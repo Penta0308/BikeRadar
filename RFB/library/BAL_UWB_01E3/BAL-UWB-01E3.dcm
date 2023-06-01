@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BAL-UWB-01E3
+D Signal Conditioning DFD PROTECTION & FILTER
+K
+F https://www.st.com/resource/en/datasheet/bal-uwb-01e3.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon May 22 17:47:07 2023
+# Process ID: 15072
+# Current directory: C:/Users/penta/Documents/BikeRadar/Bajie7020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15700 C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.xpr
+# Log file: C:/Users/penta/Documents/BikeRadar/Bajie7020/vivado.log
+# Journal file: C:/Users/penta/Documents/BikeRadar/Bajie7020\vivado.jou
+# Running On: Penta0308-E402N, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 2, Host memory: 8446 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd}
+delete_bd_objs [get_bd_intf_nets TMDS_0_1] [get_bd_intf_nets hdmi_dvi2rgb_0_RGB] [get_bd_nets processing_system7_0_FCLK_CLK1] [get_bd_nets hdmi_dvi2rgb_0_aPixelClkLckd] [get_bd_cells hdmi_dvi2rgb_0]
+delete_bd_objs [get_bd_intf_nets v_vid_in_axi4s_0_video_out] [get_bd_nets hdmi_dvi2rgb_0_PixelClk] [get_bd_nets hdmi_dvi2rgb_0_pLocked] [get_bd_nets rst_ps7_0_hdmi_peripheral_reset] [get_bd_cells v_vid_in_axi4s_0]
+delete_bd_objs [get_bd_intf_ports TMDS_0]
+delete_bd_objs [get_bd_cells rst_ps7_0_hdmi]
+create_bd_port -dir I -from 8 -to 0 RFB_D
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:selectio_wiz:5.1 selectio_wiz_0
+endgroup
+set_property -dict [list CONFIG.BUS_SIG_TYPE {DIFF} CONFIG.BUS_IO_STD {LVDS_25} CONFIG.SELIO_ACTIVE_EDGE {DDR} CONFIG.USE_SERIALIZATION {true} CONFIG.SYSTEM_DATA_WIDTH {4} CONFIG.CLK_DELAY {NONE} CONFIG.SERIALIZATION_FACTOR {4} CONFIG.SYSTEM_DATA_WIDTH {4} CONFIG.SELIO_INTERFACE_TYPE {NETWORKING} CONFIG.SELIO_CLK_SIG_TYPE {DIFF} CONFIG.SELIO_CLK_IO_STD {LVDS_25} CONFIG.CLK_FWD_SIG_TYPE {DIFF} CONFIG.CLK_FWD_IO_STD {LVDS_25}] [get_bd_cells selectio_wiz_0]
+set_property -dict [list CONFIG.SELIO_CLK_BUF {MMCM}] [get_bd_cells selectio_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf_0
+endgroup
+set_property -dict [list CONFIG.C_SIZE {1}] [get_bd_cells util_ds_buf_0]
+set_property name util_ds_buf_rfb_fclk [get_bd_cells util_ds_buf_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf_0
+endgroup
+set_property name util_ds_buf_rfb_dclk [get_bd_cells util_ds_buf_0]
+connect_bd_net [get_bd_pins util_ds_buf_rfb_fclk/IBUF_OUT] [get_bd_pins selectio_wiz_0/clk_div_in]
+connect_bd_net [get_bd_pins util_ds_buf_rfb_dclk/IBUF_OUT] [get_bd_pins selectio_wiz_0/clk_in]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins util_ds_buf_rfb_dclk/CLK_IN_D]
+endgroup
+set_property name RFB_DCLK [get_bd_intf_ports CLK_IN_D_0]
+set_property name RFB_DATA [get_bd_ports RFB_D]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins util_ds_buf_rfb_fclk/CLK_IN_D]
+endgroup
+set_property name RFB_FCLK [get_bd_intf_ports CLK_IN_D_0]
+startgroup
+make_bd_pins_external  [get_bd_pins selectio_wiz_0/data_in_from_pins_p]
+endgroup
+set_property name RFB_DATA_P [get_bd_ports data_in_from_pins_p_0]
+startgroup
+make_bd_pins_external  [get_bd_pins selectio_wiz_0/data_in_from_pins_n]
+endgroup
+set_property name RFB_DATA_N [get_bd_ports data_in_from_pins_n_0]
+delete_bd_objs [get_bd_ports RFB_DATA]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0
+endgroup
+set_property -dict [list CONFIG.TDATA_NUM_BYTES.VALUE_SRC USER] [get_bd_cells axis_data_fifo_0]
+set_property -dict [list CONFIG.TDATA_NUM_BYTES {4} CONFIG.IS_ACLK_ASYNC {1}] [get_bd_cells axis_data_fifo_0]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins axis_subset_converter_0/aclk]
+disconnect_bd_net /rst_ps7_0_160M_peripheral_aresetn [get_bd_pins axis_subset_converter_0/aresetn]
+delete_bd_objs [get_bd_intf_nets axis_subset_converter_0_M_AXIS]
+connect_bd_intf_net [get_bd_intf_pins hdmi_axi_dma/S_AXIS_S2MM] [get_bd_intf_pins axis_data_fifo_0/M_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_0/M_AXIS] [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+set_property -dict [list CONFIG.FREQ_HZ {48000000}] [get_bd_intf_ports RFB_FCLK]
+set_property -dict [list CONFIG.FREQ_HZ {288000000}] [get_bd_intf_ports RFB_DCLK]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property name proc_sys_reset_rfb_fclk [get_bd_cells proc_sys_reset_0]
+connect_bd_net [get_bd_pins proc_sys_reset_rfb_fclk/peripheral_reset] [get_bd_pins selectio_wiz_0/io_reset]
+connect_bd_net [get_bd_pins util_ds_buf_rfb_fclk/IBUF_OUT] [get_bd_pins proc_sys_reset_rfb_fclk/slowest_sync_clk]
+connect_bd_net [get_bd_pins proc_sys_reset_rfb_fclk/ext_reset_in] [get_bd_pins rst_ps7_0_160M/peripheral_aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_rfb_fclk/peripheral_aresetn] [get_bd_pins axis_data_fifo_0/s_axis_aresetn]
+connect_bd_net [get_bd_pins axis_data_fifo_0/s_axis_aclk] [get_bd_pins util_ds_buf_rfb_fclk/IBUF_OUT]
+startgroup
+set_property -dict [list CONFIG.SERIALIZATION_FACTOR {6} CONFIG.SYSTEM_DATA_WIDTH {4} CONFIG.SELIO_INTERFACE_TYPE {NETWORKING}] [get_bd_cells selectio_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.S_TUSER_WIDTH.VALUE_SRC USER CONFIG.S_TID_WIDTH.VALUE_SRC USER CONFIG.S_TDEST_WIDTH.VALUE_SRC USER] [get_bd_cells axis_subset_converter_0]
+set_property -dict [list CONFIG.S_TUSER_WIDTH {0} CONFIG.S_HAS_TLAST {0} CONFIG.TLAST_REMAP {1'b0}] [get_bd_cells axis_subset_converter_0]
+endgroup
+connect_bd_net [get_bd_pins axis_subset_converter_0/s_axis_tdata] [get_bd_pins selectio_wiz_0/data_in_to_device]
+connect_bd_net [get_bd_pins axis_subset_converter_0/s_axis_tready] [get_bd_pins axis_subset_converter_0/s_axis_tvalid]
+connect_bd_net [get_bd_pins axis_subset_converter_0/aclk] [get_bd_pins util_ds_buf_rfb_fclk/IBUF_OUT]
+connect_bd_net [get_bd_pins axis_subset_converter_0/aresetn] [get_bd_pins proc_sys_reset_rfb_fclk/peripheral_aresetn]
+regenerate_bd_layout
+save_bd_design
+set_property name xlconstant_32_0 [get_bd_cells xlconstant_0]
+copy_bd_objs /  [get_bd_cells {xlconstant_32_0}]
+set_property name xlconstant_4_0 [get_bd_cells xlconstant_32_1]
+connect_bd_net [get_bd_pins xlconstant_4_0/dout] [get_bd_pins selectio_wiz_0/bitslip]
+save_bd_design
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axis_data_fifo_0/m_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+reset_run bajie7020_xbar_4_synth_1
+reset_run bajie7020_xbar_3_synth_1
+reset_run bajie7020_axis_subset_converter_0_2_synth_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {4}] [get_bd_cells xlconstant_4_0]
+endgroup
+create_bd_port -dir I RFB_DVALID
+delete_bd_objs [get_bd_nets axis_subset_converter_0_s_axis_tready]
+connect_bd_net [get_bd_ports RFB_DVALID] [get_bd_pins axis_subset_converter_0/s_axis_tvalid]
+regenerate_bd_layout
+save_bd_design
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS25 [get_ports [list CAN0_rx CAN0_tx]]
+set_property IOSTANDARD LVDS_25 [get_ports [list {RFB_FCLK_clk_p[0]}]]
+set_property IOSTANDARD LVDS_25 [get_ports [list {RFB_DCLK_clk_p[0]}]]
+place_ports {RFB_DCLK_clk_n[0]} P20 {RFB_DCLK_clk_p[0]} N20
+place_ports {RFB_FCLK_clk_p[0]} N18 {RFB_FCLK_clk_n[0]} P19
+set_property package_pin "" [get_ports [list  {RFB_FCLK_clk_n[0]} {RFB_FCLK_clk_p[0]}]]
+set_property package_pin "" [get_ports [list  {RFB_DCLK_clk_p[0]} {RFB_DCLK_clk_n[0]}]]
+place_ports {RFB_FCLK_clk_p[0]} N18 {RFB_FCLK_clk_n[0]} P19
+place_ports {RFB_DCLK_clk_n[0]} W20 {RFB_DCLK_clk_p[0]} V20
+save_constraints
+set_property package_pin "" [get_ports [list  {RFB_DCLK_clk_n[0]} {RFB_DCLK_clk_p[0]}]]
+place_ports {RFB_DCLK_clk_n[0]} R17 {RFB_DCLK_clk_p[0]} R16
+place_ports {RFB_DATA_P[0]} T16 {RFB_DATA_N[0]} U17
+place_ports {RFB_DATA_N[1]} R18 {RFB_DATA_P[1]} T17
+place_ports {RFB_DATA_P[2]} V20 {RFB_DATA_N[2]} W20
+place_ports {RFB_DATA_N[3]} U20 {RFB_DATA_P[3]} T20
+save_constraints
+close_design
+startgroup
+set_property -dict [list CONFIG.SELIO_BUS_IN_DELAY {NONE}] [get_bd_cells selectio_wiz_0]
+endgroup
+set_property name RFB_DATAVALID [get_bd_ports RFB_DVALID]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS25 [get_ports [list RFB_DATAVALID]]
+place_ports RFB_DATAVALID R19
+save_constraints
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list CAN0_rx CAN0_tx]]
+save_constraints
+set_property DRIVE 12 [get_ports [list CAN0_tx]]
+set_property OFFCHIP_TERM NONE [get_ports [list CAN0_tx]]
+save_constraints -force
+close_design
+startgroup
+set_property -dict [list CONFIG.PCW_CAN_PERIPHERAL_DIVISOR0 {50} CONFIG.PCW_CAN_PERIPHERAL_DIVISOR1 {32} CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_CLK1_PORT {0} CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+set_property location {5 1763 824} [get_bd_cells xfft_0]
+regenerate_bd_layout
+reset_run bajie7020_processing_system7_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+create_clock -period 3.472 -name RFB_DCLK -waveform {0.000 1.736} [get_pins {bajie7020_i/RFB_DCLK_clk_p[0]}]
+create_generated_clock -name RFB_FCLK -source [get_pins {bajie7020_i/RFB_DCLK_clk_p[0]}] -divide_by 6 -add -master_clock [get_clocks  "RFB_DCLK"] [get_pins {bajie7020_i/RFB_FCLK_clk_p[0]}]
+save_constraints
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+close_design

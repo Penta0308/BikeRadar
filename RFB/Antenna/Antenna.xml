@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\penta\Documents\BikeRadar\RFB\Antenna\Antenna.kicad_sch</source>
+    <date>2023-05-26 00:33:12</date>
+    <tool>Eeschema (6.0.4)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Antenna.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>receiver.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="AE1">
+      <value>Antenna</value>
+      <footprint>Antenna:Antenna_PatchArray4_JLC7628_1.6_5800M</footprint>
+      <libsource lib="Device" part="Antenna" description="Antenna"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fdc6f30-77bc-4e9b-8665-c8aa9acf5bf9</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a3e56a1-6927-454b-8dab-90e5e4dfc76c</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9349937-f4be-4789-b58b-595f2ab9279b</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a9921d8-2e97-4bc0-bd9d-9526e7d0051e</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf924a46-a8af-4eda-944f-d464493bb254</tstamps>
+    </comp>
+    <comp ref="FB1">
+      <value>BLM18PG181SN1D</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <libsource lib="Device" part="FerriteBead" description="Ferrite bead"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb56868c-b19c-4212-a841-9013b46ee67d</tstamps>
+    </comp>
+    <comp ref="FB2">
+      <value>BLM18PG181SN1D</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <libsource lib="Device" part="FerriteBead" description="Ferrite bead"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>140d75c1-82dd-4353-8ae7-cb57f1cbde4f</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad_TopOnly</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c62bdbe1-a223-42f5-8a5d-ee74f8ec94e5</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad_TopOnly</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f67292a-cbd7-4f53-b512-d39cb449a90d</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_Coaxial</value>
+      <footprint>Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bcf5f60-6705-4cf2-88e2-612e90b9dd7f</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x05_Male</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical_SMD_Pin1Left</footprint>
+      <libsource lib="Connector" part="Conn_01x05_Male" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Antenna.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1baefcec-ac82-4268-8bf9-4c186ceb6cf1</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>0.5p R</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>6eff9761-cfb7-4bf3-a537-d62678c5b8ec</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>22p R</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>93bea7d5-034c-46a3-9acf-ef947d2475d5</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>703f119c-4c94-4337-9e60-8b3c80e3cc97</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>8p2</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>18e62b50-b030-4dba-971d-b5033a8d9118</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>4p3 R</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>fd7771f5-df28-4e6f-b5e3-8dd20df0a7bf</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>0.4p R</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>9f9fd281-d76b-408e-aff3-7a4a5afd1a5a</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>5p6</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>2a06df26-20e5-4fac-ab6b-29cdc74c5153</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>2p2 R</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>1cd78087-0ddd-420e-9ef1-ea07f95bab89</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>4u7</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>7fbd06a2-ee00-4cb7-a238-4ceaaea75899</tstamps>
+    </comp>
+    <comp ref="IC2">
+      <value>SKY67189-396LF</value>
+      <footprint>Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</footprint>
+      <fields>
+        <field name="Description">RF Amplifier</field>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Skyworks</field>
+        <field name="Manufacturer_Part_Number">SKY67189-396LF</field>
+        <field name="Mouser Part Number">873-SKY67189-396LF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SKY67189-396LF?qs=vmHwEFxEFR%252BwpGQU584Y7g%3D%3D</field>
+      </fields>
+      <libsource lib="SKY67189-396LF" part="SKY67189-396LF" description="RF Amplifier"/>
+      <property name="Description" value="RF Amplifier"/>
+      <property name="Height" value="0.8"/>
+      <property name="Mouser Part Number" value="873-SKY67189-396LF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SKY67189-396LF?qs=vmHwEFxEFR%252BwpGQU584Y7g%3D%3D"/>
+      <property name="Manufacturer_Name" value="Skyworks"/>
+      <property name="Manufacturer_Part_Number" value="SKY67189-396LF"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>e44f7fd7-66f4-4ccd-9391-92fe162cebf4</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>400p R</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>24ca46fb-42cb-4b5f-926d-be0efbf3757e</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>6n8</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>e5767bc8-e184-4fe2-b377-ecee1964bc0d</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>2n4 R</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>37b4f479-ad48-48b4-8431-249e206db6db</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>3k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>935227f7-b95f-4124-bf66-05ad3678a8f6</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>5k1</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>53e7e026-6765-47e3-934f-cfa8c633d71f</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>20</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>48ca8289-4387-4593-92db-c4027352f04f</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>GRF2101</value>
+      <footprint>GRF2101:DFN-6-1.5x1.5_1EP</footprint>
+      <libsource lib="GRF2101" part="GRF2101" description=""/>
+      <property name="Sheetname" value="receiver"/>
+      <property name="Sheetfile" value="receiver.kicad_sch"/>
+      <sheetpath names="/receiver/" tstamps="/1081e636-26b4-462c-a1d4-f727d64e6cdb/"/>
+      <tstamps>2b500473-e5d2-4bb2-bcc2-1742cee81afa</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x05_Male">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+        <fp>*LEMO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Antenna">
+      <description>Antenna</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">AE</field>
+        <field name="Value">Antenna</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="FerriteBead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">FerriteBead</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GRF2101" part="GRF2101">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GRF2101</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VENABLE" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="RFIN" type="input"/>
+        <pin num="4" name="RFOUT" type="output"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="VCC" type="power_in"/>
+        <pin num="7" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SKY67189-396LF" part="SKY67189-396LF">
+      <description>RF Amplifier</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">SKY67189-396LF</field>
+        <field name="Footprint">SON50P200X200X80-9N-D</field>
+        <field name="Description">RF Amplifier</field>
+        <field name="Height">0.8</field>
+        <field name="Mouser Part Number">873-SKY67189-396LF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SKY67189-396LF?qs=vmHwEFxEFR%252BwpGQU584Y7g%3D%3D</field>
+        <field name="Manufacturer_Name">Skyworks</field>
+        <field name="Manufacturer_Part_Number">SKY67189-396LF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="N/C" type="passive"/>
+        <pin num="2" name="RFIN" type="passive"/>
+        <pin num="3" name="VBIAS" type="passive"/>
+        <pin num="4" name="RSET" type="passive"/>
+        <pin num="5" name="~EN" type="passive"/>
+        <pin num="6" name="VDD" type="passive"/>
+        <pin num="7" name="RFOUT" type="passive"/>
+        <pin num="8" name="N/C" type="passive"/>
+        <pin num="9" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="GRF2101">
+      <uri>C:/Users/penta/Documents/BikeRadar/RFB/library/GRF2101/GRF2101.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="SKY67189-396LF">
+      <uri>C:/Users/penta/Documents/BikeRadar/RFB/library/SKY67189/SKY67189-396LF.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3A">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="/5VA">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="FB2" pin="1" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="3" name="/receiver/RF_OUT">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="In" pintype="passive"/>
+    </net>
+    <net code="4" name="/receiver/RX">
+      <node ref="AE1" pin="1" pinfunction="A" pintype="input"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/~EN1">
+      <node ref="IC2" pin="5" pinfunction="~EN" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="IC2" pin="1" pinfunction="N/C" pintype="passive"/>
+      <node ref="IC2" pin="8" pinfunction="N/C" pintype="passive"/>
+      <node ref="IC2" pin="9" pinfunction="EP" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Ext" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="EP" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C5-Pad2)">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="RFIN" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="RFOUT" pintype="output"/>
+    </net>
+    <net code="10" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="IC2" pin="7" pinfunction="RFOUT" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(C13-Pad1)">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="FB2" pin="2" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(IC2-Pad2)">
+      <node ref="IC2" pin="2" pinfunction="RFIN" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(IC2-Pad3)">
+      <node ref="IC2" pin="3" pinfunction="VBIAS" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(IC2-Pad4)">
+      <node ref="IC2" pin="4" pinfunction="RSET" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(IC2-Pad6)">
+      <node ref="IC2" pin="6" pinfunction="VDD" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="VENABLE" pintype="input"/>
+    </net>
+  </nets>
+</export>

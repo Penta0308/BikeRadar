@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GRF5511
+D RF Amplifier .7-6GHz GaAs Gain 20.1dB
+K
+F https://componentsearchengine.com/Datasheets/1/GRF5511.pdf
+$ENDCMP
+#
+#End Doc Library

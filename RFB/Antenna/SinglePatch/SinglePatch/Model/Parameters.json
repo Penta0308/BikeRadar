@@ -1,0 +1,64 @@
+{
+    "parameters": [
+        {
+            "descr": "Substrate Width",
+            "expr": "50",
+            "name": "Ws",
+            "value": "50"
+        },
+        {
+            "descr": "Substrate Length",
+            "expr": "40",
+            "name": "Ls",
+            "value": "40"
+        },
+        {
+            "descr": "Substrate Patch Height",
+            "expr": "1.58",
+            "name": "HsP",
+            "value": "1.58"
+        },
+        {
+            "descr": "Patch Width",
+            "expr": "15.44",
+            "name": "Wp",
+            "value": "15.44"
+        },
+        {
+            "descr": "Delta L",
+            "expr": "10",
+            "name": "DL",
+            "value": "10"
+        },
+        {
+            "descr": "Patch Length",
+            "expr": "11.48",
+            "name": "Lp",
+            "value": "11.48"
+        },
+        {
+            "descr": "Patch Height",
+            "expr": "0.035",
+            "name": "Hp",
+            "value": "0.035"
+        },
+        {
+            "descr": "Feed Width",
+            "expr": "3",
+            "name": "Wf",
+            "value": "3"
+        },
+        {
+            "descr": "Inset Height",
+            "expr": "3.8",
+            "name": "Yo",
+            "value": "3.8"
+        },
+        {
+            "expr": "0.0152",
+            "name": "Hg",
+            "value": "0.0152"
+        }
+    ],
+    "version": 1
+}

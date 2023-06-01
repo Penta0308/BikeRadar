@@ -1,0 +1,86 @@
+{
+    "parameters": [
+        {
+            "descr": "Substrate Width",
+            "expr": "25",
+            "name": "Ws",
+            "value": "25"
+        },
+        {
+            "descr": "Substrate Length",
+            "expr": "25",
+            "name": "Ls",
+            "value": "25"
+        },
+        {
+            "descr": "Substrate Height",
+            "expr": "0.2104",
+            "name": "Hs",
+            "value": "0.2104"
+        },
+        {
+            "descr": "Ground Height",
+            "expr": "0.017",
+            "name": "Hg",
+            "value": "0.017"
+        },
+        {
+            "descr": "C Width",
+            "expr": "0.350",
+            "name": "Wi",
+            "value": "0.350"
+        },
+        {
+            "descr": "C Length",
+            "expr": "Ls/2",
+            "name": "Li",
+            "value": "12.5"
+        },
+        {
+            "descr": "Microstrip Height",
+            "expr": "0.035",
+            "name": "Hm",
+            "value": "0.035"
+        },
+        {
+            "descr": "Port A Width",
+            "expr": "0.160",
+            "name": "Wa",
+            "value": "0.160"
+        },
+        {
+            "descr": "Port A Offset",
+            "expr": "-(Wi-Wb)/2",
+            "name": "Oa",
+            "value": "-0.095"
+        },
+        {
+            "descr": "Port B Width",
+            "expr": "0.16",
+            "name": "Wb",
+            "value": "0.16"
+        },
+        {
+            "descr": "Port B Offset",
+            "expr": "-(Wa)/2",
+            "name": "Ob",
+            "value": "-0.08"
+        },
+        {
+            "expr": "7.5",
+            "name": "La",
+            "value": "7.5"
+        },
+        {
+            "expr": "7.5",
+            "name": "Lb",
+            "value": "7.5"
+        },
+        {
+            "expr": "0.350",
+            "name": "Wf",
+            "value": "0.350"
+        }
+    ],
+    "version": 1
+}

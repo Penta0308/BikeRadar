@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "GRF2101")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/GRF2101")(options "")(descr ""))
+  (lib (name "RFSW8009")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/RFSW8009")(options "")(descr ""))
+  (lib (name "SKY67189")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/SKY67189")(options "")(descr ""))
+  (lib (name "Antenna")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/Antenna.pretty")(options "")(descr ""))
+)

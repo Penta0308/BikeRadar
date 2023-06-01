@@ -1,0 +1,37 @@
+[Device]
+Family=machxo
+PartType=LCMXO256E
+PartName=LCMXO256E-3T100C
+SpeedGrade=-3
+Package=TQFP100
+OperatingCondition=COM
+Status=P
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Distributed_DPRAM
+CoreRevision=3.5
+ModuleName=DPRAM
+SourceFormat=Schematic/VHDL
+ParameterFileVersion=1.0
+Date=12/09/2010
+Time=18:21:15
+
+[Parameters]
+Verilog=0
+VHDL=1
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+Addresses=128
+Data=8
+LUT=1
+MemFile=
+MemFormat=orca
+
+[FilesGenerated]
+=mem

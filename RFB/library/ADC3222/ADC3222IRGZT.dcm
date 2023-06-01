@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADC3222IRGZT
+D Dual-Channel, 12-Bit, 50-MSPS Analog-to-Digital Converter (ADC)
+K
+F http://www.ti.com/lit/gpn/adc3222
+$ENDCMP
+#
+#End Doc Library

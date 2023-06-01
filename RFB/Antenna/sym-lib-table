@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "GRF2101")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/GRF2101/GRF2101.kicad_sym")(options "")(descr ""))
+  (lib (name "RFSW8009TR7")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/RFSW8009/RFSW8009TR7.kicad_sym")(options "")(descr ""))
+  (lib (name "SKY67189-396LF")(type "KiCad")(uri "C:/Users/penta/Documents/BikeRadar/RFB/library/SKY67189/SKY67189-396LF.kicad_sym")(options "")(descr ""))
+)

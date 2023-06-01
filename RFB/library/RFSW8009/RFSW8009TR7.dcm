@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RFSW8009TR7
+D RF Switch ICs WiFi SW,WiFi
+K
+F https://www.qorvo.com/products/d/da001194
+$ENDCMP
+#
+#End Doc Library

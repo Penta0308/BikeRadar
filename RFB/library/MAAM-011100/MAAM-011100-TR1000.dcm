@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAAM-011100-TR1000
+D RF Amplifier Amplifier,0.4-20GHz,1.5x1.2mm,TDFN
+K
+F http://cdn.macom.com/datasheets/MAAM-011100.pdf
+$ENDCMP
+#
+#End Doc Library

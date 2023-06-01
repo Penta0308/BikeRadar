@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC5588IPF-1#PBF
+D RF MODULATOR 200MHZ-6GHZ 24UFQFN,RF Modulator IC 200MHz ~ 6GHz 24-UFQFN Exposed Pad
+K
+F https://www.analog.com/media/en/technical-documentation/data-sheets/55881fb.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS74601PBDRVR
+D Adjustable 1-A low-dropout (LDO) linear regulator with power good
+K
+F http://www.ti.com/lit/gpn/TPS746
+$ENDCMP
+#
+#End Doc Library

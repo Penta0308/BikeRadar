@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.531915",
+   "Default View_TopLeft":"-436,-92",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port M_AXIS_0 -pg 1 -lvl 4 -x 910 -y 820 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port port-id_s_axis_tvalid -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace port port-id_m_axis_aresetn -pg 1 -lvl 0 -x 0 -y 900 -defaultsOSRD
+preplace port port-id_m_axis_aclk -pg 1 -lvl 0 -x 0 -y 920 -defaultsOSRD
+preplace port port-id_smpl_fin -pg 1 -lvl 4 -x 910 -y 590 -defaultsOSRD
+preplace port port-id_smpl_last -pg 1 -lvl 4 -x 910 -y 570 -defaultsOSRD
+preplace port port-id_w_reg -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_regclk -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_r_reg -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace portBus s_axis_tdata -pg 1 -lvl 0 -x 0 -y 760 -defaultsOSRD
+preplace portBus N_0 -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
+preplace portBus i_reg -pg 1 -lvl 4 -x 910 -y 60 -defaultsOSRD
+preplace portBus o_reg -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace inst axis_clock_converter_0 -pg 1 -lvl 3 -x 770 -y 820 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 2 -x 430 -y 790 -defaultsOSRD
+preplace inst smplctlr_0 -pg 1 -lvl 3 -x 770 -y 580 -defaultsOSRD
+preplace inst regcont_0 -pg 1 -lvl 2 -x 430 -y 240 -defaultsOSRD
+preplace inst xlconstant_1_0 -pg 1 -lvl 1 -x 100 -y 250 -defaultsOSRD
+preplace netloc N_0_1 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc aresetn_1 1 0 3 NJ 780 200 580 630
+preplace netloc m_axis_aclk_1 1 0 3 NJ 920 NJ 920 640J
+preplace netloc m_axis_aresetn_1 1 0 3 NJ 900 NJ 900 630J
+preplace netloc o_reg_1 1 0 2 NJ 130 NJ
+preplace netloc r_reg_1 1 0 2 NJ 150 NJ
+preplace netloc regclk_1 1 0 2 NJ 110 NJ
+preplace netloc regcont_0_i_reg 1 2 2 NJ 60 NJ
+preplace netloc regcont_0_o_00 1 2 1 630 80n
+preplace netloc s_axis_tdata_1 1 0 2 NJ 760 NJ
+preplace netloc s_axis_tvalid_1 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc selectio_wiz_0_clk_div_out 1 0 3 NJ 190 190 540 640
+preplace netloc smplctlr_0_fin 1 3 1 NJ 590
+preplace netloc smplctlr_0_last 1 1 3 220 680 NJ 680 890
+preplace netloc smplctlr_0_pulse 1 1 3 210 480 NJ 480 890
+preplace netloc w_reg_1 1 0 2 NJ 170 NJ
+preplace netloc xlconstant_1_0_dout 1 1 1 180 250n
+preplace netloc axis_clock_converter_0_M_AXIS 1 3 1 NJ 820
+preplace netloc axis_subset_converter_0_M_AXIS 1 2 1 N 780
+levelinfo -pg 1 0 100 430 770 910
+pagesize -pg 1 -db -bbox -sgen -170 0 1030 940
+"
+}
+0

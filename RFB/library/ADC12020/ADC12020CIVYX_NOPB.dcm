@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADC12020CIVYX_NOPB
+D Analog to Digital Converters - ADC 12-Bit 20MSPS Analog-to-Digital Converter (ADC) 32-LQFP -40 to 85
+K
+F https://www.arrow.com/en/products/adc12020civyxnopb/texas-instruments
+$ENDCMP
+#
+#End Doc Library

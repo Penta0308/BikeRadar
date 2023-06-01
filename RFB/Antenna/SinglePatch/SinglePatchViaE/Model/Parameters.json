@@ -1,0 +1,86 @@
+{
+    "parameters": [
+        {
+            "descr": "Substrate Width",
+            "expr": "50",
+            "name": "Ws",
+            "value": "50"
+        },
+        {
+            "descr": "Substrate Length",
+            "expr": "40",
+            "name": "Ls",
+            "value": "40"
+        },
+        {
+            "descr": "Substrate Patch Height",
+            "expr": "1.58",
+            "name": "HsP",
+            "value": "1.58"
+        },
+        {
+            "descr": "Patch Width",
+            "expr": "15.44",
+            "name": "Wp",
+            "value": "15.44"
+        },
+        {
+            "descr": "Patch Length",
+            "expr": "11.48",
+            "name": "Lp",
+            "value": "11.48"
+        },
+        {
+            "descr": "Patch Height",
+            "expr": "0.035",
+            "name": "Hp",
+            "value": "0.035"
+        },
+        {
+            "descr": "Feed Width",
+            "expr": "0.36",
+            "name": "Wf",
+            "value": "0.36"
+        },
+        {
+            "descr": "Ground Height",
+            "expr": "0.0152",
+            "name": "Hg",
+            "value": "0.0152"
+        },
+        {
+            "descr": "Substrate Feed Height",
+            "expr": "0.21",
+            "name": "HsF",
+            "value": "0.21"
+        },
+        {
+            "descr": "Via Y",
+            "expr": "-5",
+            "name": "Yb",
+            "value": "-5"
+        },
+        {
+            "descr": "Feed Height",
+            "expr": "0.035",
+            "name": "Hf",
+            "value": "0.035"
+        },
+        {
+            "expr": "0.36/2",
+            "name": "Vo",
+            "value": "0.18"
+        },
+        {
+            "expr": "0.2/2",
+            "name": "Vi",
+            "value": "0.1"
+        },
+        {
+            "expr": "0.5",
+            "name": "Vc",
+            "value": "0.5"
+        }
+    ],
+    "version": 1
+}

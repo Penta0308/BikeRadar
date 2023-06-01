@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC6948IUFD-4#PBF
+D Clock Generator 10MHz to 425MHz-IN 6390MHz-OUT Automotive 28-Pin QFN EP Tube
+K
+F https://www.analog.com/media/en/technical-documentation/data-sheets/6948fa.pdf
+$ENDCMP
+#
+#End Doc Library

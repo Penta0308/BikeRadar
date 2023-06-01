@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TLV3601DCKR
+#/15545384/295929/2.50/5/3/Integrated Circuit
+DEF TLV3601DCKR IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "TLV3601DCKR" 850 200 50 H V L CNN
+F2 "SOT65P210X110-5N" 850 100 50 H I L CNN
+F3 "https://www.arrow.com/en/products/tlv3601dckr/texas-instruments?region=nac" 850 0 50 H I L CNN
+F4 "Analog Comparators" 850 -100 50 H I L CNN "Description"
+F5 "1.1" 850 -200 50 H I L CNN "Height"
+F6 "595-TLV3601DCKR" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV3601DCKR?qs=XAiT9M5g4x9WciY6W7PNjw%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TLV3601DCKR" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X OUT 1 0 0 200 R 50 50 0 0 P
+X VEE 2 0 -100 200 R 50 50 0 0 P
+X IN+ 3 0 -200 200 R 50 50 0 0 P
+X IN- 4 1000 0 200 L 50 50 0 0 P
+X VCC 5 1000 -100 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

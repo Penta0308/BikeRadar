@@ -1,0 +1,3 @@
+C:/Users/penta/Documents/BikeRadar/RFB/STM32L431/Core/Src/spi.c:30:6:MX_SPI2_Init	8	static
+C:/Users/penta/Documents/BikeRadar/RFB/STM32L431/Core/Src/spi.c:64:6:HAL_SPI_MspInit	48	static
+C:/Users/penta/Documents/BikeRadar/RFB/STM32L431/Core/Src/spi.c:95:6:HAL_SPI_MspDeInit	16	static

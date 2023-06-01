@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPD12S016PWR
+D Texas Instruments,TPD12S016PWR,IC,HDMI TPD12S016PWR, HDMI Interface 12-channel HDMI 4.5
+K
+F http://www.ti.com/lit/ds/symlink/tpd12s016.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Nov 30 16:25:39 2021
+# Process ID: 15064
+# Current directory: C:/Users/penta/Desktop/Bajie7020
+# Command line: vivado.exe C:\Users\penta\Desktop\Bajie7020\Bajie7020.xpr
+# Log file: C:/Users/penta/Desktop/Bajie7020/vivado.log
+# Journal file: C:/Users/penta/Desktop/Bajie7020\vivado.jou
+# Running On: DESKTOP-8ERHJ94, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 4, Host memory: 14978 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/penta/Desktop/Bajie7020/Bajie7020.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+close_hw_manager
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210241854537]
+set_property PARAM.FREQUENCY 10000000 [get_hw_targets */xilinx_tcf/Digilent/210241854537]
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/penta/Desktop/Bajie7020/bajie7020_wrapper.xsa
+close_hw_manager

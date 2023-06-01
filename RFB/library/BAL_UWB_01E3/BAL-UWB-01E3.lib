@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model BAL-UWB-01E3
+#/2205704/295929/2.50/6/4/Filter
+DEF BAL-UWB-01E3 FL 0 30 Y Y 1 F N
+F0 "FL" 1050 300 50 H V L CNN
+F1 "BAL-UWB-01E3" 1050 200 50 H V L CNN
+F2 "BALUWB01E3" 1050 100 50 H I L CNN
+F3 "https://www.st.com/resource/en/datasheet/bal-uwb-01e3.pdf" 1050 0 50 H I L CNN
+F4 "Signal Conditioning DFD PROTECTION & FILTER" 1050 -100 50 H I L CNN "Description"
+F5 "0.45" 1050 -200 50 H I L CNN "Height"
+F6 "511-BAL-UWB-01E3" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/BAL-UWB-01E3?qs=ZSypp649SOWHmVbGHG7Pvw%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "STMicroelectronics" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "BAL-UWB-01E3" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X SE 1 0 0 200 R 50 50 0 0 P
+X GND1 2 0 -100 200 R 50 50 0 0 P
+X DIFFN 3 0 -200 200 R 50 50 0 0 P
+X DIFFP 4 1200 -200 200 L 50 50 0 0 P
+X GND2 5 1200 -100 200 L 50 50 0 0 P
+X NC 6 1200 0 200 L 50 50 0 0 N
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

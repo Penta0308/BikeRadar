@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BGT24LTR22E6327XTSA1
+D RF Transceiver, 24 GHz to 24.25 GHz, WFWLB-52, 1.45 V to 1.6 V, -40 C to 85 C
+K
+F https://www.infineon.com/dgdl/Infineon-BGT24LTR22-DataSheet-v01_00-EN.pdf?fileId=5546d462700c0ae60170532090534d21
+$ENDCMP
+#
+#End Doc Library

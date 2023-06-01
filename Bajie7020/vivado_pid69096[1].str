@@ -1,0 +1,660 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 69096
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Nov 27 18:28:13 KST 2021
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	penta
+User home directory: C:/Users/penta
+User working directory: C:/Users/penta/Documents/BikeRadar/Bajie7020
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/penta/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/penta/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/penta/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/penta/Documents/BikeRadar/Bajie7020/vivado.log
+Vivado journal file: 	C:/Users/penta/Documents/BikeRadar/Bajie7020/vivado.jou
+Engine tmp dir: 	C:/Users/penta/Documents/BikeRadar/Bajie7020/.Xil/Vivado-69096-Penta0308-E402N
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,010 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// Opening Vivado Project: C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.xpr. Version: Vivado v2021.2 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 58 MB. Current time: 11/27/21, 6:28:13 PM KST
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 56 MB. Current time: 11/27/21, 6:28:43 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+102170kb) [00:01:54]
+// [Engine Memory]: 1,010 MB (+907516kb) [00:01:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  18871 ms.
+// Tcl Message: open_project C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1681 ms.
+// [GUI Memory]: 123 MB (+19353kb) [00:02:16]
+// Project name: Bajie7020; location: C:/Users/penta/Documents/BikeRadar/Bajie7020; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:01:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1211.719 ; gain = 0.000 
+dismissDialog("Open Project"); // bA
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6651 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1725 ms. Increasing delay to 5175 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2630 ms. Increasing delay to 7890 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1607 ms. Increasing delay to 4000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 29 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // ad
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // ao
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run bajie7020_xbar_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  4138 ms.
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1211.719 ; gain = 0.000 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run bajie7020_xbar_1_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run bajie7020_xfft_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10563 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1316 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "1", 0); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs impl_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1211.719 ; gain = 0.000 
+// 'c' command handler elapsed time: 42 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9554 ms. Increasing delay to 6000 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5208 ms. Increasing delay to 7000 ms.
+// Elapsed time: 40 seconds
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "bajie7020 ;  ; Running Submodule Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Nov 25 23:45:13 KST 2021 ; 39:36:06 ;  ;  ;  ; ", 3); // az
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Constraints", 1); // az
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Name", 0); // az
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Constraints", 1); // az
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "bajie7020_FIRSampleController_0_0_synth_1 ; bajie7020_FIRSampleController_0_0 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 34 ; 19 ; 0.0 ; 0 ; 0 ; Fri Nov 26 08:28:57 KST 2021 ; 00:05:57 ; Vivado Synthesis Defaults (Vivado Synthesis 2021) ; Vivado Synthesis Default Reports (Vivado Synthesis 2021) ; xc7z020clg400-1 ; Vivado Synthesis Defaults", 7, (String) null, 9, false); // az
+// PAPropertyPanels.initPanels (bajie7020_FIRSampleController_0_0_synth_1) elapsed time: 4.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  5736 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "bajie7020_FIRSampleController_0_0_synth_1 ; bajie7020_FIRSampleController_0_0 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 34 ; 19 ; 0.0 ; 0 ; 0 ; Fri Nov 26 08:28:57 KST 2021 ; 00:05:57 ; Vivado Synthesis Defaults (Vivado Synthesis 2021) ; Vivado Synthesis Default Reports (Vivado Synthesis 2021) ; xc7z020clg400-1 ; Vivado Synthesis Defaults", 7, "bajie7020_FIRSampleController_0_0_synth_1", 0, false); // az
+// WARNING: HEventQueue.dispatchEvent() is taking  1155 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2799 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5296 ms. Increasing delay to 8000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 907ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3730 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4532 ms. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2468 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3953 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1061ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1063 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1440 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1496 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2535 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1316 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 12549 ms. Increasing delay to 37647 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1223 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6431 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3421 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2821 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 488ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5894 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 796ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3486 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1466 ms. Decreasing delay to 3466 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4184 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1061 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2762 ms. Increasing delay to 8286 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1908 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7380 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4310 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 11066 ms. Increasing delay to 33198 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1725 ms.
+// [GUI Memory]: 135 MB (+6009kb) [00:09:30]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1413ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2018 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2774 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1039 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1657 ms. Decreasing delay to 3657 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2368 ms. Increasing delay to 7104 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15155 ms.
+// Thread: Image Fetcher 1
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.isFetcher(ImageFetcher.java:120)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:199)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.run(ImageFetcher.java:176)
+// Thread: Common-Cleaner
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// 	at java.base@11.0.11/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+// Thread: pool-7-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-11-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-2-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Attach Listener
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.z.aXx(SourceFile:2513)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Thread-1
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@11.0.11/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@11.0.11/java.lang.Thread.getAllStackTraces(Thread.java:1653)
+// 	at ui.utils.d.c.iPe(SourceFile:589)
+// 	at ui.frmwork.a.e.aXx(SourceFile:144)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-1-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.aXx(SourceFile:373)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: AWT-Windows
+// 	at java.desktop@11.0.11/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@11.0.11/sun.awt.windows.WToolkit.run(WToolkit.java:305)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: pool-9-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-13-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-4-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-12-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Image Fetcher 0
+// 	at java.base@11.0.11/java.lang.System.currentTimeMillis(Native Method)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.nextImage(ImageFetcher.java:145)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:207)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.run(ImageFetcher.java:176)
+// Thread: AWT-EventQueue-0
+// 	at java.desktop@11.0.11/java.awt.geom.LineIterator.next(LineIterator.java:71)
+// 	at java.desktop@11.0.11/sun.java2d.marlin.DMarlinRenderingEngine$NormalizingPathIterator.next(DMarlinRenderingEngine.java:612)
+// 	at java.desktop@11.0.11/sun.java2d.marlin.DMarlinRenderingEngine.pathToLoop(DMarlinRenderingEngine.java:670)
+// 	at java.desktop@11.0.11/sun.java2d.marlin.DMarlinRenderingEngine.pathTo(DMarlinRenderingEngine.java:656)
+// 	at java.desktop@11.0.11/sun.java2d.marlin.DMarlinRenderingEngine.strokeTo(DMarlinRenderingEngine.java:468)
+// 	at java.desktop@11.0.11/sun.java2d.marlin.DMarlinRenderingEngine.strokeTo(DMarlinRenderingEngine.java:228)
+// 	at java.desktop@11.0.11/sun.java2d.marlin.DMarlinRenderingEngine.strokeTo(DMarlinRenderingEngine.java:201)
+// 	at java.desktop@11.0.11/sun.java2d.pipe.LoopPipe.getStrokeSpans(LoopPipe.java:272)
+// 	at java.desktop@11.0.11/sun.java2d.pipe.LoopPipe.draw(LoopPipe.java:195)
+// 	at java.desktop@11.0.11/sun.java2d.pipe.PixelToShapeConverter.drawLine(PixelToShapeConverter.java:52)
+// 	at java.desktop@11.0.11/sun.java2d.pipe.PixelToParallelogramConverter.drawLine(PixelToParallelogramConverter.java:81)
+// 	at java.desktop@11.0.11/sun.java2d.pipe.ValidatePipe.drawLine(ValidatePipe.java:62)
+// 	at java.desktop@11.0.11/sun.java2d.SunGraphics2D.drawLine(SunGraphics2D.java:2240)
+// 	at ui.utils.swing.g.e.a(SourceFile:742)
+// 	at ui.utils.lnf.HSyntheticaJideTabbedPaneUI.paintContentBorderBottomEdge(SourceFile:379)
+// 	at ui.utils.lnf.HSyntheticaJideTabbedPaneUI.paintContentBorder(SourceFile:296)
+// 	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.paint(Unknown Source)
+// 	at java.desktop@11.0.11/javax.swing.plaf.ComponentUI.update(ComponentUI.java:161)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintComponent(JComponent.java:797)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1074)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JLayeredPane.paint(JLayeredPane.java:590)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JSplitPane.paintChildren(JSplitPane.java:1024)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JLayeredPane.paint(JLayeredPane.java:590)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintChildren(JComponent.java:907)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paint(JComponent.java:1083)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintToOffscreen(JComponent.java:5255)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(RepaintManager.java:1643)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(RepaintManager.java:1618)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager$PaintManager.paint(RepaintManager.java:1556)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager.paint(RepaintManager.java:1323)
+// 	at java.desktop@11.0.11/javax.swing.JComponent._paintImmediately(JComponent.java:5203)
+// 	at java.desktop@11.0.11/javax.swing.JComponent.paintImmediately(JComponent.java:5013)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager$4.run(RepaintManager.java:865)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager$4.run(RepaintManager.java:848)
+// 	at java.base@11.0.11/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.11/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:848)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager.paintDirtyRegions(RepaintManager.java:823)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager.prePaintDirtyRegions(RepaintManager.java:772)
+// 	at java.desktop@11.0.11/javax.swing.RepaintManager$ProcessingRunnable.run(RepaintManager.java:1890)
+// 	at java.desktop@11.0.11/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+// 	at java.desktop@11.0.11/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$4.run(EventQueue.java:721)
+// 	at java.desktop@11.0.11/java.awt.EventQueue$4.run(EventQueue.java:715)
+// 	at java.base@11.0.11/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.11/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.11/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+// 	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+// 	at java.desktop@11.0.11/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+// Thread: pool-6-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Batik CleanerThread
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: pool-14-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: pool-3-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: AWT-Shutdown
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.Object.wait(Object.java:328)
+// 	at java.desktop@11.0.11/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: main
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1150)
+// 	at ui.PlanAhead.jswMain(SourceFile:1197)
+// Thread: pool-8-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Process Messages Thread
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.c.h.aXx(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:206)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Thread-63
+// Thread: Signal Dispatcher
+// Thread: TimerQueue
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.11/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+// 	at java.desktop@11.0.11/javax.swing.TimerQueue.run(TimerQueue.java:171)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Image Animator 0
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at java.desktop@11.0.11/sun.awt.image.GifFrame.dispose(GifImageDecoder.java:669)
+// 	at java.desktop@11.0.11/sun.awt.image.GifImageDecoder.readImage(GifImageDecoder.java:458)
+// 	at java.desktop@11.0.11/sun.awt.image.GifImageDecoder.produceImage(GifImageDecoder.java:212)
+// 	at java.desktop@11.0.11/sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:212)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.run(ImageFetcher.java:176)
+// Thread: Finalizer
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.base@11.0.11/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+// Thread: pool-10-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: Thread-59
+// Thread: Image Animator 0
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.i.i.I.imageUpdate(SourceFile:97)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageWatched$WeakLink.lambda$update$0(ImageWatched.java:144)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageWatched$WeakLink$$Lambda$161/0x0000000800245c40.run(Unknown Source)
+// 	at java.base@11.0.11/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageWatched$WeakLink.update(ImageWatched.java:142)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageWatched$WeakLink.newInfo(ImageWatched.java:159)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageWatched.newInfo(ImageWatched.java:197)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageRepresentation.imageComplete(ImageRepresentation.java:724)
+// 	at java.desktop@11.0.11/java.awt.image.ImageFilter.imageComplete(ImageFilter.java:194)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageDecoder.imageComplete(ImageDecoder.java:153)
+// 	at java.desktop@11.0.11/sun.awt.image.GifFrame.dispose(GifImageDecoder.java:661)
+// 	at java.desktop@11.0.11/sun.awt.image.GifImageDecoder.readImage(GifImageDecoder.java:458)
+// 	at java.desktop@11.0.11/sun.awt.image.GifImageDecoder.produceImage(GifImageDecoder.java:212)
+// 	at java.desktop@11.0.11/sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:212)
+// 	at java.desktop@11.0.11/sun.awt.image.ImageFetcher.run(ImageFetcher.java:176)
+// Thread: Reference Handler
+// 	at java.base@11.0.11/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+// 	at java.base@11.0.11/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+// Thread: Java2D Disposer
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.11/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.desktop@11.0.11/sun.java2d.Disposer.run(Disposer.java:144)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: hw_ila_monitor
+// 	at java.base@11.0.11/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.11/java.lang.Object.wait(Object.java:328)
+// 	at java.base@11.0.11/java.util.TimerThread.mainLoop(Timer.java:527)
+// 	at java.base@11.0.11/java.util.TimerThread.run(Timer.java:506)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: pool-5-thread-1
+// 	at java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.11/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// WARNING: HEventQueue.dispatchEvent() is taking  36854 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4593 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1578 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 25810 ms. Increasing delay to 77430 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21968 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  68782 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 933ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1783 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 760ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2255 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8435 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2152 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2336 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10903 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1030ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1030 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5256 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1698 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2159ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2240 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1855 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4247 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7469 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1867ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3432 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4019 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16872 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1600ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2387 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 41240 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13089 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 86230 ms. Increasing delay to 258690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  212849 ms.
