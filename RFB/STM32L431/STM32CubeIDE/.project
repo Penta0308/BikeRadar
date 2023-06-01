@@ -172,56 +172,6 @@
 			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c</locationURI>
 		</link>
 		<link>
-			<name>Middlewares/FreeRTOS/cmsis_os2.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/croutine.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/croutine.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/event_groups.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/heap_4.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/list.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/list.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/port.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/queue.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/queue.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/stream_buffer.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/tasks.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/FreeRTOS/timers.c</name>
-			<type>1</type>
-			<locationURI>PARENT-5-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/timers.c</locationURI>
-		</link>
-		<link>
 			<name>Application/User/Core/adc.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/adc.c</locationURI>
@@ -235,11 +185,6 @@
 			<name>Application/User/Core/dma.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/dma.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/Core/freertos.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/freertos.c</locationURI>
 		</link>
 		<link>
 			<name>Application/User/Core/gpio.c</name>
@@ -265,11 +210,6 @@
 			<name>Application/User/Core/stm32l4xx_hal_msp.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/stm32l4xx_hal_msp.c</locationURI>
-		</link>
-		<link>
-			<name>Application/User/Core/stm32l4xx_hal_timebase_tim.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Core/Src/stm32l4xx_hal_timebase_tim.c</locationURI>
 		</link>
 		<link>
 			<name>Application/User/Core/stm32l4xx_it.c</name>
