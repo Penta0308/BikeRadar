@@ -63,7 +63,7 @@
 
 /* USER CODE BEGIN PV */
 
-uint8_t doactivetimer = 0;
+uint8_t CAN_request_doactivetimer = 0;
 
 #define TIPLL_FOSCIN 48000000.0f
 const uint8_t TIPLL_OSC2X = 1;
@@ -79,6 +79,7 @@ uint8_t TIPLL_DENQ = 32;
 #define ADCSAMPLE_INTTEMP 1
 
 const uint32_t VDD_APPLIED = 2500; // mV
+
 uint16_t PAPWR_mV = 0;
 float	 PAPWR_dB = -40;
  int32_t INTTEMP = 0;
@@ -153,7 +154,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  if (doactivetimer && !LL_TIM_IsEnabledCounter(TIM15)) {
+	  if (CAN_request_doactivetimer && !LL_TIM_IsEnabledCounter(TIM15)) {
 		  LL_TIM_EnableCounter(TIM15);
 
 		  canTxHeader.StdId = 0x102;
@@ -236,7 +237,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	  if ((canRxHeader.StdId == 0x106) && (canRxHeader.IDE == CAN_ID_STD)) {
 		  LL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
 		  if(canRxHeader.DLC == CAN_DLC_1B && canRx0Data[0] == 0x01) {
-			  doactivetimer = 1;
+			  CAN_request_doactivetimer = 1;
 		  }
 	  }
 	}

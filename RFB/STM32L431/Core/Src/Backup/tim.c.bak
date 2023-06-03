@@ -74,7 +74,7 @@ void MX_TIM15_Init(void)
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_TIM15);
 
   /* TIM15 interrupt Init */
-  NVIC_SetPriority(TIM1_BRK_TIM15_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),5, 0));
+  NVIC_SetPriority(TIM1_BRK_TIM15_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),0, 0));
   NVIC_EnableIRQ(TIM1_BRK_TIM15_IRQn);
 
   /* USER CODE BEGIN TIM15_Init 1 */
