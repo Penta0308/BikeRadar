@@ -26,6 +26,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "queue.h"
+#include "can.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -140,7 +143,7 @@ void StartCanTask(void *argument) {
   for(;;)
   {
 	if(xQueueReceive(CANRxQueueHandle, &qm, 0)) {
-		switch(qm->h) {
+		switch(qm.h) {
 		case RFBCANMessage_SetTxPwr:
 			break;
 		case RFBCANMessage_SetTxContFreq:

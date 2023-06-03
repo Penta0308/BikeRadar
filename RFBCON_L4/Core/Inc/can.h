@@ -30,6 +30,10 @@ extern "C" {
 
 /* USER CODE BEGIN Includes */
 
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
+#include "queue.h"
+
 /* USER CODE END Includes */
 
 extern CAN_HandleTypeDef hcan1;
@@ -59,6 +63,8 @@ typedef struct __attribute__((aligned(4))) _RFBCANMessage {
 void MX_CAN1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+
+extern osMessageQueueId_t CANRxQueueHandle;
 
 /* USER CODE END Prototypes */
 

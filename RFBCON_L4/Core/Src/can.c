@@ -33,7 +33,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	if(hcan->Instance == CAN1) {
 	  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &canRxHeader, canRxData) != HAL_OK) { Error_Handler(); }
 
-	  xQueueSendFromISR(CANRxQueueHandle, (RFBCANMessage*)canRxData);
+	  xQueueSendFromISR(CANRxQueueHandle, (RFBCANMessage*)canRxData, NULL);
 	}
 }
 
