@@ -1,4 +1,8 @@
 RFB/STM32L431/workspace/
+RFB/STM32L431/STM32CubeIDE/Debug/
+
+RFBCON_L4/workspace/
+RFBCON_L4/STM32CubeIDE/Debug/
 
 ADCBoard/ADCBoard.cache/
 ADCBoard/ADCBoard.runs/
