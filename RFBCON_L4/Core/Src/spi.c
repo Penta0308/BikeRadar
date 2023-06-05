@@ -126,4 +126,163 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
 
 /* USER CODE BEGIN 1 */
 
+uint32_t RFBPllData[3];
+
+void SPIInitTiPll(void) {
+	LL_GPIO_ResetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+	asm("NOP");
+
+	const uint8_t aTxBufferResetSeq[] = SPIInitTiPllW_GenArray(0, 0b0000000000000010);
+
+	if (HAL_SPI_Transmit(&hspi2, (uint8_t*)aTxBufferResetSeq, 3, 10) != HAL_OK) {
+	    Error_Handler();
+	}
+	LL_GPIO_SetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+	asm("NOP");
+
+	const uint8_t aTxBuffers[][3] = {
+			SPIInitTiPllW_GenArray( 96, 0b1000000000000001), // Burst EN, CNT:1
+			SPIInitTiPllW_GenArray( 97, 0b1000000000001001), // RAMP0 RST, TrigA:ClkR, TrigB:Disable, Burst:TrigA
+			SPIInitTiPllW_GenArray(105, 0b0000000000100000), // Manual Ramping
+			SPIInitTiPllW_GenArray( 46, 0b0000011111110001), // OutB:VCO
+			SPIInitTiPllW_GenArray( 45, 0b1100111000000000 | 12u), // OutA:VCO, OutBPWR: 12
+			SPIInitTiPllW_GenArray( 44, 0b0000000100100010), // OutAPWR: 0, OutAEn: Off
+	};
+
+	for (uint8_t i = 0; i < COUNTOF(aTxBuffers); i++) {
+		asm("NOP");
+		LL_GPIO_ResetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+		asm("NOP");
+
+		if (HAL_SPI_Transmit(&hspi2, (uint8_t*)aTxBuffers[i], 3, 10) != HAL_OK) {
+		    Error_Handler();
+		}
+
+		asm("NOP");
+		LL_GPIO_SetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+	}
+}
+
+/**
+  * @param  power: 0 .. 63 (highest)
+  * @param  powerdown: 0 .. 1 (off)
+  */
+void SPISetTiPllOutAPwr(uint8_t power, uint8_t powerdown) {
+	const uint8_t aTxBuffer[] = SPIInitTiPllW_GenArray( 44, 0b0000000000100010 | ((power & 0x3F) << 8) | ((powerdown & 0x01) << 6)); // OutAPWR: 63
+
+	LL_GPIO_ResetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+	asm("NOP");
+
+	if (HAL_SPI_Transmit(&hspi2, (uint8_t*)aTxBuffer, 3, 10) != HAL_OK) {
+		Error_Handler();
+	}
+
+	asm("NOP");
+	LL_GPIO_SetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+}
+
+void SPISetTiPllFreq(float f) {
+	uint8_t denq = TIPLL_DENQ;
+	uint32_t den = (1u << denq) - 1;
+	uint64_t ns = f * den / TIPLL_FPD;
+
+	uint32_t sq = ns % den;
+	uint32_t sp = (ns - sq) / den;
+	if(sp & 0xFFFF0000) return; // OVF.
+
+
+	const uint8_t aTxBuffers[][3] = {
+			SPIInitTiPllW_GenArray( 43, (uint16_t)(sq)),
+			SPIInitTiPllW_GenArray( 42, (uint16_t)(sq >> 16)),
+
+			SPIInitTiPllW_GenArray( 39, (uint16_t)(den)),
+			SPIInitTiPllW_GenArray( 38, (uint16_t)(den >> 16)),
+
+			SPIInitTiPllW_GenArray( 36, (uint16_t)(sp)),
+	};
+
+	for (uint8_t i = 0; i < COUNTOF(aTxBuffers); i++) {
+		asm("NOP");
+		LL_GPIO_ResetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+		asm("NOP");
+
+		if (HAL_SPI_Transmit(&hspi2, (uint8_t*)aTxBuffers[i], 3, 10) != HAL_OK) {
+		    Error_Handler();
+		}
+
+		asm("NOP");
+		LL_GPIO_SetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+	}
+}
+
+void SPISetTiPllRampFreqFromBuf();
+
+void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, float limithigh, float limitlow) {
+
+	uint8_t denq = TIPLL_DENQ;
+	uint32_t den = (1u << denq) - 1;
+	uint64_t ns = start * den / TIPLL_FPD;
+	uint64_t ne = end   * den / TIPLL_FPD;
+	int64_t so = ne - ns;
+	int64_t ss = llround(1.0f * so / len);
+
+	while ((ss & 0x7FFFFFFFE0000000) != 0) {
+		if(denq > 2) denq--;
+		else return; // Unable to set.
+		den = (1u << denq) - 1;
+		ns = start * den / TIPLL_FPD;
+		ne = end   * den / TIPLL_FPD;
+		so = ne - ns;
+		ss = llround(1.0f * so / len);
+	}
+
+	uint32_t sq = ns % den;
+	uint32_t sp = (ns - sq) / den;
+	if(sp & 0xFFFF0000) return; // OVF.
+
+	uint64_t rthresh = llround(threshbw * 16777216.0f / TIPLL_FPD); // 32bit
+	uint64_t rlhramp = llround(16777216.0f * (limithigh - start) / TIPLL_FPD); // 33bit
+	uint64_t rllramp = 8589934592ull - llround(16777216.0f * (start - limitlow) / TIPLL_FPD); // 33bit
+
+	const uint8_t aTxBuffers[][3] = {
+			SPIInitTiPllW_GenArray(100, len),
+			SPIInitTiPllW_GenArray( 99, ((uint16_t)(ss))),
+			SPIInitTiPllW_GenArray( 98, ((uint16_t)(ss >> 48) & 0x8000) | ((uint16_t)(ss >> 14) & 0x7FFC) | 0b00),
+
+			SPIInitTiPllW_GenArray( 86, (uint16_t)(rllramp)),
+			SPIInitTiPllW_GenArray( 85, (uint16_t)(rllramp >> 16)),
+			SPIInitTiPllW_GenArray( 84, (uint16_t)(rllramp >> 32) & 0x0001),
+			SPIInitTiPllW_GenArray( 83, (uint16_t)(rlhramp)),
+
+			SPIInitTiPllW_GenArray( 82, (uint16_t)(rlhramp >> 16)),
+			SPIInitTiPllW_GenArray( 81, (uint16_t)(rlhramp >> 32) & 0x0001),
+			SPIInitTiPllW_GenArray( 80, (uint16_t)(rthresh)),
+			SPIInitTiPllW_GenArray( 79, (uint16_t)(rthresh >> 16)),
+
+			SPIInitTiPllW_GenArray( 43, (uint16_t)(sq)),
+			SPIInitTiPllW_GenArray( 42, (uint16_t)(sq >> 16)),
+
+			SPIInitTiPllW_GenArray( 39, (uint16_t)(den)),
+			SPIInitTiPllW_GenArray( 38, (uint16_t)(den >> 16)),
+
+			SPIInitTiPllW_GenArray( 36, (uint16_t)(sp)),
+	};
+
+	for (uint8_t i = 0; i < COUNTOF(aTxBuffers); i++) {
+		asm("NOP");
+		LL_GPIO_ResetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+		asm("NOP");
+
+		if (HAL_SPI_Transmit(&hspi2, (uint8_t*)aTxBuffers[i], 3, 10) != HAL_OK) {
+		    Error_Handler();
+		}
+
+		asm("NOP");
+		LL_GPIO_SetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
+	}
+}
+
+
+
+
 /* USER CODE END 1 */

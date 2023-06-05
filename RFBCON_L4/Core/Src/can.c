@@ -25,9 +25,9 @@
 CAN_FilterTypeDef can1Filter0;
 CAN_RxHeaderTypeDef canRxHeader;
 CAN_TxHeaderTypeDef canTxHeader;
-uint8_t canRxData[8];
+uint8_t canRxData[64];
 uint32_t TxMailBox;
-uint8_t canTxData[8];
+uint8_t canTxData[64];
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 	if(hcan->Instance == CAN1) {
@@ -69,6 +69,19 @@ void MX_CAN1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN CAN1_Init 2 */
+
+  can1Filter0.FilterMaskIdHigh = RFBCAN_FILTER0_MaskIdHigh;
+  can1Filter0.FilterIdHigh = RFBCAN_FILTER0_IdHigh;
+  can1Filter0.FilterMaskIdLow = RFBCAN_FILTER0_MaskIdLow;
+  can1Filter0.FilterIdLow = RFBCAN_FILTER0_IdLow;
+  can1Filter0.FilterMode = RFBCAN_FILTER0_FilterMode;
+  can1Filter0.FilterScale = RFBCAN_FILTER0_FilterScale;
+  can1Filter0.FilterFIFOAssignment = CAN_FILTER_FIFO0;
+  can1Filter0.FilterBank = 0;
+  can1Filter0.FilterActivation = ENABLE;
+
+  if (HAL_CAN_ConfigFilter(&hcan1, &can1Filter0) != HAL_OK) { Error_Handler(); }
+  if (HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK) { Error_Handler(); }
 
   /* USER CODE END CAN1_Init 2 */
 

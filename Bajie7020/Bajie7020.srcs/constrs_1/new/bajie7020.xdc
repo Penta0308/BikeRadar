@@ -54,5 +54,18 @@ create_clock -period 20.833 -name RFB_FCLK -waveform {0.000 10.417} [get_ports {
 
 
 
-set_input_delay -clock [get_clocks RFB_DCLK] 0.000 [get_ports -filter { NAME =~  "RFB_DATA_P*" || NAME =~  "RFB_DATAVALID*" }]
 
+
+
+
+
+set_input_delay -clock [get_clocks RFB_DCLK] -clock_fall -min -add_delay -0.500 [get_ports {RFB_DATA_N[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -clock_fall -max -add_delay 0.580 [get_ports {RFB_DATA_N[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -min -add_delay -0.500 [get_ports {RFB_DATA_N[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -max -add_delay 0.580 [get_ports {RFB_DATA_N[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -clock_fall -min -add_delay -0.500 [get_ports {RFB_DATA_P[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -clock_fall -max -add_delay 0.580 [get_ports {RFB_DATA_P[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -min -add_delay -0.500 [get_ports {RFB_DATA_P[*]}]
+set_input_delay -clock [get_clocks RFB_DCLK] -max -add_delay 0.580 [get_ports {RFB_DATA_P[*]}]
+set_input_delay -clock [get_clocks RFB_FCLK] -min -add_delay -2.000 [get_ports RFB_DATAVALID]
+set_input_delay -clock [get_clocks RFB_FCLK] -max -add_delay 2.000 [get_ports RFB_DATAVALID]

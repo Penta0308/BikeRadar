@@ -28,6 +28,7 @@
 
 #include "queue.h"
 #include "can.h"
+#include "spi.h"
 
 /* USER CODE END Includes */
 
@@ -68,6 +69,11 @@ const osThreadAttr_t TxMgr_attributes = {
 osMessageQueueId_t CANRxQueueHandle;
 const osMessageQueueAttr_t CANRxQueue_attributes = {
   .name = "CANRxQueue"
+};
+/* Definitions for TxMgrEvent */
+osEventFlagsId_t TxMgrEventHandle;
+const osEventFlagsAttr_t TxMgrEvent_attributes = {
+  .name = "TxMgrEvent"
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -121,6 +127,10 @@ void MX_FREERTOS_Init(void) {
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
 
+  /* Create the event(s) */
+  /* creation of TxMgrEvent */
+  TxMgrEventHandle = osEventFlagsNew(&TxMgrEvent_attributes);
+
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
@@ -134,28 +144,31 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_StartCanTask */
-void StartCanTask(void *argument) {
+void StartCanTask(void *argument)
+{
   /* USER CODE BEGIN StartCanTask */
 
 	RFBCANMessage qm;
 
   /* Infinite loop */
-  for(;;)
-  {
+  for(;;) {
 	if(xQueueReceive(CANRxQueueHandle, &qm, 0)) {
 		switch(qm.h) {
-		case RFBCANMessage_SetTxPwr:
-			break;
-		case RFBCANMessage_SetTxContFreq:
-			break;
-		case RFBCANMessage_StartTxSweep:
-			break;
-		case RFBCANMessage_SetTxSweepFrom:
-			break;
-		case RFBCANMessage_SetTxSweepTo:
-			break;
-		case RFBCANMessage_SetTxSweepDur:
-			break;
+		case RFBCANMessage_SetPllPwr: {
+			SPISetTiPllOutAPwr((uint8_t)(qm.u4), (uint8_t)(qm.u4 >> 31));
+		}; break;
+		case RFBCANMessage_SetPllContFreq: {
+			SPISetTiPllFreq((float)qm.u4);
+		}; break;
+		case RFBCANMessage_StartPllSweep: {
+
+		}; break;
+		case RFBCANMessage_PushPllData: {
+			RFBPllData[qm.a] = qm.u4;
+		}; break;
+		case RFBCANMessage_SetPllSweepData: {
+			SPISetTiPllRampFreqFromBuf();
+		}; break;
 		}
 	}
 

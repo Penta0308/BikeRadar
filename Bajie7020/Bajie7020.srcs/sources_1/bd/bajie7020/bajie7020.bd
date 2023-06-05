@@ -39,12 +39,8 @@
         }
       },
       "axis_subset_converter_0": "",
-      "selectio_wiz_0": "",
-      "util_ds_buf_rfb_fclk": "",
       "axis_data_fifo_0": "",
       "proc_sys_reset_rfb_fclk": "",
-      "xlconstant_4_0": "",
-      "util_ds_buf_rfb_dclk": "",
       "fir_compiler_0": "",
       "clk_wiz_0": "",
       "axis_data_fifo_1": "",
@@ -53,7 +49,8 @@
         "xlconcat_1": "",
         "util_reduced_logic_0": "",
         "axis_subset_converter_1": ""
-      }
+      },
+      "rfbdes_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -139,7 +136,7 @@
             "value": "133.333344"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "200.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -244,7 +241,7 @@
             "value": "133333344"
           },
           "PCW_CLK1_FREQ": {
-            "value": "10000000"
+            "value": "200000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -349,7 +346,7 @@
             "value": "1"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_CLK2_PORT": {
             "value": "0"
@@ -546,11 +543,14 @@
           "PCW_FCLK_CLK0_BUF": {
             "value": "TRUE"
           },
+          "PCW_FCLK_CLK1_BUF": {
+            "value": "TRUE"
+          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "133.33333333"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "25"
+            "value": "200"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "50"
@@ -559,6 +559,9 @@
             "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GP0_EN_MODIFIABLE_TXN": {
@@ -3213,7 +3216,7 @@
             "value": "0"
           },
           "S_HAS_TREADY": {
-            "value": "1"
+            "value": "0"
           },
           "S_HAS_TSTRB": {
             "value": "0"
@@ -3228,7 +3231,7 @@
             "value": "0"
           },
           "S_TUSER_WIDTH": {
-            "value": "1"
+            "value": "0"
           },
           "TDATA_REMAP": {
             "value": "4'b0000,tdata[23:12],4'b0000,tdata[11:0]"
@@ -3240,68 +3243,7 @@
             "value": "1'b0"
           },
           "TUSER_REMAP": {
-            "value": "tuser[0:0]"
-          }
-        }
-      },
-      "selectio_wiz_0": {
-        "vlnv": "xilinx.com:ip:selectio_wiz:5.1",
-        "xci_name": "bajie7020_selectio_wiz_0_0",
-        "xci_path": "ip\\bajie7020_selectio_wiz_0_0\\bajie7020_selectio_wiz_0_0.xci",
-        "inst_hier_path": "selectio_wiz_0",
-        "parameters": {
-          "BUS_IO_STD": {
-            "value": "LVDS_25"
-          },
-          "BUS_SIG_TYPE": {
-            "value": "DIFF"
-          },
-          "CLK_DELAY": {
-            "value": "NONE"
-          },
-          "CLK_FWD_IO_STD": {
-            "value": "LVDS_25"
-          },
-          "CLK_FWD_SIG_TYPE": {
-            "value": "DIFF"
-          },
-          "SELIO_ACTIVE_EDGE": {
-            "value": "DDR"
-          },
-          "SELIO_BUS_IN_DELAY": {
-            "value": "NONE"
-          },
-          "SELIO_CLK_BUF": {
-            "value": "MMCM"
-          },
-          "SELIO_CLK_IO_STD": {
-            "value": "LVDS_25"
-          },
-          "SELIO_CLK_SIG_TYPE": {
-            "value": "DIFF"
-          },
-          "SELIO_INTERFACE_TYPE": {
-            "value": "NETWORKING"
-          },
-          "SERIALIZATION_FACTOR": {
-            "value": "6"
-          },
-          "SYSTEM_DATA_WIDTH": {
-            "value": "4"
-          },
-          "USE_SERIALIZATION": {
-            "value": "true"
-          }
-        }
-      },
-      "util_ds_buf_rfb_fclk": {
-        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
-        "xci_name": "bajie7020_util_ds_buf_0_0",
-        "xci_path": "ip\\bajie7020_util_ds_buf_0_0\\bajie7020_util_ds_buf_0_0.xci",
-        "inst_hier_path": "util_ds_buf_rfb_fclk",
-        "parameters": {
-          "C_SIZE": {
-            "value": "1"
+            "value": "1'b0"
           }
         }
       },
@@ -3345,26 +3287,6 @@
         "xci_name": "bajie7020_proc_sys_reset_0_0",
         "xci_path": "ip\\bajie7020_proc_sys_reset_0_0\\bajie7020_proc_sys_reset_0_0.xci",
         "inst_hier_path": "proc_sys_reset_rfb_fclk"
-      },
-      "xlconstant_4_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "bajie7020_xlconstant_32_0_0",
-        "xci_path": "ip\\bajie7020_xlconstant_32_0_0\\bajie7020_xlconstant_32_0_0.xci",
-        "inst_hier_path": "xlconstant_4_0",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "0"
-          },
-          "CONST_WIDTH": {
-            "value": "4"
-          }
-        }
-      },
-      "util_ds_buf_rfb_dclk": {
-        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
-        "xci_name": "bajie7020_util_ds_buf_0_1",
-        "xci_path": "ip\\bajie7020_util_ds_buf_0_1\\bajie7020_util_ds_buf_0_1.xci",
-        "inst_hier_path": "util_ds_buf_rfb_dclk"
       },
       "fir_compiler_0": {
         "vlnv": "xilinx.com:ip:fir_compiler:7.2",
@@ -3718,19 +3640,203 @@
             ]
           }
         }
+      },
+      "rfbdes_0": {
+        "vlnv": "xilinx.com:module_ref:rfbdes:1.0",
+        "xci_name": "bajie7020_rfbdes_0_0",
+        "xci_path": "ip\\bajie7020_rfbdes_0_0\\bajie7020_rfbdes_0_0.xci",
+        "inst_hier_path": "rfbdes_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "rfbdes",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "M_AXIS": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "3",
+                "value_src": "auto"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "rfb_axis_data",
+                "direction": "O",
+                "left": "23",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "rfb_axis_valid",
+                "direction": "O"
+              }
+            }
+          },
+          "RFB_DCLK": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+            "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+            "parameters": {
+              "CAN_DEBUG": {
+                "value": "false",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "288000000",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "CLK_P": {
+                "physical_name": "RFB_DCLK_clk_p",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "CLK_N": {
+                "physical_name": "RFB_DCLK_clk_n",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "RFB_FCLK": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+            "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+            "parameters": {
+              "CAN_DEBUG": {
+                "value": "false",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "48000000",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "CLK_P": {
+                "physical_name": "RFB_FCLK_clk_p",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              },
+              "CLK_N": {
+                "physical_name": "RFB_FCLK_clk_n",
+                "direction": "I",
+                "left": "0",
+                "right": "0"
+              }
+            }
+          },
+          "RFB": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "digilentinc.com:interface:tmds:1.0",
+            "vlnv": "digilentinc.com:interface:tmds_rtl:1.0",
+            "port_maps": {
+              "DATA_P": {
+                "physical_name": "RFB_DATA_P",
+                "direction": "I",
+                "left": "3",
+                "right": "0"
+              },
+              "DATA_N": {
+                "physical_name": "RFB_DATA_N",
+                "direction": "I",
+                "left": "3",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "ports": {
+          "RFB_DATAVALID": {
+            "direction": "I"
+          },
+          "RFB_AXIS_CLK": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M_AXIS",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "48000000",
+                "value_src": "constant"
+              }
+            }
+          },
+          "idelay_refclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "200000000",
+                "value_src": "constant"
+              }
+            }
+          },
+          "areset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "constant"
+              }
+            }
+          }
+        }
       }
     },
     "interface_nets": {
-      "CLK_IN_D_0_1": {
+      "RFB_DCLK_1": {
         "interface_ports": [
           "RFB_DCLK",
-          "util_ds_buf_rfb_dclk/CLK_IN_D"
+          "rfbdes_0/RFB_DCLK"
         ]
       },
-      "CLK_IN_D_0_2": {
+      "RFB_FCLK_1": {
         "interface_ports": [
           "RFB_FCLK",
-          "util_ds_buf_rfb_fclk/CLK_IN_D"
+          "rfbdes_0/RFB_FCLK"
         ]
       },
       "S00_AXI_1": {
@@ -3829,6 +3935,12 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
+      "rfbdes_0_M_AXIS": {
+        "interface_ports": [
+          "rfbdes_0/M_AXIS",
+          "axis_subset_converter_0/S_AXIS"
+        ]
+      },
       "xfft_0_M_AXIS_DATA": {
         "interface_ports": [
           "xfft_0/M_AXIS_DATA",
@@ -3837,10 +3949,22 @@
       }
     },
     "nets": {
-      "RFB_DVALID_1": {
+      "RFB_DATAVALID_1": {
         "ports": [
           "RFB_DATAVALID",
-          "axis_subset_converter_0/s_axis_tvalid"
+          "rfbdes_0/RFB_DATAVALID"
+        ]
+      },
+      "RFB_DATA_N_1": {
+        "ports": [
+          "RFB_DATA_N",
+          "rfbdes_0/RFB_DATA_N"
+        ]
+      },
+      "RFB_DATA_P_1": {
+        "ports": [
+          "RFB_DATA_P",
+          "rfbdes_0/RFB_DATA_P"
         ]
       },
       "axi_dma_1_mm2s_introut": {
@@ -3881,18 +4005,6 @@
         "ports": [
           "clk_wiz_0/locked",
           "proc_sys_reset_rfb_288M/dcm_locked"
-        ]
-      },
-      "data_in_from_pins_n_0_1": {
-        "ports": [
-          "RFB_DATA_N",
-          "selectio_wiz_0/data_in_from_pins_n"
-        ]
-      },
-      "data_in_from_pins_p_0_1": {
-        "ports": [
-          "RFB_DATA_P",
-          "selectio_wiz_0/data_in_from_pins_p"
         ]
       },
       "fir_compiler_0_m_axis_data_tdata": {
@@ -3944,7 +4056,6 @@
       "proc_sys_reset_rfb_fclk_peripheral_reset": {
         "ports": [
           "proc_sys_reset_rfb_fclk/peripheral_reset",
-          "selectio_wiz_0/io_reset",
           "clk_wiz_0/reset"
         ]
       },
@@ -3975,10 +4086,22 @@
           "axis_data_fifo_0/m_axis_aclk"
         ]
       },
+      "processing_system7_0_FCLK_CLK1": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK1",
+          "rfbdes_0/idelay_refclk"
+        ]
+      },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
           "rst_ps7_0_133M/ext_reset_in"
+        ]
+      },
+      "rst_ps7_0_133M_peripheral_reset": {
+        "ports": [
+          "rst_ps7_0_133M/peripheral_reset",
+          "rfbdes_0/areset"
         ]
       },
       "rst_ps7_0_160M_peripheral_aresetn": {
@@ -3998,23 +4121,10 @@
           "proc_sys_reset_rfb_fclk/ext_reset_in"
         ]
       },
-      "selectio_wiz_0_data_in_to_device": {
-        "ports": [
-          "selectio_wiz_0/data_in_to_device",
-          "axis_subset_converter_0/s_axis_tdata"
-        ]
-      },
-      "util_ds_buf_rfb_dclk_IBUF_OUT": {
-        "ports": [
-          "util_ds_buf_rfb_dclk/IBUF_OUT",
-          "selectio_wiz_0/clk_in"
-        ]
-      },
       "util_ds_buf_rfb_fclk_IBUF_OUT": {
         "ports": [
-          "util_ds_buf_rfb_fclk/IBUF_OUT",
+          "rfbdes_0/RFB_AXIS_CLK",
           "clk_wiz_0/clk_in1",
-          "selectio_wiz_0/clk_div_in",
           "axis_subset_converter_0/aclk",
           "axis_data_fifo_1/s_axis_aclk",
           "proc_sys_reset_rfb_fclk/slowest_sync_clk"
@@ -4036,12 +4146,6 @@
         "ports": [
           "xlconstant_32_0/dout",
           "xfft_0/s_axis_config_tdata"
-        ]
-      },
-      "xlconstant_4_0_dout": {
-        "ports": [
-          "xlconstant_4_0/dout",
-          "selectio_wiz_0/bitslip"
         ]
       }
     },

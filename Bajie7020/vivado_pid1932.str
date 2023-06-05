@@ -1,0 +1,1417 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 1932
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jun 05 15:55:08 KST 2023
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	penta
+User home directory: C:/Users/penta
+User working directory: C:/Users/penta/Documents/BikeRadar/Bajie7020
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/penta/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/penta/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/penta/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/penta/Documents/BikeRadar/Bajie7020/vivado.log
+Vivado journal file: 	C:/Users/penta/Documents/BikeRadar/Bajie7020/vivado.jou
+Engine tmp dir: 	C:/Users/penta/Documents/BikeRadar/Bajie7020/.Xil/Vivado-1932-Penta0308-E402N
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_SDK: C:/Xilinx/Vitis/2021.2
+XILINX_VITIS: C:/Xilinx/Vitis/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,298 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  2901 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,298 MB. GUI used memory: 58 MB. Current time: 6/5/23, 3:55:12 PM KST
+// Tcl Message: open_project C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr 
+// WARNING: HEventQueue.dispatchEvent() is taking  1396 ms.
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,298 MB. GUI used memory: 55 MB. Current time: 6/5/23, 3:55:39 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+106979kb) [00:01:22]
+// [Engine Memory]: 1,298 MB (+1209547kb) [00:01:22]
+// [GUI Memory]: 119 MB (+9628kb) [00:01:37]
+// Tcl Message: open_project C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// [GUI Memory]: 131 MB (+6326kb) [00:01:40]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10030 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3128 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2331 ms.
+// Project name: Bajie7020; location: C:/Users/penta/Documents/BikeRadar/Bajie7020; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:01:31 ; elapsed = 00:01:10 . Memory (MB): peak = 1557.582 ; gain = 0.000 
+dismissDialog("Open Project"); // bA
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 565ms to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 141 MB (+3420kb) [00:01:55]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8603 ms. Increasing delay to 4000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.8s
+// Elapsed time: 62 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; Implementation Out-of-date ; 100 ; Off ; -5.175461769104004 ; -30.84844398498535 ; 0.048855364322662354 ; 0.0 ; 0.0 ; 1.7389647960662842 ; 0 ; 6785 ; 11919 ; 14.0 ; 0 ; 36 ; 873 ; Mon Jun 05 15:31:37 KST 2023 ; 00:14:23 ; xc7z020clg400-1", 1, "impl_1", 0, false); // az
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; Implementation Out-of-date ; 100 ; Off ; -5.175461769104004 ; -30.84844398498535 ; 0.048855364322662354 ; 0.0 ; 0.0 ; 1.7389647960662842 ; 0 ; 6785 ; 11919 ; 14.0 ; 0 ; 36 ; 873 ; Mon Jun 05 15:31:37 KST 2023 ; 00:14:23 ; xc7z020clg400-1", 1, "impl_1", 0, false, false, false, false, false, true); // az - Double Click
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a
+dismissDialog("Implementation is Out-of-date"); // cg
+// Tcl Message: open_run impl_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,326 MB. GUI used memory: 83 MB. Current time: 6/5/23, 3:57:40 PM KST
+// [Engine Memory]: 1,494 MB (+137189kb) [00:03:14]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2325 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,586 MB. GUI used memory: 82 MB. Current time: 6/5/23, 3:57:55 PM KST
+// [Engine Memory]: 1,616 MB (+49728kb) [00:03:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,828 MB. GUI used memory: 83 MB. Current time: 6/5/23, 3:58:15 PM KST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 2,107 MB (+430249kb) [00:03:45]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,133 MB. GUI used memory: 83 MB. Current time: 6/5/23, 3:58:26 PM KST
+// Xgd.load filename: C:/Xilinx/Vivado/2021.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 1.9s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 2.2s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,183 MB. GUI used memory: 103 MB. Current time: 6/5/23, 3:58:30 PM KST
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,240 MB (+28544kb) [00:04:00]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3282 ms. Increasing delay to 6000 ms.
+// [GUI Memory]: 166 MB (+19524kb) [00:04:09]
+// DeviceView Instantiated
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 14.6s
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 1.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  14522 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1557.582 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2294.219 ; gain = 12.449 
+// Tcl Message: Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2294.219 ; gain = 12.449 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2294.281 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 18 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances   SRLC32E => SRL16E: 3 instances  
+// HMemoryUtils.trashcanNow. Engine heap size: 2,263 MB. GUI used memory: 114 MB. Current time: 6/5/23, 3:58:45 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  1363 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:01:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2413.398 ; gain = 855.816 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// ExpRunCommands.openImplResults elapsed time: 78.6s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  2323 ms.
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1738 ms. Increasing delay to 5214 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4012 ms. Increasing delay to 7000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,332 MB. GUI used memory: 118 MB. Current time: 6/5/23, 3:59:01 PM KST
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 175 MB (+48kb) [00:04:31]
+// [GUI Memory]: 186 MB (+2532kb) [00:05:00]
+// [Engine Memory]: 2,356 MB (+4148kb) [00:05:01]
+// [GUI Memory]: 195 MB (+60kb) [00:05:01]
+// WARNING: HEventQueue.dispatchEvent() is taking  33569 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,372 MB. GUI used memory: 146 MB. Current time: 6/5/23, 3:59:38 PM KST
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  5759 ms.
+// Elapsed time: 132 seconds
+dismissDialog("Open Implemented Design"); // bA
+// [GUI Memory]: 217 MB (+12153kb) [00:05:24]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// [Engine Memory]: 2,481 MB (+8238kb) [00:05:25]
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,499 MB. GUI used memory: 158 MB. Current time: 6/5/23, 4:00:01 PM KST
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Create Clock Constraints (4)", 1); // i
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+// Elapsed time: 12 seconds
+selectButton("BACK", "< Back"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "create_clock -period 20.833 -name RFB_FCLK -waveform {0.000 10.417} [get_ports {RFB_FCLK_clk_p[0]}]", 3); // H
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "create_clock -period 3.472 -name RFB_DCLK -waveform {0.000 1.736} [get_ports {RFB_DCLK_clk_p[0]}]", 2); // H
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton((HResource) null, "PAResourceEtoH.GeneratedClockTablePanel_TABLE_CLOCK_NETWORKS"); // D
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_CLOCK_NETWORKS, "Report Clock Networks..."); // ao
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Clock Networks"); // a
+// Tcl Message: report_clock_networks -name {network_1} 
+// TclEventType: TIMING_CLOCK_NETWORKS_UPDATED
+// WARNING: HTimer (clock networks report timing Timer) is taking 395ms to process. Increasing delay to 1500 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1852 ms.
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTable(PAResourceEtoH.ForwardedClockTablePanel_TABLE, null, -1, null, -1, false, false, false, true, false); // aD - Popup Trigger
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Single Fall", 1, "RFB_DATA_P[*]", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_DATAVALID", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "RFB_DATA_N[*]", 1); // br
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Set Input Delay Constraints (1)", 1); // i
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0); // H
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0, false, false, false, true, false); // H - Popup Trigger
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0); // H
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0); // H
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Waveform - System | Edge | Dual", 2); // i
+// Elapsed time: 36 seconds
+setText("trco_max:", "0.5"); // aa
+// Elapsed time: 44 seconds
+setText("trco_min:", "0.48"); // aa
+setText("trco_min:", "0.48"); // aa
+setText("tfco_min:", "0.48"); // aa
+setText("trco_max:", "0.5"); // aa
+setText("tfco_max:", "0.5"); // aa
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Single Fall", 1, "Single Fall", 5); // br
+editTable(PAResourceItoN.InputOutputTablePanel_TABLE, "Dual", 1, "Data Rate and Edge", 5); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "RFB_DATA_N[*]", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "Dual", 5); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "Dual", 5); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Dual", 1, (String) null, -1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, null, -1, null, -1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "Edge", 4); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "Edge", 4); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "Edge", 4, false, false, false, false, true); // br - Double Click
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "Edge", 4); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, null, -1, null, -1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "System", 3); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, null, -1, null, -1); // br
+// HMemoryUtils.trashcanNow. Engine heap size: 2,525 MB. GUI used memory: 165 MB. Current time: 6/5/23, 4:03:01 PM KST
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_FCLK", 2); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_FCLK", 2, false, false, false, false, true); // br - Double Click
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_FCLK", 2); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_FCLK", 2, false, false, false, false, true); // br - Double Click
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_FCLK", 2, false, false, false, true, false); // br - Popup Trigger
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Dual", 1, "RFB_DATA_P[*]", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "RFB_DATA_N[*]", 1); // br
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 261ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 128 seconds
+setText("trco_max:", "1.98"); // aa
+setText("tfco_max:", "1.98"); // aa
+setText("trco_min:", "-0.48"); // aa
+// Elapsed time: 12 seconds
+setText("trco_min:", "-1.9"); // aa
+setText("tfco_min:", "-1.9"); // aa
+// Elapsed time: 46 seconds
+setText("trco_max:", "0.5"); // aa
+setText("tfco_max:", "0.5"); // aa
+// Elapsed time: 15 seconds
+setText("tfco_min:", "-0.58"); // aa
+setText("trco_min:", "-0.58"); // aa
+// Elapsed time: 10 seconds
+setText("trce_dly_min:", "0"); // aa
+setText("trce_dly_max:", "0"); // aa
+selectButton(PAResourceAtoD.DelayValuesChooser_APPLY, "Apply"); // a
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "RFB_DATA_N[*]", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Dual", 1, "RFB_DATA_P[*]", 1); // br
+setText("trco_min:", "-0.58"); // aa
+setText("trco_max:", "0.5"); // aa
+setText("tfco_min:", "-0.58"); // aa
+setText("tfco_max:", "0.5"); // aa
+setText("trce_dly_min:", "0"); // aa
+setText("trce_dly_max:", "0"); // aa
+selectButton(PAResourceAtoD.DelayValuesChooser_APPLY, "Apply"); // a
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Dual", 1, "RFB_DATA_P[*]", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_DATAVALID", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Dual", 1, "RFB_DATA_P[*]", 1); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATAVALID ; RFB_FCLK ; System ; Edge ; Single Rise", 2, "RFB_DATAVALID", 1); // br
+setText("tco_min:", "2"); // aa
+setText("tco_max:", "2"); // aa
+setText("trce_dly_min:", "2"); // aa
+setText("trce_dly_max:", "2"); // aa
+selectButton(PAResourceAtoD.DelayValuesChooser_APPLY, "Apply"); // a
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Set Output Delay Constraints (0)", 1); // i
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Tcl Command Preview (0)", 0); // i
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Set Input Delay, Set Output Delay Constraints (11)", 1); // i
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0); // H
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0, false, false, false, true, false); // H - Popup Trigger
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+// Elapsed time: 16 seconds
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; clk_fpga_0 ; RFB_FCLK ; Timed - No Common Primary Clock ; 4 ; 0 ; 4 ; 0 ; 0", 1, "Timed - No Common Primary Clock", 3); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "Timed - No Common Primary Clock", 3); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "Timed - No Common Primary Clock", 3); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "Timed - No Common Primary Clock", 3, false, false, false, false, true); // j - Double Click
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Set Clock Groups, Set False Path, Set Bus Skew Constraints (21)", 1); // i
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Tcl Command Preview (0)", 0); // i
+selectTable(PAResourceAtoD.ClockDomainCrossingsTablePanel_TABLE, null, -1, null, -1, false, false, false, true, false); // q - Popup Trigger
+selectButton((HResource) null, "PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE_CLOCK_NETWORKS"); // D
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; clk_fpga_0 ; RFB_FCLK ; Timed - No Common Primary Clock ; 4 ; 0 ; 4 ; 0 ; 0", 1, (String) null, -1); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "3", 6); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "3", 4); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "RFB_DCLK", 1); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; RFB_DCLK ; RFB_FCLK ; Timed - No Common Primary Clock ; 3 ; 0 ; 3 ; 0 ; 0", 0, "RFB_FCLK", 2); // j
+selectTable(PAResourceAtoD.ClockDomainCrossingsNotRecommendedTablePanel_TABLE, "false ; clk_fpga_0 ; RFB_FCLK ; Timed - No Common Primary Clock ; 4 ; 0 ; 4 ; 0 ; 0", 1, "RFB_FCLK", 2); // j
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CLOSED
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Commit Design Constraints"); // bA
+dismissDialog("Timing Constraints Wizard"); // cz
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v), bajie7020_i : bajie7020 (bajie7020.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v), bajie7020_i : bajie7020 (bajie7020.bd), bajie7020 (bajie7020.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v), bajie7020_i : bajie7020 (bajie7020.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v), bajie7020_i : bajie7020 (bajie7020.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rfbdes (rfbdes.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rfbdes (rfbdes.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v), bajie7020_i : bajie7020 (bajie7020.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bajie7020_wrapper (bajie7020_wrapper.v), bajie7020_i : bajie7020 (bajie7020.bd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Tcl Message: open_bd_design {C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: Reading block design file <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_133M Adding component instance block -- xilinx.com:ip:xfft:9.1 - xfft_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0 Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_1 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_rfb_288M Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1 Adding component instance block -- xilinx.com:ip:util_reduced_logic:2.0 - util_reduced_logic_0 Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1 Adding component instance block -- xilinx.com:module_ref:rfbdes:1.0 - rfbdes_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 229 MB (+1766kb) [00:14:19]
+// Tcl Message: Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S. Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S. Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM. Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM. Successfully read diagram <bajie7020> from block design file <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  6660 ms.
+// JavaFX intialization before: 1685948941391
+// HMemoryUtils.trashcanNow. Engine heap size: 2,558 MB. GUI used memory: 171 MB. Current time: 6/5/23, 4:09:02 PM KST
+// JavaFX initialization after: 1685948943609
+// WARNING: HEventQueue.dispatchEvent() is taking  1865 ms.
+// PAPropertyPanels.initPanels (processing_system7_0_FCLK_CLK1) elapsed time: 0.4s
+// Elapsed time: 22 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2638.645 ; gain = 11.199 
+// [Engine Memory]: 2,626 MB (+21507kb) [00:14:33]
+dismissDialog("Open Block Design"); // bA
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp 
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+dismissDialog("Resetting Runs"); // bA
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs impl_1 -jobs 2 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 2,702 MB. GUI used memory: 180 MB. Current time: 6/5/23, 4:09:41 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  2837 ms.
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.006 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.006 MB. 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// [GUI Memory]: 244 MB (+3637kb) [00:15:21]
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jun  5 16:10:01 2023] Launched synth_1... Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log [Mon Jun  5 16:10:01 2023] Launched impl_1... Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2764.723 ; gain = 8.426 
+// Elapsed time: 22 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2393 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2404 ms. Increasing delay to 4000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 257 MB (+787kb) [00:19:02]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3116 ms. Increasing delay to 9348 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3229 ms. Increasing delay to 5000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4196 ms. Increasing delay to 6000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 754 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// 'el' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  5206 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1331 ms.
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd] 
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 141 MB. Current time: 6/5/23, 4:22:56 PM KST
+// Engine heap size: 2,703 MB. GUI used memory: 141 MB. Current time: 6/5/23, 4:22:57 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  6095 ms.
+// TclEventType: TIMING_CLOCK_NETWORKS_UNLOAD
+// Elapsed time: 20 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1504 ms.
+// TclEventType: TIMING_CLOCK_NETWORKS_UNLOAD
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2813.160 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. 
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. 
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... 
+// Tcl Message: Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2813.160 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2813.160 ; gain = 0.000 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 117 MB. Current time: 6/5/23, 4:23:20 PM KST
+// Xgd.load filename: C:/Xilinx/Vivado/2021.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.8s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.9s
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  11368 ms.
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 13.5s
+// RouteApi::initDelayMediator elapsed time: 4s
+// WARNING: HEventQueue.dispatchEvent() is taking  1634 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// WARNING: HEventQueue.dispatchEvent() is taking  1240 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 150 MB. Current time: 6/5/23, 4:23:44 PM KST
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  34231 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  6964 ms.
+// Elapsed time: 91 seconds
+dismissDialog("Reloading"); // bA
+// Elapsed time: 54 seconds
+selectCodeEditor("rfbdes.v", 519, 182); // be
+selectCodeEditor("rfbdes.v", 382, 299); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  5321 ms.
+// Tcl Message: open_hw_manager 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1439 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2985.945 ; gain = 0.430 
+// 'Q' command handler elapsed time: 7 seconds
+dismissDialog("Open Hardware Manager"); // bA
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  4781 ms.
+// Tcl Message: close_hw_manager 
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+dismissDialog("Close Hardware Manager"); // bA
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // n - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Set Input Delay Constraints (11)", 1); // i
+selectList(RDIResource.SelectableListPanel_SELECTABLE_LIST, "set_input_delay -clock [get_clocks RFB_DCLK] -add_delay 1.0 [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }]", 0); // H
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectTab(PAResourceAtoD.ConstraintsBasePanel_PREVIEW, (HResource) null, "Existing Set Input Delay, Set Output Delay Constraints (11)", 1); // i
+selectButton("CANCEL", "Cancel"); // JButton
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CLOSED
+dismissDialog("Apply XDC Constraints"); // bA
+dismissDialog("Timing Constraints Wizard"); // cz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Edit Timing Constraints]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// WARNING: HEventQueue.dispatchEvent() is taking  1742 ms.
+dismissDialog("Load Constraints"); // bA
+selectTree(PAResourceTtoZ.XdcCategoryTree_XDC_CATEGORY_TREE, "[All Categories (42), Clocks (6), Set External Delay (0)]", 10, false); // bk
+// [GUI Memory]: 271 MB (+783kb) [00:32:08]
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "12 ; [get_clocks RFB_DCLK] ; rise ;  ;  ; true ; None ; 1.0 ; [get_ports -filter { NAME =~  RFB_DATA_P* || NAME =~  RFB_DATAVALID* }] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 0, (String) null, 4); // v
+selectButton(PAResourceTtoZ.XdcTableEditorsPanel_REMOVE_SELECTED_ROW, (String) null); // D
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "13 ; [get_clocks RFB_DCLK] ; fall ;  ; min ; true ; None ; -0.58 ; [get_ports {RFB_DATA_N[*]}] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 0, "[get_clocks RFB_DCLK]", 1); // v
+setText(PAResourceEtoH.EditIODelayTablePanel_SPECIFY_CLOCK_PIN_OR_PORT, "[get_clocks RFB_DCLK]"); // aa
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "22 ; [get_clocks RFB_FCLK] ; rise ;  ; max ; true ; None ; 4.0 ; [get_ports RFB_DATAVALID] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 9, "[get_clocks RFB_FCLK]", 1, true, false, false, false, false); // v - Shift Key
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, null, -1, null, -1); // v
+selectButton(PAResourceTtoZ.XdcTableEditorsPanel_REMOVE_SELECTED_ROW, (String) null); // D
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: TIMING_RESULTS_STALE
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+// Elapsed time: 21 seconds
+setText("trco_min:", "-0.5"); // aa
+setText("tfco_min:", "-0.5"); // aa
+setText("trce_dly_min:", "0"); // aa
+setText("trce_dly_max:", "0"); // aa
+setText("trco_max:", "0.58"); // aa
+setText("tfco_max:", "0.58"); // aa
+selectButton(PAResourceAtoD.DelayValuesChooser_APPLY, "Apply"); // a
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_N[*] ; RFB_DCLK ; System ; Edge ; Dual", 0, "RFB_DCLK", 2); // br
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; RFB_DATA_P[*] ; RFB_DCLK ; System ; Edge ; Dual", 1, "RFB_DCLK", 2); // br
+setText("trco_min:", "-0.5"); // aa
+setText("trco_max:", "0.58"); // aa
+setText("tfco_min:", "-0.5"); // aa
+setText("tfco_max:", "0.58"); // aa
+setText("trce_dly_min:", "0"); // aa
+setText("trce_dly_max:", "0"); // aa
+selectButton(PAResourceAtoD.DelayValuesChooser_APPLY, "Apply"); // a
+setText("tco_min:", "-2"); // aa
+setText("tco_max:", "2"); // aa
+setText("trce_dly_min:", "-2"); // aa
+setText("trce_dly_max:", "2"); // aa
+setText("trce_dly_min:", "02"); // aa
+setText("trce_dly_max:", "0"); // aa
+setText("trce_dly_min:", "0"); // aa
+selectButton(PAResourceAtoD.DelayValuesChooser_APPLY, "Apply"); // a
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bA
+selectButton(PAResourceTtoZ.TimingConstraintsWizard_GOTO_CONSTRAINTS_SUMMARY_PAGE, "Skip to Finish >>"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CLOSED
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Commit Design Constraints"); // bA
+dismissDialog("Timing Constraints Wizard"); // cz
+selectTree(PAResourceTtoZ.XdcCategoryTree_XDC_CATEGORY_TREE, "[All Categories (41), Inputs (10), Set Input Delay (10)]", 12, false); // bk
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "12 ; [get_clocks RFB_DCLK] ; fall ;  ; min ; true ; None ; -0.5 ; [get_ports {RFB_DATA_N[*]}] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 0, "[get_clocks RFB_DCLK]", 1); // v
+setText(PAResourceEtoH.EditIODelayTablePanel_SPECIFY_CLOCK_PIN_OR_PORT, "[get_clocks RFB_DCLK]"); // aa
+editTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "[get_clocks RFB_DCLK]", 0, "   Clock   ", 1); // v
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "19 ; [get_clocks RFB_DCLK] ; rise ;  ; max ; true ; None ; 0.58 ; [get_ports {RFB_DATA_P[*]}] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 7, "[get_clocks RFB_DCLK]", 1); // v
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "20 ; [get_clocks RFB_FCLK] ; rise ;  ; min ; true ; None ; -2.0 ; [get_ports RFB_DATAVALID] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 8, "[get_clocks RFB_FCLK]", 1, false, false, false, false, true); // v - Double Click
+dismissDialog("Edit Set Input Delay"); // bp
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "14 ; [get_clocks RFB_DCLK] ; rise ;  ; min ; true ; None ; -0.5 ; [get_ports {RFB_DATA_N[*]}] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 2, "[get_clocks RFB_DCLK]", 1); // v
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, "15 ; [get_clocks RFB_DCLK] ; rise ;  ; max ; true ; None ; 0.58 ; [get_ports {RFB_DATA_N[*]}] ; C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc ;  ; ", 3, "[get_clocks RFB_DCLK]", 1); // v
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, null, -1, null, -1); // v
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, " ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 10, (String) null, 0); // v
+selectTable(PAResourceEtoH.EditIODelayTablePanel_EDIT_IO_DELAY_TABLE, null, -1, null, -1); // v
+// Elapsed time: 23 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK]", 6, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK, Setup -1.004 ns]", 7, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK, Hold -1.268 ns]", 8, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK, Setup -1.004 ns]", 7, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK, Hold -1.268 ns]", 8, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK, Setup -1.004 ns]", 7, false); // a
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 1.8s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -1.0043013 ; 2 ; 2 ; RFB_DATA_P[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.743278 ; 2.7432783 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, "bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY", 5); // h
+// WARNING: HEventQueue.dispatchEvent() is taking  1859 ms.
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -1.0043013 ; 2 ; 2 ; RFB_DATA_P[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.743278 ; 2.7432783 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, "RFB_DATA_P[1]", 4); // h
+// PAPropertyPanels.initPanels (Path 2) elapsed time: 0.2s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; -0.994441 ; 2 ; 2 ; RFB_DATA_P[2] ; bajie7020_i/rfbdes_0/inst/pins[2].iserdese2_master/DDLY ; 2.7838762 ; 2.7838762 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 1, (String) null, -1); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -1.0043013 ; 2 ; 2 ; RFB_DATA_P[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.743278 ; 2.7432783 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, (String) null, -1); // h
+// [GUI Memory]: 285 MB (+820kb) [00:34:45]
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Other Path Groups]", 16, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_196M_bajie7020_clk_wiz_0_1 to clk_fpga_0]", 19, true, false, false, false, false, true); // a - Double Click - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, clk_fpga_0 to RFB_FCLK]", 20, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, RFB_DCLK to RFB_FCLK]", 16, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths, RFB_DCLK to RFB_FCLK, Setup -3.120 ns]", 17, false); // a
+// PAPropertyPanels.initPanels (Path 69) elapsed time: 0.3s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 69 ; -3.1201189 ; 3 ; 3 ; RFB_DATAVALID ; bajie7020_i/axis_subset_converter_0/inst/axis_subset_converter_v1_1_25_core/gen_regslice.REG/axisc_register_slice_0/gen_AB_reg_slice.state_reg[0]/D ; 7.1087084 ; 4.3966436 ; 2.712064 ; 0.0010000889 ; RFB_DCLK ; RFB_FCLK ;  ; 0.03535534", 0, "bajie7020_i/axis_subset_converter_0/inst/axis_subset_converter_v1_1_25_core/gen_regslice.REG/axisc_register_slice_0/gen_AB_reg_slice.state_reg[0]/D", 5); // h
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0.0
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rfbdes.v", 2); // m
+selectCodeEditor("rfbdes.v", 395, 149); // be
+selectCodeEditor("rfbdes.v", 448, 287); // be
+selectCodeEditor("rfbdes.v", 836, 257); // be
+typeControlKey((HResource) null, "rfbdes.v", 'c'); // be
+selectCodeEditor("rfbdes.v", 301, 312); // be
+typeControlKey((HResource) null, "rfbdes.v", 'v'); // be
+selectCodeEditor("rfbdes.v", 632, 337); // be
+selectCodeEditor("rfbdes.v", 299, 335); // be
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("rfbdes.v", 354, 334); // be
+selectCodeEditor("rfbdes.v", 405, 312); // be
+selectCodeEditor("rfbdes.v", 614, 245); // be
+typeControlKey((HResource) null, "rfbdes.v", 'c'); // be
+selectCodeEditor("rfbdes.v", 312, 312); // be
+typeControlKey((HResource) null, "rfbdes.v", 'v'); // be
+selectCodeEditor("rfbdes.v", 523, 328); // be
+// PAPropertyPanels.initPanels (Path 69) elapsed time: 0.2s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("rfbdes.v", 631, 252); // be
+// PAPropertyPanels.initPanels (Path 69) elapsed time: 0.2s
+// PAPropertyPanels.initPanels (Path 69) elapsed time: 0.2s
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 686ms to process. Increasing delay to 4000 ms.
+selectCodeEditor("rfbdes.v", 524, 285); // be
+selectCodeEditor("rfbdes.v", 541, 317); // be
+selectCodeEditor("rfbdes.v", 355, 115); // be
+selectCodeEditor("rfbdes.v", 342, 104); // be
+selectCodeEditor("rfbdes.v", 324, 128); // be
+// Elapsed time: 15 seconds
+selectCodeEditor("rfbdes.v", 93, 268); // be
+selectCodeEditor("rfbdes.v", 367, 152); // be
+selectCodeEditor("rfbdes.v", 363, 172); // be
+selectCodeEditor("rfbdes.v", 363, 172); // be
+selectCodeEditor("rfbdes.v", 323, 249); // be
+selectCodeEditor("rfbdes.v", 204, 151); // be
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp 
+dismissDialog("Resetting Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_module_reference bajie7020_rfbdes_0_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'. 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3631 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1095 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd' 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// PAPropertyPanels.initPanels (Path 69) elapsed time: 0.2s
+// Tcl Message: Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd>  Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2992.750 ; gain = 6.301 update_module_reference: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2992.750 ; gain = 6.301 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 795, 57); // dT
+// Tcl Message: launch_runs impl_1 -jobs 2 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 779, 42); // dT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // g
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 211 MB. Current time: 6/5/23, 4:31:55 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Elapsed time: 23 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 864, 56); // dT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // g
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 210 MB. Current time: 6/5/23, 4:32:25 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd>  Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui>  
+// Tcl Message: VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v 
+// Tcl Message: VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1233 ms.
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.006 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.006 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.006 MB. 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 217 MB. Current time: 6/5/23, 4:32:55 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jun  5 16:33:03 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1... Run output will be captured here: bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log [Mon Jun  5 16:33:04 2023] Launched impl_1... Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 3005.375 ; gain = 12.625 
+// Elapsed time: 41 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Launch Run Critical Messages"); // bs
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1314 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3186 ms. Increasing delay to 4000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 143 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // D
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2912 ms. Increasing delay to 5000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4096 ms. Increasing delay to 6000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3558 ms. Increasing delay to 7000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 716 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// 'el' command handler elapsed time: 4 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  4264 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1282 ms.
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd] 
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 173 MB. Current time: 6/5/23, 4:47:47 PM KST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,703 MB. GUI used memory: 175 MB. Current time: 6/5/23, 4:47:47 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  4949 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1314 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3057.230 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. 
+// Tcl Message: INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 149 MB. Current time: 6/5/23, 4:48:06 PM KST
+// Tcl Message: Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3057.230 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 8.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3057.230 ; gain = 0.000 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 149 MB. Current time: 6/5/23, 4:48:10 PM KST
+// Xgd.load filename: C:/Xilinx/Vivado/2021.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.7s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  12539 ms.
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 11.3s
+// Elapsed time: 51 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// WARNING: HEventQueue.dispatchEvent() is taking  1054 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1048 ms.
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  26281 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  2559 ms.
+// Elapsed time: 36 seconds
+dismissDialog("Reloading"); // bA
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // W
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-4.942 ns"); // g
+// PAPropertyPanels.initPanels (Path 86) elapsed time: 0.5s
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 4, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK]", 6, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, RFB_DCLK, Setup -0.586 ns]", 7, false); // a
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.58630145 ; 2 ; 2 ; RFB_DATA_N[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.7452781 ; 2.7452781 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, "-0.58630145", 1); // h
+// Elapsed time: 39 seconds
+selectCodeEditor("rfbdes.v", 588, 266); // be
+selectCodeEditor("rfbdes.v", 588, 266); // be
+// Elapsed time: 20 seconds
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.58630145 ; 2 ; 2 ; RFB_DATA_N[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.7452781 ; 2.7452781 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, "100.0", 9, false, false, false, true, false); // h - Popup Trigger
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Requirement", 9, false, false, false, true, false); // h - Popup Trigger
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Timing Summary]", 21, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs 
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  2085 ms.
+// Tcl Message: report_timing_summary: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 3234.137 ; gain = 15.160 
+// Elapsed time: 11 seconds
+dismissDialog("Report Timing Summary"); // bA
+// [GUI Memory]: 301 MB (+2051kb) [00:56:22]
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "-4.942 ns"); // g
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Timing Constraints", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rfbdes.v", 2); // m
+// Elapsed time: 10 seconds
+selectTab("PAResourceOtoP.PAViews_TIMING", (HResource) null, "Timing Summary - impl_1 (saved)", 0); // d
+selectTab("PAResourceOtoP.PAViews_TIMING", (HResource) null, "Timing Summary - timing_1", 1); // d
+// TclEventType: TIMING_RESULTS_UNLOAD
+// PAPropertyPanels.initPanels (PR_OUT_DFF[0].FDRE_PER (FDRE)) elapsed time: 0.3s
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.58630145 ; 2 ; 2 ; RFB_DATA_N[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.7452781 ; 2.7452781 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, "bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY", 5); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; -0.58630145 ; 2 ; 2 ; RFB_DATA_N[1] ; bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY ; 2.7452781 ; 2.7452781 ; 0.0 ; 1.736 ; RFB_DCLK ; RFB_DCLK ;  ; 0.03535534", 0, "bajie7020_i/rfbdes_0/inst/pins[1].iserdese2_master/DDLY", 5, false, false, false, false, true); // h - Double Click
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Requirement ; 1.736ns (RFB_DCLK fall@1.736ns - RFB_DCLK rise@0.000ns)", 6, "1.736ns (RFB_DCLK fall@1.736ns - RFB_DCLK rise@0.000ns)", 1); // C
+// [GUI Memory]: 320 MB (+3799kb) [00:57:10]
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Timing Constraints", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 1 - bajie7020_wrapper_timing_summary_routed", 4); // m
+// Elapsed time: 24 seconds
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Slack ; -0.586ns", 1, "-0.586ns", 1); // C
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rfbdes.v", 2); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("rfbdes.v", 174, 156); // be
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp 
+dismissDialog("Resetting Runs"); // bA
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_module_reference bajie7020_rfbdes_0_0 
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  6365 ms.
+// Tcl Message: INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'. 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1540 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd' 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.5s
+// TclEventType: FILE_SET_DELETE
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd>  Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3284.461 ; gain = 15.816 update_module_reference: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3284.461 ; gain = 15.816 
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 234 MB. Current time: 6/5/23, 4:53:26 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,703 MB. GUI used memory: 224 MB. Current time: 6/5/23, 4:53:56 PM KST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
