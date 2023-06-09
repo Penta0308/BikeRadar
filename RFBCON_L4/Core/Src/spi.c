@@ -126,7 +126,7 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
 
 /* USER CODE BEGIN 1 */
 
-uint32_t RFBPllData[3];
+uint32_t RFBPllData[RFBPllDataLen];
 
 void SPIInitTiPll(void) {
 	LL_GPIO_ResetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
@@ -215,7 +215,12 @@ void SPISetTiPllFreq(float f) {
 	}
 }
 
-void SPISetTiPllRampFreqFromBuf();
+void SPISetTiPllRampFreqFromBuf() {
+	float p = (float)RFBPllData[RFBPllData_SweepLow];
+	float q = (float)RFBPllData[RFBPllData_SweepHigh];
+
+	SPISetTiPllRampFreq(p, q, 0xFFFF, q - p + 200000.0f, q + 100000.0f, p - 100000.0f);
+}
 
 void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, float limithigh, float limitlow) {
 
@@ -224,7 +229,7 @@ void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, f
 	uint64_t ns = start * den / TIPLL_FPD;
 	uint64_t ne = end   * den / TIPLL_FPD;
 	int64_t so = ne - ns;
-	int64_t ss = llround(1.0f * so / len);
+	int64_t ss = llroundf(1.0f * so / len);
 
 	while ((ss & 0x7FFFFFFFE0000000) != 0) {
 		if(denq > 2) denq--;
@@ -233,7 +238,7 @@ void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, f
 		ns = start * den / TIPLL_FPD;
 		ne = end   * den / TIPLL_FPD;
 		so = ne - ns;
-		ss = llround(1.0f * so / len);
+		ss = llroundf(1.0f * so / len);
 	}
 
 	uint32_t sq = ns % den;

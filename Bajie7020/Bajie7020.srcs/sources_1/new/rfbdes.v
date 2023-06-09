@@ -29,26 +29,37 @@ module rfbdes #(
   input              RFB_DATAVALID,
   
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *)
-  output [DEV_W-1:0] rfb_axis_data,
+  output [DEV_W-1:0] RFB_AXIS_DATA,
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *)
-  output             rfb_axis_valid,
+  output RFB_AXIS_VALID,
+  //output reg RFB_AXIS_VALID,
   
-  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 RFB_DCLK CLK_N" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RFB_DCLK, CAN_DEBUG false, FREQ_HZ 288000000" *) input [0:0]RFB_DCLK_clk_n,
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 RFB_DCLK CLK_N" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RFB_DCLK, CAN_DEBUG false, FREQ_HZ 144000000" *) input [0:0]RFB_DCLK_clk_n,
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 RFB_DCLK CLK_P" *) input [0:0]RFB_DCLK_clk_p,
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 RFB_FCLK CLK_N" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RFB_FCLK, CAN_DEBUG false, FREQ_HZ 48000000" *) input [0:0]RFB_FCLK_clk_n,
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 RFB_FCLK CLK_P" *) input [0:0]RFB_FCLK_clk_p,
   
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 RFB_AXIS_CLK CLK" *)
-  (* X_INTERFACE_PARAMETER = "ASSOCIATED_BUSIF M_AXIS, ASSOCIATED_RESET reset, FREQ_HZ 48000000" *)
+  (* X_INTERFACE_PARAMETER = "ASSOCIATED_BUSIF M_AXIS, ASSOCIATED_RESET des_reset, FREQ_HZ 48000000" *)
   output             RFB_AXIS_CLK,
+  
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *)
+  output [0:0] RFB_AXIS_USER,
+  
+  //output reg [0:0] RFB_AXIS_BEGIN,
+  //output reg RFB_AXIS_LAST,
   
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 idelay_refclk CLK" *)
   (* X_INTERFACE_PARAMETER = "FREQ_HZ 200000000" *)
   input              idelay_refclk,
   
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 areset RST" *)
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 des_reset RST" *)
   (* X_INTERFACE_PARAMETER = "POLARITY ACTIVE_HIGH" *)
-  input             areset
+  input             des_reset,
+  
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 io_reset RST" *)
+  (* X_INTERFACE_PARAMETER = "POLARITY ACTIVE_HIGH" *)
+  input iod_reset
   );
   
   localparam         num_serial_bits = DEV_W/SYS_W;
@@ -68,13 +79,13 @@ module rfbdes #(
   assign bitslip = 4'b0000;
   
   wire RFB_DCLK;
-  wire RFB_DCLK_i;
+  //wire RFB_DCLK_i;
   
   (* IODELAY_GROUP = "RFB_idelay" *)
    IDELAYCTRL IDELAYCTRL_inst (
-      .RDY(),       // 1-bit output: Ready output
+      .RDY(RFB_AXIS_VALID),       // 1-bit output: Ready output
       .REFCLK(idelay_refclk), // 1-bit input: Reference clock input
-      .RST(areset)        // 1-bit input: Active high reset input
+      .RST(iod_reset)        // 1-bit input: Active high reset input
    );
   
   IBUFDS 
@@ -85,7 +96,8 @@ module rfbdes #(
       .IB         (RFB_DCLK_clk_n),
       .O          (RFB_DCLK_i));
       
-  (* IODELAY_GROUP = "RFB_idelay" *)
+  assign RFB_DCLK = RFB_DCLK_i;
+  /*(* IODELAY_GROUP = "RFB_idelay" *)
   IDELAYE2 #(
       .CINVCTRL_SEL("FALSE"),          // Enable dynamic clock inversion (FALSE, TRUE)
       .DELAY_SRC("IDATAIN"),           // Delay input (IDATAIN, DATAIN)
@@ -108,7 +120,7 @@ module rfbdes #(
       .LD(1'b0),                   // 1-bit input: Load IDELAY_VALUE input
       .LDPIPEEN(1'b0),       // 1-bit input: Enable PIPELINE register to load data input
       .REGRST(1'b0)            // 1-bit input: Active-high reset tap-delay input
-    );
+    );*/
 
   wire RFB_FCLK;
   assign RFB_AXIS_CLK = RFB_FCLK;
@@ -150,16 +162,20 @@ module rfbdes #(
       .REGRST(1'b0)            // 1-bit input: Active-high reset tap-delay input
     );
   
+  wire rfb_dclk_div;
+  
   BUFR #(
      .BUFR_DIVIDE("BYPASS"),   // Values: "BYPASS, 1, 2, 3, 4, 5, 6, 7, 8" 
      .SIM_DEVICE("7SERIES")  // Must be set to "7SERIES" 
   )
-  bufr_inst_fclk (
+  bufr_inst_clkdiv (
       .O(RFB_FCLK),     // 1-bit output: Clock output port
       .CE(1'b0),   // 1-bit input: Active high, clock enable (Divided modes only)
       .CLR(1'b1), // 1-bit input: Active high, asynchronous clear (Divided modes only)
       .I(RFB_FCLK_d)      // 1-bit input: Clock buffer input driven by an IBUF, MMCM or local interconnect
    );
+   
+   wire rfb_axis_valid_i;
    
   (* IODELAY_GROUP = "RFB_idelay" *)
   IDELAYE2 #(
@@ -167,13 +183,13 @@ module rfbdes #(
       .DELAY_SRC("IDATAIN"),           // Delay input (IDATAIN, DATAIN)
       .HIGH_PERFORMANCE_MODE("FALSE"), // Reduced jitter ("TRUE"), Reduced power ("FALSE")
       .IDELAY_TYPE("FIXED"),           // FIXED, VARIABLE, VAR_LOAD, VAR_LOAD_PIPE
-      .IDELAY_VALUE(22),                // Input delay tap setting (0-31)
+      .IDELAY_VALUE(28),                // Input delay tap setting (0-31)
       .PIPE_SEL("FALSE"),              // Select pipelined mode, FALSE, TRUE
       .REFCLK_FREQUENCY(200.0),        // IDELAYCTRL clock input frequency in MHz (190.0-210.0, 290.0-310.0).
       .SIGNAL_PATTERN("DATA")          // DATA, CLOCK input signal
     ) idelaye2_inst_dv (
       .CNTVALUEOUT(), // 5-bit output: Counter value output
-      .DATAOUT(rfb_axis_valid),         // 1-bit output: Delayed data output
+      .DATAOUT(rfb_axis_valid_i),         // 1-bit output: Delayed data output
       .C(idelay_refclk),                     // 1-bit input: Clock input
       .CE(1'b0),                   // 1-bit input: Active high enable increment/decrement input
       .CINVCTRL(1'b0),       // 1-bit input: Dynamic clock inversion input
@@ -276,7 +292,7 @@ module rfbdes #(
          .CLKDIVP           (1'b0),
          .D                 (data_in_from_pins_int[pin_count]),  // 1-bit Input signal from IOB 
          .DDLY              (data_in_from_pins_delay[pin_count]),// 1-bit Input from Input Delay component 
-         .RST               (areset),                            // 1-bit Asynchronous reset only.
+         .RST               (des_reset),                            // 1-bit Asynchronous reset only.
          .SHIFTIN1          (1'b0),
          .SHIFTIN2          (1'b0),
     // unused connections
@@ -294,7 +310,7 @@ module rfbdes #(
      ////---------------------------------------------------------
      for (slice_count = 0; slice_count < num_serial_bits; slice_count = slice_count + 1) begin: in_slices
         // This places the first data in time on the right
-        assign rfb_axis_data[slice_count*SYS_W+:SYS_W] =
+        assign RFB_AXIS_DATA[slice_count*SYS_W+:SYS_W] =
           iserdes_q[num_serial_bits-slice_count-1];
         // To place the first data in time on the left, use the
         //   following code, instead
@@ -304,5 +320,44 @@ module rfbdes #(
   end
   endgenerate
   
+  //reg sample_active;
+  //reg [17:0] sample_n;
+  //wire [17:0] sample_q;
+  //wire [17:0] sample_r;
+  //assign sample_q = 18'd14400;
+  //assign sample_r = 18'd14399;
+  
+  //reg sample_valid;
+  assign RFB_AXIS_USER[0] = rfb_axis_valid_i;
+  /*reg sample_begin, sample_last, sample_valid;
+  assign RFB_AXIS_USER[2] = sample_begin;
+  assign RFB_AXIS_USER[1] = sample_valid;
+  assign RFB_AXIS_USER[0] = sample_last;
+  
+  always @(posedge RFB_FCLK) begin
+    if(des_reset) begin
+      sample_active <= 0;
+      sample_n <= 0;
+      sample_begin <= 0;
+      sample_last <= 0;
+      sample_valid <= 0;
+    end else begin
+      if(sample_valid) begin
+        sample_begin <= 0;
+        sample_n = sample_n + 1;
+        if(sample_n == sample_q) begin
+          sample_valid <= 0;
+          sample_last <= 0;
+        end else if(sample_n == sample_r) begin
+          sample_last <= 1;
+        end
+      end else begin
+        if(rfb_axis_valid_i) begin
+          sample_valid <= 1;
+          sample_begin <= 1;
+        end
+      end
+    end
+  end*/
 
 endmodule

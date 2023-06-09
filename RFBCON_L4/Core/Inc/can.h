@@ -47,7 +47,7 @@ extern CAN_HandleTypeDef hcan1;
 #define RFBCAN_FILTER0_FilterMode 		CAN_FILTERMODE_IDMASK
 #define RFBCAN_FILTER0_FilterScale 		CAN_FILTERSCALE_16BIT
 
-#define RFBCANMessage_SetPllPwr  		(uint8_t)0x01	// f = data (dBm, -inf = off)
+#define RFBCANMessage_SetPllPwr  		(uint8_t)0x01	// f = data (sign neg: Off, [5:0]: data)
 #define RFBCANMessage_SetPllContFreq	(uint8_t)0x02	// f = data
 #define RFBCANMessage_StartPllSweep  	(uint8_t)0x03
 #define RFBCANMessage_PushPllData		(uint8_t)0x04	// a = addr, f = data

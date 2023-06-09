@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/bajie7020/ip/bajie7020_rst_ps7_0_200M_0/sim/bajie7020_rst_ps7_0_200M_0.vhd" \
+"../../../bd/bajie7020/ip/bajie7020_xfft_0_0/sim/bajie7020_xfft_0_0.vhd" \
+"../../../bd/bajie7020/ip/bajie7020_axi_dma_1_1/sim/bajie7020_axi_dma_1_1.vhd" \
+"../../../bd/bajie7020/ip/bajie7020_axi_dma_0_2/sim/bajie7020_axi_dma_0_2.vhd" \
+"../../../bd/bajie7020/ip/bajie7020_proc_sys_reset_0_0/sim/bajie7020_proc_sys_reset_0_0.vhd" \
+"../../../bd/bajie7020/ip/bajie7020_fir_compiler_0_0/sim/bajie7020_fir_compiler_0_0.vhd" \
+"../../../bd/bajie7020/ip/bajie7020_rst_ps7_0_133M_0/sim/bajie7020_rst_ps7_0_133M_0.vhd" \
+
+nosort

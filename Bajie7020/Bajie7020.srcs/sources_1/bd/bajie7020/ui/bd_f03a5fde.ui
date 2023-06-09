@@ -1,92 +1,80 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.29659",
-   "Default View_TopLeft":"-169,-425",
+   "Default View_ScaleFactor":"0.590251",
+   "Default View_TopLeft":"649,146",
    "ExpandedHierarchyInLayout":"",
    "No Loops_ScaleFactor":"0.277022",
    "No Loops_TopLeft":"-130,-144",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 11 -x 3890 -y 520 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 11 -x 3890 -y 540 -defaultsOSRD
-preplace port CAN0 -pg 1 -lvl 11 -x 3890 -y 560 -defaultsOSRD
-preplace port RFB_DCLK -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
-preplace port RFB_FCLK -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
-preplace port port-id_RFB_DATAVALID -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
-preplace portBus RFB_DATA_P -pg 1 -lvl 0 -x 0 -y 590 -defaultsOSRD
-preplace portBus RFB_DATA_N -pg 1 -lvl 0 -x 0 -y 610 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 10 -x 3610 -y 580 -defaultsOSRD
-preplace inst rst_ps7_0_133M -pg 1 -lvl 1 -x 200 -y 430 -defaultsOSRD
-preplace inst xfft_0 -pg 1 -lvl 7 -x 2400 -y 130 -defaultsOSRD
-preplace inst axi_interconnect_gp0 -pg 1 -lvl 7 -x 2400 -y 370 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 9 -x 3210 -y 100 -defaultsOSRD
-preplace inst xfft_axi_dma -pg 1 -lvl 8 -x 2820 -y 280 -defaultsOSRD
-preplace inst xlconstant_32_0 -pg 1 -lvl 6 -x 2010 -y 110 -defaultsOSRD
-preplace inst axi_interconnect_acp -pg 1 -lvl 9 -x 3210 -y 310 -defaultsOSRD
-preplace inst rfb_axi_dma -pg 1 -lvl 8 -x 2820 -y 520 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 9 -x 3210 -y 560 -defaultsOSRD
-preplace inst axis_subset_converter_0 -pg 1 -lvl 3 -x 930 -y 560 -defaultsOSRD
-preplace inst axis_data_fifo_0 -pg 1 -lvl 7 -x 2400 -y 600 -defaultsOSRD
-preplace inst proc_sys_reset_rfb_fclk -pg 1 -lvl 2 -x 570 -y 360 -defaultsOSRD
-preplace inst fir_compiler_0 -pg 1 -lvl 5 -x 1660 -y 600 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 930 -y 370 -defaultsOSRD
-preplace inst axis_data_fifo_1 -pg 1 -lvl 4 -x 1300 -y 580 -defaultsOSRD
-preplace inst proc_sys_reset_rfb_288M -pg 1 -lvl 4 -x 1300 -y 370 -defaultsOSRD
-preplace inst fir_out -pg 1 -lvl 6 -x 2010 -y 570 -defaultsOSRD
-preplace inst rfbdes_0 -pg 1 -lvl 2 -x 570 -y 600 -defaultsOSRD
-preplace netloc RFB_DATAVALID_1 1 0 2 NJ 630 NJ
-preplace netloc RFB_DATA_N_1 1 0 2 NJ 610 NJ
-preplace netloc RFB_DATA_P_1 1 0 2 NJ 590 NJ
-preplace netloc axi_dma_1_mm2s_introut 1 8 1 3030 100n
-preplace netloc axi_dma_1_mm2s_prmry_reset_out_n 1 8 1 3040 280n
-preplace netloc axi_dma_1_s2mm_introut 1 8 1 3000 80n
-preplace netloc axi_dma_1_s2mm_prmry_reset_out_n 1 8 1 3010 300n
-preplace netloc clk_wiz_0_clk_196M 1 3 4 1110 670 1490 700 1860 670 2180J
-preplace netloc clk_wiz_0_locked 1 3 1 1120 380n
-preplace netloc fir_compiler_0_m_axis_data_tdata 1 5 1 1850 590n
-preplace netloc fir_compiler_0_m_axis_data_tuser 1 5 1 1830 530n
-preplace netloc fir_compiler_0_m_axis_data_tvalid 1 5 1 1840 550n
-preplace netloc hdmi_axi_dma_0_s2mm_introut 1 8 1 3050 120n
-preplace netloc hdmi_axi_dma_0_s2mm_prmry_reset_out_n 1 8 1 2990 520n
-preplace netloc proc_sys_reset_rfb_288M_peripheral_aresetn 1 4 3 1480 690 1870 660 2160
-preplace netloc proc_sys_reset_rfb_fclk_peripheral_aresetn 1 2 2 740 440 1130
-preplace netloc proc_sys_reset_rfb_fclk_peripheral_reset 1 2 1 N 360
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 11 20 540 390J 460 NJ 460 1100J 480 1470J 460 NJ 460 2170 690 2640 160 3020 680 3380 710 3860
-preplace netloc processing_system7_0_FCLK_CLK1 1 1 10 400 470 NJ 470 NJ 470 NJ 470 NJ 470 2150J 720 NJ 720 NJ 720 NJ 720 3850
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 11 30 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 3840
-preplace netloc rst_ps7_0_133M_peripheral_reset 1 1 1 380 430n
-preplace netloc rst_ps7_0_160M_peripheral_aresetn 1 1 8 370 250 NJ 250 NJ 250 NJ 250 NJ 250 2180 510 2630 150 3060
-preplace netloc util_ds_buf_rfb_fclk_IBUF_OUT 1 1 3 400 260 750 640 1130
-preplace netloc xfft_0_s_axis_config_tready 1 6 1 2190 130n
-preplace netloc xlconcat_0_dout 1 9 1 3370 100n
-preplace netloc xlconstant_0_dout 1 6 1 NJ 110
-preplace netloc RFB_DCLK_1 1 0 2 NJ 530 NJ
-preplace netloc RFB_FCLK_1 1 0 2 NJ 550 NJ
-preplace netloc S00_AXI_1 1 6 5 2190 700 NJ 700 NJ 700 NJ 700 3870
-preplace netloc axi_dma_1_M_AXIS_MM2S 1 6 3 2190 10 NJ 10 2990
-preplace netloc axi_dma_1_M_AXI_MM2S 1 8 1 N 220
-preplace netloc axi_dma_1_M_AXI_S2MM 1 8 1 N 240
-preplace netloc axi_interconnect_0_M00_AXI 1 7 1 2610 360n
-preplace netloc axi_interconnect_0_M01_AXI 1 7 1 2620 230n
-preplace netloc axi_interconnect_1_M00_AXI 1 9 1 3360 310n
-preplace netloc axi_mem_intercon_M00_AXI 1 9 1 N 560
-preplace netloc axis_data_fifo_0_M_AXIS 1 7 1 2650 500n
-preplace netloc axis_data_fifo_1_M_AXIS 1 4 1 N 580
-preplace netloc axis_subset_converter_0_M_AXIS 1 3 1 N 550
-preplace netloc axis_subset_converter_1_M_AXIS 1 6 1 N 570
-preplace netloc hdmi_axi_dma_0_M_AXI_S2MM 1 8 1 N 500
-preplace netloc processing_system7_0_CAN_0 1 10 1 NJ 560
-preplace netloc processing_system7_0_DDR 1 10 1 NJ 520
-preplace netloc processing_system7_0_FIXED_IO 1 10 1 NJ 540
-preplace netloc rfbdes_0_M_AXIS 1 2 1 760 540n
-preplace netloc xfft_0_M_AXIS_DATA 1 7 1 2650 70n
-levelinfo -pg 1 0 200 570 930 1300 1660 2010 2400 2820 3210 3610 3890
-pagesize -pg 1 -db -bbox -sgen -170 0 4010 740
+preplace port DDR -pg 1 -lvl 9 -x 3150 -y 620 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 3150 -y 640 -defaultsOSRD
+preplace port CAN0 -pg 1 -lvl 9 -x 3150 -y 660 -defaultsOSRD
+preplace port RFB_DCLK -pg 1 -lvl 0 -x -10 -y 600 -defaultsOSRD
+preplace port RFB_FCLK -pg 1 -lvl 0 -x -10 -y 620 -defaultsOSRD
+preplace port RFB_DATA -pg 1 -lvl 0 -x -10 -y 640 -defaultsOSRD
+preplace port port-id_RFB_DATAVALID -pg 1 -lvl 0 -x -10 -y 660 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 8 -x 2890 -y 680 -defaultsOSRD
+preplace inst rst_ps7_0_133M -pg 1 -lvl 1 -x 190 -y 110 -defaultsOSRD
+preplace inst xfft_0 -pg 1 -lvl 5 -x 1690 -y 150 -defaultsOSRD
+preplace inst axi_interconnect_gp0 -pg 1 -lvl 5 -x 1690 -y 490 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 7 -x 2500 -y 900 -defaultsOSRD
+preplace inst xfft_axi_dma -pg 1 -lvl 6 -x 2120 -y 390 -defaultsOSRD
+preplace inst axi_interconnect_acp -pg 1 -lvl 7 -x 2500 -y 420 -defaultsOSRD
+preplace inst rfb_axi_dma -pg 1 -lvl 6 -x 2120 -y 630 -defaultsOSRD
+preplace inst axi_interconnect_hp0 -pg 1 -lvl 7 -x 2500 -y 670 -defaultsOSRD
+preplace inst proc_sys_reset_rfb_fclk -pg 1 -lvl 2 -x 550 -y 320 -defaultsOSRD
+preplace inst rst_ps7_0_200M -pg 1 -lvl 2 -x 550 -y 500 -defaultsOSRD
+preplace inst rfb_fir -pg 1 -lvl 4 -x 1280 -y 710 -defaultsOSRD
+preplace inst xlconstant_32_0 -pg 1 -lvl 4 -x 1280 -y 130 -defaultsOSRD
+preplace inst rfbdes_0 -pg 1 -lvl 3 -x 930 -y 660 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 5 -x 1690 -y 710 -defaultsOSRD
+preplace netloc RFB_DATAVALID_1 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc axi_dma_1_mm2s_introut 1 6 1 2320 430n
+preplace netloc axi_dma_1_mm2s_prmry_reset_out_n 1 6 1 2330 390n
+preplace netloc axi_dma_1_s2mm_introut 1 6 1 2310 450n
+preplace netloc axi_dma_1_s2mm_prmry_reset_out_n 1 6 1 2300 410n
+preplace netloc hdmi_axi_dma_0_s2mm_introut 1 6 1 2300 650n
+preplace netloc hdmi_axi_dma_0_s2mm_prmry_reset_out_n 1 6 1 2330 630n
+preplace netloc proc_sys_reset_rfb_288M_peripheral_aresetn 1 2 2 720J 520 1130
+preplace netloc proc_sys_reset_rfb_fclk_peripheral_aresetn 1 2 2 NJ 360 1120
+preplace netloc proc_sys_reset_rfb_fclk_peripheral_reset 1 2 1 730 320n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 9 10 630 NJ 630 750J 510 1140 510 1470 280 1940 270 2340 790 2650 560 3120
+preplace netloc processing_system7_0_FCLK_CLK1 1 1 8 380 650 770 530 1110 590 1440J 800 NJ 800 NJ 800 NJ 800 3130
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 9 20 820 NJ 820 NJ 820 NJ 820 1420J 810 NJ 810 NJ 810 NJ 810 3120
+preplace netloc rst_ps7_0_160M_peripheral_aresetn 1 1 6 360 210 NJ 210 NJ 210 1460 290 1910 260 2350
+preplace netloc rst_ps7_0_200M_peripheral_reset 1 2 2 740 500 1100J
+preplace netloc util_ds_buf_rfb_fclk_IBUF_OUT 1 1 3 370 610 760J 540 1090
+preplace netloc xlconcat_0_dout 1 7 1 2660 740n
+preplace netloc xfft_0_s_axis_config_tready 1 4 1 1480 150n
+preplace netloc xlconstant_0_dout 1 4 1 NJ 130
+preplace netloc rfb_fir_transfer_dropped 1 4 3 1430J 820 NJ 820 2290
+preplace netloc RFB_0_1 1 0 3 NJ 640 NJ 640 NJ
+preplace netloc RFB_DCLK_1 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc RFB_FCLK_1 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc S00_AXI_1 1 4 5 1480 270 1900J 250 NJ 250 NJ 250 3130
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 4 3 1480 30 NJ 30 2320
+preplace netloc axi_dma_1_M_AXI_MM2S 1 6 1 N 330
+preplace netloc axi_dma_1_M_AXI_S2MM 1 6 1 N 350
+preplace netloc axi_interconnect_0_M00_AXI 1 5 1 1900 480n
+preplace netloc axi_interconnect_0_M01_AXI 1 5 1 1920 340n
+preplace netloc axi_interconnect_1_M00_AXI 1 7 1 2660 420n
+preplace netloc axi_mem_intercon_M00_AXI 1 7 1 2660 660n
+preplace netloc processing_system7_0_CAN_0 1 8 1 NJ 660
+preplace netloc processing_system7_0_DDR 1 8 1 NJ 620
+preplace netloc processing_system7_0_FIXED_IO 1 8 1 NJ 640
+preplace netloc rfbdes_0_M_AXIS 1 3 1 N 650
+preplace netloc xfft_0_M_AXIS_DATA 1 5 1 1930 90n
+preplace netloc rfb_fir_M_AXIS 1 4 1 1450 690n
+preplace netloc axis_subset_converter_0_M_AXIS 1 5 1 1950 610n
+preplace netloc S00_AXI_2 1 6 1 N 610
+levelinfo -pg 1 -10 190 550 930 1280 1690 2120 2500 2890 3150
+pagesize -pg 1 -db -bbox -sgen -180 0 3270 1000
 "
 }
 {
-   "da_axi4_cnt":"7",
+   "da_axi4_cnt":"12",
    "da_board_cnt":"1",
-   "da_clkrst_cnt":"25",
+   "da_clkrst_cnt":"30",
    "da_ps7_cnt":"1"
 }

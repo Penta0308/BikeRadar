@@ -41,6 +41,8 @@ void MX_TIM15_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
+void TIM15TiPllRampStart();
+
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

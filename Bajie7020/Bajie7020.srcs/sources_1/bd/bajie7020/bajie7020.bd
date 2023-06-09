@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x71509046CB50E670",
+      "boundary_crc": "0xDC1ACB14A039BAE7",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../Bajie7020.gen/sources_1/bd/bajie7020",
       "name": "bajie7020",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.2"
+      "tool_version": "2021.2",
+      "validated": "true"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -23,7 +24,6 @@
       },
       "xlconcat_0": "",
       "xfft_axi_dma": "",
-      "xlconstant_32_0": "",
       "axi_interconnect_acp": {
         "xbar": "",
         "s00_couplers": {},
@@ -33,35 +33,95 @@
         }
       },
       "rfb_axi_dma": "",
-      "axi_mem_intercon": {
+      "axi_interconnect_hp0": {
         "s00_couplers": {
           "auto_pc": ""
         }
       },
-      "axis_subset_converter_0": "",
-      "axis_data_fifo_0": "",
       "proc_sys_reset_rfb_fclk": "",
-      "fir_compiler_0": "",
-      "clk_wiz_0": "",
-      "axis_data_fifo_1": "",
-      "proc_sys_reset_rfb_288M": "",
-      "fir_out": {
-        "xlconcat_1": "",
-        "util_reduced_logic_0": "",
-        "axis_subset_converter_1": ""
+      "rst_ps7_0_200M": "",
+      "rfb_fir": {
+        "fir_compiler_0": "",
+        "rfb_fir_out": {
+          "axis_subset_converter_1": "",
+          "axis_data_fifo_0": "",
+          "firoutmixer_0": ""
+        },
+        "rfb_fir_in": {
+          "axis_subset_converter_0": "",
+          "axis_data_fifo_1": ""
+        }
       },
-      "rfbdes_0": ""
+      "xlconstant_32_0": "",
+      "rfbdes_0": "",
+      "axis_subset_converter_0": ""
     },
     "interface_ports": {
       "DDR": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:ddrx:1.0",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0"
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        }
       },
       "FIXED_IO": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
       },
       "CAN0": {
         "mode": "Master",
@@ -73,8 +133,12 @@
         "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
         "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
         "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
-            "value": "288000000"
+            "value": "144000000"
           }
         }
       },
@@ -83,23 +147,22 @@
         "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
         "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
         "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "48000000"
           }
         }
+      },
+      "RFB_DATA": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "digilentinc.com:interface:tmds:1.0",
+        "vlnv": "digilentinc.com:interface:tmds_rtl:1.0"
       }
     },
     "ports": {
-      "RFB_DATA_P": {
-        "direction": "I",
-        "left": "3",
-        "right": "0"
-      },
-      "RFB_DATA_N": {
-        "direction": "I",
-        "left": "3",
-        "right": "0"
-      },
       "RFB_DATAVALID": {
         "direction": "I"
       }
@@ -553,7 +616,7 @@
             "value": "200"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+            "value": "100"
           },
           "PCW_FPGA3_PERIPHERAL_FREQMHZ": {
             "value": "50"
@@ -1375,13 +1438,10 @@
             "value": "3"
           },
           "PCW_S_AXI_HP0_DATA_WIDTH": {
-            "value": "32"
+            "value": "64"
           },
           "PCW_S_AXI_HP0_ID_WIDTH": {
             "value": "6"
-          },
-          "PCW_S_AXI_HP1_DATA_WIDTH": {
-            "value": "64"
           },
           "PCW_S_AXI_HP2_DATA_WIDTH": {
             "value": "64"
@@ -1952,7 +2012,7 @@
             "value": "scaled"
           },
           "target_clock_frequency": {
-            "value": "160"
+            "value": "133"
           },
           "target_data_throughput": {
             "value": "50"
@@ -2384,7 +2444,7 @@
         "inst_hier_path": "xlconcat_0",
         "parameters": {
           "NUM_PORTS": {
-            "value": "3"
+            "value": "4"
           }
         }
       },
@@ -2448,20 +2508,6 @@
           }
         }
       },
-      "xlconstant_32_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "bajie7020_xlconstant_0_3",
-        "xci_path": "ip\\bajie7020_xlconstant_0_3\\bajie7020_xlconstant_0_3.xci",
-        "inst_hier_path": "xlconstant_32_0",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "0"
-          },
-          "CONST_WIDTH": {
-            "value": "32"
-          }
-        }
-      },
       "axi_interconnect_acp": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip\\bajie7020_axi_interconnect_1_0\\bajie7020_axi_interconnect_1_0.xci",
@@ -2482,6 +2528,9 @@
           },
           "S01_ARB_PRIORITY": {
             "value": "2"
+          },
+          "XBAR_DATA_WIDTH": {
+            "value": "64"
           }
         },
         "interface_ports": {
@@ -2571,6 +2620,9 @@
             "xci_path": "ip\\bajie7020_xbar_4\\bajie7020_xbar_4.xci",
             "inst_hier_path": "axi_interconnect_acp/xbar",
             "parameters": {
+              "DATA_WIDTH": {
+                "value": "64"
+              },
               "NUM_MI": {
                 "value": "1"
               },
@@ -2926,10 +2978,13 @@
             "value": "0"
           },
           "c_m_axi_s2mm_data_width": {
-            "value": "32"
+            "value": "64"
           },
           "c_s_axis_s2mm_tdata_width": {
-            "value": "32"
+            "value": "64"
+          },
+          "c_sg_length_width": {
+            "value": "20"
           }
         },
         "interface_ports": {
@@ -2957,10 +3012,10 @@
           }
         }
       },
-      "axi_mem_intercon": {
+      "axi_interconnect_hp0": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip\\bajie7020_axi_mem_intercon_0\\bajie7020_axi_mem_intercon_0.xci",
-        "inst_hier_path": "axi_mem_intercon",
+        "inst_hier_path": "axi_interconnect_hp0",
         "xci_name": "bajie7020_axi_mem_intercon_0",
         "parameters": {
           "ENABLE_ADVANCED_OPTIONS": {
@@ -2974,6 +3029,9 @@
           },
           "S00_HAS_DATA_FIFO": {
             "value": "0"
+          },
+          "XBAR_DATA_WIDTH": {
+            "value": "64"
           }
         },
         "interface_ports": {
@@ -3088,7 +3146,7 @@
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "xci_name": "bajie7020_auto_pc_2",
                 "xci_path": "ip\\bajie7020_auto_pc_2\\bajie7020_auto_pc_2.xci",
-                "inst_hier_path": "axi_mem_intercon/s00_couplers/auto_pc",
+                "inst_hier_path": "axi_interconnect_hp0/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
                     "value": "AXI3"
@@ -3139,13 +3197,13 @@
           }
         },
         "interface_nets": {
-          "axi_mem_intercon_to_s00_couplers": {
+          "axi_interconnect_hp0_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
               "s00_couplers/S_AXI"
             ]
           },
-          "s00_couplers_to_axi_mem_intercon": {
+          "s00_couplers_to_axi_interconnect_hp0": {
             "interface_ports": [
               "M00_AXI",
               "s00_couplers/M_AXI"
@@ -3165,120 +3223,17 @@
               "s00_couplers/S_ARESETN"
             ]
           },
-          "axi_mem_intercon_ACLK_net": {
+          "axi_interconnect_hp0_ACLK_net": {
             "ports": [
               "M00_ACLK",
               "s00_couplers/M_ACLK"
             ]
           },
-          "axi_mem_intercon_ARESETN_net": {
+          "axi_interconnect_hp0_ARESETN_net": {
             "ports": [
               "M00_ARESETN",
               "s00_couplers/M_ARESETN"
             ]
-          }
-        }
-      },
-      "axis_subset_converter_0": {
-        "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
-        "xci_name": "bajie7020_axis_subset_converter_0_2",
-        "xci_path": "ip\\bajie7020_axis_subset_converter_0_2\\bajie7020_axis_subset_converter_0_2.xci",
-        "inst_hier_path": "axis_subset_converter_0",
-        "parameters": {
-          "M_HAS_TKEEP": {
-            "value": "0"
-          },
-          "M_HAS_TLAST": {
-            "value": "0"
-          },
-          "M_HAS_TREADY": {
-            "value": "1"
-          },
-          "M_HAS_TSTRB": {
-            "value": "0"
-          },
-          "M_TDATA_NUM_BYTES": {
-            "value": "4"
-          },
-          "M_TDEST_WIDTH": {
-            "value": "0"
-          },
-          "M_TID_WIDTH": {
-            "value": "0"
-          },
-          "M_TUSER_WIDTH": {
-            "value": "1"
-          },
-          "S_HAS_TKEEP": {
-            "value": "0"
-          },
-          "S_HAS_TLAST": {
-            "value": "0"
-          },
-          "S_HAS_TREADY": {
-            "value": "0"
-          },
-          "S_HAS_TSTRB": {
-            "value": "0"
-          },
-          "S_TDATA_NUM_BYTES": {
-            "value": "3"
-          },
-          "S_TDEST_WIDTH": {
-            "value": "0"
-          },
-          "S_TID_WIDTH": {
-            "value": "0"
-          },
-          "S_TUSER_WIDTH": {
-            "value": "0"
-          },
-          "TDATA_REMAP": {
-            "value": "4'b0000,tdata[23:12],4'b0000,tdata[11:0]"
-          },
-          "TKEEP_REMAP": {
-            "value": "1'b0"
-          },
-          "TLAST_REMAP": {
-            "value": "1'b0"
-          },
-          "TUSER_REMAP": {
-            "value": "1'b0"
-          }
-        }
-      },
-      "axis_data_fifo_0": {
-        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
-        "xci_name": "bajie7020_axis_data_fifo_0_0",
-        "xci_path": "ip\\bajie7020_axis_data_fifo_0_0\\bajie7020_axis_data_fifo_0_0.xci",
-        "inst_hier_path": "axis_data_fifo_0",
-        "parameters": {
-          "FIFO_DEPTH": {
-            "value": "512"
-          },
-          "HAS_TKEEP": {
-            "value": "0"
-          },
-          "HAS_TLAST": {
-            "value": "0"
-          },
-          "HAS_TSTRB": {
-            "value": "0"
-          },
-          "IS_ACLK_ASYNC": {
-            "value": "1"
-          },
-          "TDATA_NUM_BYTES": {
-            "value": "4"
-          },
-          "TDEST_WIDTH": {
-            "value": "0"
-          },
-          "TID_WIDTH": {
-            "value": "0"
-          },
-          "TUSER_WIDTH": {
-            "value": "0"
           }
         }
       },
@@ -3288,197 +3243,19 @@
         "xci_path": "ip\\bajie7020_proc_sys_reset_0_0\\bajie7020_proc_sys_reset_0_0.xci",
         "inst_hier_path": "proc_sys_reset_rfb_fclk"
       },
-      "fir_compiler_0": {
-        "vlnv": "xilinx.com:ip:fir_compiler:7.2",
-        "xci_name": "bajie7020_fir_compiler_0_0",
-        "xci_path": "ip\\bajie7020_fir_compiler_0_0\\bajie7020_fir_compiler_0_0.xci",
-        "inst_hier_path": "fir_compiler_0",
-        "parameters": {
-          "BestPrecision": {
-            "value": "true"
-          },
-          "Clock_Frequency": {
-            "value": "196"
-          },
-          "CoefficientSource": {
-            "value": "COE_File"
-          },
-          "Coefficient_File": {
-            "value": "../../../../../../fir48Mt2M4.coe"
-          },
-          "Coefficient_Fractional_Bits": {
-            "value": "20"
-          },
-          "Coefficient_Sets": {
-            "value": "1"
-          },
-          "Coefficient_Sign": {
-            "value": "Signed"
-          },
-          "Coefficient_Structure": {
-            "value": "Inferred"
-          },
-          "Coefficient_Width": {
-            "value": "18"
-          },
-          "ColumnConfig": {
-            "value": "8"
-          },
-          "DATA_TUSER_Width": {
-            "value": "1"
-          },
-          "Data_Fractional_Bits": {
-            "value": "0"
-          },
-          "Data_Sign": {
-            "value": "Signed"
-          },
-          "Data_Width": {
-            "value": "12"
-          },
-          "Filter_Architecture": {
-            "value": "Systolic_Multiply_Accumulate"
-          },
-          "Has_ACLKEN": {
-            "value": "false"
-          },
-          "Has_ARESETn": {
-            "value": "true"
-          },
-          "M_DATA_Has_TUSER": {
-            "value": "User_Field"
-          },
-          "Number_Paths": {
-            "value": "2"
-          },
-          "Output_Rounding_Mode": {
-            "value": "Truncate_LSBs"
-          },
-          "Output_Width": {
-            "value": "16"
-          },
-          "Quantization": {
-            "value": "Maximize_Dynamic_Range"
-          },
-          "S_DATA_Has_FIFO": {
-            "value": "false"
-          },
-          "S_DATA_Has_TUSER": {
-            "value": "User_Field"
-          },
-          "Sample_Frequency": {
-            "value": "48"
-          }
-        }
-      },
-      "clk_wiz_0": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "bajie7020_clk_wiz_0_1",
-        "xci_path": "ip\\bajie7020_clk_wiz_0_1\\bajie7020_clk_wiz_0_1.xci",
-        "inst_hier_path": "clk_wiz_0",
-        "parameters": {
-          "CLKIN1_JITTER_PS": {
-            "value": "100"
-          },
-          "CLKIN1_UI_JITTER": {
-            "value": "100"
-          },
-          "CLKIN2_JITTER_PS": {
-            "value": "100.000"
-          },
-          "CLKIN2_UI_JITTER": {
-            "value": "100.000"
-          },
-          "CLKOUT1_JITTER": {
-            "value": "263.610"
-          },
-          "CLKOUT1_PHASE_ERROR": {
-            "value": "433.125"
-          },
-          "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "196"
-          },
-          "CLK_OUT1_PORT": {
-            "value": "clk_196M"
-          },
-          "JITTER_OPTIONS": {
-            "value": "PS"
-          },
-          "MMCM_CLKFBOUT_MULT_F": {
-            "value": "61.250"
-          },
-          "MMCM_CLKIN1_PERIOD": {
-            "value": "20.833"
-          },
-          "MMCM_CLKIN2_PERIOD": {
-            "value": "10.0"
-          },
-          "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "5.000"
-          },
-          "MMCM_DIVCLK_DIVIDE": {
-            "value": "3"
-          },
-          "MMCM_REF_JITTER1": {
-            "value": "0.005"
-          },
-          "MMCM_REF_JITTER2": {
-            "value": "0.010"
-          },
-          "PRIM_IN_FREQ": {
-            "value": "48"
-          },
-          "PRIM_SOURCE": {
-            "value": "No_buffer"
-          }
-        }
-      },
-      "axis_data_fifo_1": {
-        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
-        "xci_name": "bajie7020_axis_data_fifo_1_0",
-        "xci_path": "ip\\bajie7020_axis_data_fifo_1_0\\bajie7020_axis_data_fifo_1_0.xci",
-        "inst_hier_path": "axis_data_fifo_1",
-        "parameters": {
-          "FIFO_DEPTH": {
-            "value": "16"
-          },
-          "FIFO_MEMORY_TYPE": {
-            "value": "auto"
-          },
-          "HAS_TKEEP": {
-            "value": "0"
-          },
-          "HAS_TLAST": {
-            "value": "0"
-          },
-          "HAS_TSTRB": {
-            "value": "0"
-          },
-          "IS_ACLK_ASYNC": {
-            "value": "1"
-          },
-          "TDATA_NUM_BYTES": {
-            "value": "4"
-          },
-          "TDEST_WIDTH": {
-            "value": "0"
-          },
-          "TID_WIDTH": {
-            "value": "0"
-          },
-          "TUSER_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "proc_sys_reset_rfb_288M": {
+      "rst_ps7_0_200M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "bajie7020_proc_sys_reset_0_1",
-        "xci_path": "ip\\bajie7020_proc_sys_reset_0_1\\bajie7020_proc_sys_reset_0_1.xci",
-        "inst_hier_path": "proc_sys_reset_rfb_288M"
+        "xci_name": "bajie7020_rst_ps7_0_133M_0",
+        "xci_path": "ip\\bajie7020_rst_ps7_0_133M_0\\bajie7020_rst_ps7_0_133M_0.xci",
+        "inst_hier_path": "rst_ps7_0_200M"
       },
-      "fir_out": {
+      "rfb_fir": {
         "interface_ports": {
+          "S_AXIS": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
           "M_AXIS": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
@@ -3486,158 +3263,757 @@
           }
         },
         "ports": {
-          "s_axis_data_tvalid": {
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "s_axis_data_tuser": {
-            "direction": "I",
-            "left": "0",
-            "right": "0"
-          },
-          "aclk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "aresetn": {
+          "fir_aresetn": {
             "type": "rst",
             "direction": "I"
           },
-          "s_axis_tdata": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
+          "fir_aclk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "m_axis_aclk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "s_axis_aclk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "s_axis_aresetn": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "transfer_dropped": {
+            "direction": "O"
+          },
+          "fir_reset": {
+            "type": "rst",
+            "direction": "I"
           }
         },
         "components": {
-          "xlconcat_1": {
-            "vlnv": "xilinx.com:ip:xlconcat:2.1",
-            "xci_name": "bajie7020_xlconcat_1_1",
-            "xci_path": "ip\\bajie7020_xlconcat_1_1\\bajie7020_xlconcat_1_1.xci",
-            "inst_hier_path": "fir_out/xlconcat_1"
-          },
-          "util_reduced_logic_0": {
-            "vlnv": "xilinx.com:ip:util_reduced_logic:2.0",
-            "xci_name": "bajie7020_util_reduced_logic_0_1",
-            "xci_path": "ip\\bajie7020_util_reduced_logic_0_1\\bajie7020_util_reduced_logic_0_1.xci",
-            "inst_hier_path": "fir_out/util_reduced_logic_0",
+          "fir_compiler_0": {
+            "vlnv": "xilinx.com:ip:fir_compiler:7.2",
+            "xci_name": "bajie7020_fir_compiler_0_0",
+            "xci_path": "ip\\bajie7020_fir_compiler_0_0\\bajie7020_fir_compiler_0_0.xci",
+            "inst_hier_path": "rfb_fir/fir_compiler_0",
             "parameters": {
-              "C_SIZE": {
+              "BestPrecision": {
+                "value": "true"
+              },
+              "Clock_Frequency": {
+                "value": "200"
+              },
+              "CoefficientSource": {
+                "value": "COE_File"
+              },
+              "Coefficient_File": {
+                "value": "../../../../../../fir48Mt2M4.coe"
+              },
+              "Coefficient_Fractional_Bits": {
+                "value": "20"
+              },
+              "Coefficient_Sets": {
+                "value": "1"
+              },
+              "Coefficient_Sign": {
+                "value": "Signed"
+              },
+              "Coefficient_Structure": {
+                "value": "Inferred"
+              },
+              "Coefficient_Width": {
+                "value": "18"
+              },
+              "ColumnConfig": {
+                "value": "8"
+              },
+              "DATA_TUSER_Width": {
+                "value": "3"
+              },
+              "Data_Fractional_Bits": {
+                "value": "0"
+              },
+              "Data_Sign": {
+                "value": "Signed"
+              },
+              "Data_Width": {
+                "value": "12"
+              },
+              "Filter_Architecture": {
+                "value": "Systolic_Multiply_Accumulate"
+              },
+              "Has_ACLKEN": {
+                "value": "false"
+              },
+              "Has_ARESETn": {
+                "value": "true"
+              },
+              "M_DATA_Has_TUSER": {
+                "value": "User_Field"
+              },
+              "Number_Paths": {
                 "value": "2"
+              },
+              "Output_Rounding_Mode": {
+                "value": "Truncate_LSBs"
+              },
+              "Output_Width": {
+                "value": "32"
+              },
+              "Quantization": {
+                "value": "Maximize_Dynamic_Range"
+              },
+              "S_DATA_Has_FIFO": {
+                "value": "false"
+              },
+              "S_DATA_Has_TUSER": {
+                "value": "User_Field"
+              },
+              "Sample_Frequency": {
+                "value": "48"
               }
             }
           },
-          "axis_subset_converter_1": {
-            "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
-            "xci_name": "bajie7020_axis_subset_converter_1_2",
-            "xci_path": "ip\\bajie7020_axis_subset_converter_1_2\\bajie7020_axis_subset_converter_1_2.xci",
-            "inst_hier_path": "fir_out/axis_subset_converter_1",
-            "parameters": {
-              "M_HAS_TKEEP": {
-                "value": "0"
+          "rfb_fir_out": {
+            "interface_ports": {
+              "S_AXIS": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
               },
-              "M_HAS_TLAST": {
-                "value": "0"
+              "M_AXIS": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              }
+            },
+            "ports": {
+              "s_axis_aclk": {
+                "type": "clk",
+                "direction": "I"
               },
-              "M_HAS_TREADY": {
-                "value": "1"
+              "s_axis_aresetn": {
+                "type": "rst",
+                "direction": "I"
               },
-              "M_HAS_TSTRB": {
-                "value": "0"
+              "m_axis_aclk": {
+                "type": "clk",
+                "direction": "I"
               },
-              "M_TDATA_NUM_BYTES": {
-                "value": "4"
+              "transfer_dropped": {
+                "direction": "O"
               },
-              "M_TDEST_WIDTH": {
-                "value": "0"
+              "s_axis_reset": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "components": {
+              "axis_subset_converter_1": {
+                "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
+                "xci_name": "bajie7020_axis_subset_converter_1_2",
+                "xci_path": "ip\\bajie7020_axis_subset_converter_1_2\\bajie7020_axis_subset_converter_1_2.xci",
+                "inst_hier_path": "rfb_fir/rfb_fir_out/axis_subset_converter_1",
+                "parameters": {
+                  "M_HAS_TKEEP": {
+                    "value": "0"
+                  },
+                  "M_HAS_TLAST": {
+                    "value": "1"
+                  },
+                  "M_HAS_TREADY": {
+                    "value": "1"
+                  },
+                  "M_HAS_TSTRB": {
+                    "value": "0"
+                  },
+                  "M_TDATA_NUM_BYTES": {
+                    "value": "8"
+                  },
+                  "M_TDEST_WIDTH": {
+                    "value": "0"
+                  },
+                  "M_TID_WIDTH": {
+                    "value": "0"
+                  },
+                  "M_TUSER_WIDTH": {
+                    "value": "0"
+                  },
+                  "S_HAS_TKEEP": {
+                    "value": "0"
+                  },
+                  "S_HAS_TLAST": {
+                    "value": "1"
+                  },
+                  "S_HAS_TREADY": {
+                    "value": "0"
+                  },
+                  "S_HAS_TSTRB": {
+                    "value": "0"
+                  },
+                  "S_TDATA_NUM_BYTES": {
+                    "value": "8"
+                  },
+                  "S_TDEST_WIDTH": {
+                    "value": "0"
+                  },
+                  "S_TID_WIDTH": {
+                    "value": "0"
+                  },
+                  "S_TUSER_WIDTH": {
+                    "value": "0"
+                  },
+                  "TDATA_REMAP": {
+                    "value": "tdata[63:0]"
+                  },
+                  "TLAST_REMAP": {
+                    "value": "tlast[0]"
+                  }
+                }
               },
-              "M_TID_WIDTH": {
-                "value": "0"
+              "axis_data_fifo_0": {
+                "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+                "xci_name": "bajie7020_axis_data_fifo_0_0",
+                "xci_path": "ip\\bajie7020_axis_data_fifo_0_0\\bajie7020_axis_data_fifo_0_0.xci",
+                "inst_hier_path": "rfb_fir/rfb_fir_out/axis_data_fifo_0",
+                "parameters": {
+                  "FIFO_DEPTH": {
+                    "value": "1024"
+                  },
+                  "HAS_TKEEP": {
+                    "value": "0"
+                  },
+                  "HAS_TLAST": {
+                    "value": "1"
+                  },
+                  "HAS_TSTRB": {
+                    "value": "0"
+                  },
+                  "IS_ACLK_ASYNC": {
+                    "value": "1"
+                  },
+                  "TDATA_NUM_BYTES": {
+                    "value": "8"
+                  },
+                  "TDEST_WIDTH": {
+                    "value": "2"
+                  },
+                  "TID_WIDTH": {
+                    "value": "0"
+                  },
+                  "TUSER_WIDTH": {
+                    "value": "0"
+                  }
+                }
               },
-              "M_TUSER_WIDTH": {
-                "value": "0"
+              "firoutmixer_0": {
+                "vlnv": "xilinx.com:module_ref:firoutmixer:1.0",
+                "xci_name": "bajie7020_firoutmixer_0_0",
+                "xci_path": "ip\\bajie7020_firoutmixer_0_0\\bajie7020_firoutmixer_0_0.xci",
+                "inst_hier_path": "rfb_fir/rfb_fir_out/firoutmixer_0",
+                "reference_info": {
+                  "ref_type": "hdl",
+                  "ref_name": "firoutmixer",
+                  "boundary_crc": "0x0"
+                },
+                "interface_ports": {
+                  "S_AXIS": {
+                    "mode": "Slave",
+                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                    "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+                    "parameters": {
+                      "TDATA_NUM_BYTES": {
+                        "value": "8",
+                        "value_src": "constant"
+                      },
+                      "TDEST_WIDTH": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "TID_WIDTH": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "TUSER_WIDTH": {
+                        "value": "1",
+                        "value_src": "constant"
+                      },
+                      "HAS_TREADY": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "HAS_TSTRB": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "HAS_TKEEP": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "HAS_TLAST": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "FREQ_HZ": {
+                        "value": "200000000",
+                        "value_src": "user_prop"
+                      },
+                      "CLK_DOMAIN": {
+                        "value": "bajie7020_processing_system7_0_0_FCLK_CLK1",
+                        "value_src": "default_prop"
+                      },
+                      "LAYERED_METADATA": {
+                        "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 64} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value path} size {attribs {resolve_type generated dependency path_size format long minimum {} maximum {}} value 2} stride {attribs {resolve_type generated dependency path_stride format long minimum {} maximum {}} value 32} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency out_width format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency out_fractwidth format long minimum {} maximum {}} value 19} signed {attribs {resolve_type generated dependency out_signed format bool minimum {} maximum {}} value true}}}}}}}}} TDATA_WIDTH 64 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 3} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_data_valid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data_valid} enabled {attribs {resolve_type generated dependency data_valid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency data_valid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency chanid_bitoffset format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_bitwidth format long minimum {} maximum {}} value 3} bitoffset {attribs {resolve_type generated dependency user_bitoffset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 3}",
+                        "value_src": "ip_prop"
+                      }
+                    },
+                    "port_maps": {
+                      "TDATA": {
+                        "physical_name": "s_axis_data",
+                        "direction": "I",
+                        "left": "63",
+                        "right": "0"
+                      },
+                      "TUSER": {
+                        "physical_name": "s_axis_user",
+                        "direction": "I",
+                        "left": "0",
+                        "right": "0"
+                      },
+                      "TVALID": {
+                        "physical_name": "s_axis_valid",
+                        "direction": "I"
+                      }
+                    }
+                  },
+                  "M_AXIS": {
+                    "mode": "Master",
+                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                    "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+                    "parameters": {
+                      "TDATA_NUM_BYTES": {
+                        "value": "8",
+                        "value_src": "constant"
+                      },
+                      "TDEST_WIDTH": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "TID_WIDTH": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "TUSER_WIDTH": {
+                        "value": "1",
+                        "value_src": "constant"
+                      },
+                      "HAS_TREADY": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "HAS_TSTRB": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "HAS_TKEEP": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "HAS_TLAST": {
+                        "value": "0",
+                        "value_src": "constant"
+                      },
+                      "FREQ_HZ": {
+                        "value": "200000000",
+                        "value_src": "user_prop"
+                      },
+                      "CLK_DOMAIN": {
+                        "value": "bajie7020_processing_system7_0_0_FCLK_CLK1",
+                        "value_src": "default_prop"
+                      }
+                    },
+                    "port_maps": {
+                      "TDATA": {
+                        "physical_name": "m_axis_data",
+                        "direction": "O",
+                        "left": "63",
+                        "right": "0"
+                      },
+                      "TUSER": {
+                        "physical_name": "m_axis_last",
+                        "direction": "O"
+                      },
+                      "TVALID": {
+                        "physical_name": "m_axis_valid",
+                        "direction": "O"
+                      }
+                    }
+                  }
+                },
+                "ports": {
+                  "clk": {
+                    "type": "clk",
+                    "direction": "I",
+                    "parameters": {
+                      "ASSOCIATED_BUSIF": {
+                        "value": "M_AXIS:S_AXIS",
+                        "value_src": "constant"
+                      },
+                      "ASSOCIATED_RESET": {
+                        "value": "reset",
+                        "value_src": "constant"
+                      },
+                      "FREQ_HZ": {
+                        "value": "200000000",
+                        "value_src": "user_prop"
+                      },
+                      "CLK_DOMAIN": {
+                        "value": "bajie7020_processing_system7_0_0_FCLK_CLK1",
+                        "value_src": "default_prop"
+                      }
+                    }
+                  },
+                  "reset": {
+                    "type": "rst",
+                    "direction": "I",
+                    "parameters": {
+                      "POLARITY": {
+                        "value": "ACTIVE_HIGH",
+                        "value_src": "constant"
+                      }
+                    }
+                  },
+                  "sample_n": {
+                    "direction": "O",
+                    "left": "15",
+                    "right": "0"
+                  },
+                  "sample_ln": {
+                    "direction": "O",
+                    "left": "3",
+                    "right": "0"
+                  },
+                  "sample_active": {
+                    "direction": "O"
+                  },
+                  "sample_valid": {
+                    "direction": "O"
+                  },
+                  "sample_begin": {
+                    "direction": "O"
+                  },
+                  "sample_last": {
+                    "direction": "O"
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "Conn1": {
+                "interface_ports": [
+                  "M_AXIS",
+                  "axis_data_fifo_0/M_AXIS"
+                ]
               },
-              "S_HAS_TKEEP": {
-                "value": "0"
+              "axis_subset_converter_1_M_AXIS": {
+                "interface_ports": [
+                  "axis_data_fifo_0/S_AXIS",
+                  "axis_subset_converter_1/M_AXIS"
+                ]
               },
-              "S_HAS_TLAST": {
-                "value": "0"
+              "fir_compiler_0_M_AXIS_DATA": {
+                "interface_ports": [
+                  "S_AXIS",
+                  "firoutmixer_0/S_AXIS"
+                ]
               },
-              "S_HAS_TREADY": {
-                "value": "0"
+              "firoutmixer_0_M_AXIS": {
+                "interface_ports": [
+                  "firoutmixer_0/M_AXIS",
+                  "axis_subset_converter_1/S_AXIS"
+                ]
+              }
+            },
+            "nets": {
+              "axis_subset_converter_1_transfer_dropped": {
+                "ports": [
+                  "axis_subset_converter_1/transfer_dropped",
+                  "transfer_dropped"
+                ]
               },
-              "S_HAS_TSTRB": {
-                "value": "0"
+              "proc_sys_reset_rfb_288M_peripheral_aresetn": {
+                "ports": [
+                  "s_axis_aresetn",
+                  "axis_data_fifo_0/s_axis_aresetn",
+                  "axis_subset_converter_1/aresetn"
+                ]
               },
-              "S_TDATA_NUM_BYTES": {
-                "value": "4"
+              "processing_system7_0_FCLK_CLK0": {
+                "ports": [
+                  "m_axis_aclk",
+                  "axis_data_fifo_0/m_axis_aclk"
+                ]
               },
-              "S_TDEST_WIDTH": {
-                "value": "0"
+              "processing_system7_0_FCLK_CLK1": {
+                "ports": [
+                  "s_axis_aclk",
+                  "axis_data_fifo_0/s_axis_aclk",
+                  "axis_subset_converter_1/aclk",
+                  "firoutmixer_0/clk"
+                ]
               },
-              "S_TID_WIDTH": {
-                "value": "0"
+              "reset_1": {
+                "ports": [
+                  "s_axis_reset",
+                  "firoutmixer_0/reset"
+                ]
+              }
+            }
+          },
+          "rfb_fir_in": {
+            "interface_ports": {
+              "S_AXIS": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
               },
-              "S_TUSER_WIDTH": {
-                "value": "0"
+              "M_AXIS": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              }
+            },
+            "ports": {
+              "s_axis_aclk": {
+                "type": "clk",
+                "direction": "I"
               },
-              "TDATA_REMAP": {
-                "value": "tdata[31:0]"
+              "s_axis_aresetn": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "m_axis_aclk": {
+                "type": "clk",
+                "direction": "I"
+              }
+            },
+            "components": {
+              "axis_subset_converter_0": {
+                "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
+                "xci_name": "bajie7020_axis_subset_converter_0_2",
+                "xci_path": "ip\\bajie7020_axis_subset_converter_0_2\\bajie7020_axis_subset_converter_0_2.xci",
+                "inst_hier_path": "rfb_fir/rfb_fir_in/axis_subset_converter_0",
+                "parameters": {
+                  "M_HAS_TKEEP": {
+                    "value": "0"
+                  },
+                  "M_HAS_TLAST": {
+                    "value": "0"
+                  },
+                  "M_HAS_TREADY": {
+                    "value": "1"
+                  },
+                  "M_HAS_TSTRB": {
+                    "value": "0"
+                  },
+                  "M_TDATA_NUM_BYTES": {
+                    "value": "4"
+                  },
+                  "M_TDEST_WIDTH": {
+                    "value": "0"
+                  },
+                  "M_TID_WIDTH": {
+                    "value": "0"
+                  },
+                  "M_TUSER_WIDTH": {
+                    "value": "1"
+                  },
+                  "S_HAS_TKEEP": {
+                    "value": "0"
+                  },
+                  "S_HAS_TLAST": {
+                    "value": "0"
+                  },
+                  "S_HAS_TREADY": {
+                    "value": "0"
+                  },
+                  "S_HAS_TSTRB": {
+                    "value": "0"
+                  },
+                  "S_TDATA_NUM_BYTES": {
+                    "value": "3"
+                  },
+                  "S_TDEST_WIDTH": {
+                    "value": "0"
+                  },
+                  "S_TID_WIDTH": {
+                    "value": "0"
+                  },
+                  "S_TUSER_WIDTH": {
+                    "value": "1"
+                  },
+                  "TDATA_REMAP": {
+                    "value": "4'b0000,tdata[23:12],4'b0000,tdata[11:0]"
+                  },
+                  "TKEEP_REMAP": {
+                    "value": "1'b0"
+                  },
+                  "TLAST_REMAP": {
+                    "value": "1'b0"
+                  },
+                  "TUSER_REMAP": {
+                    "value": "tuser[0:0]"
+                  }
+                }
+              },
+              "axis_data_fifo_1": {
+                "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+                "xci_name": "bajie7020_axis_data_fifo_1_0",
+                "xci_path": "ip\\bajie7020_axis_data_fifo_1_0\\bajie7020_axis_data_fifo_1_0.xci",
+                "inst_hier_path": "rfb_fir/rfb_fir_in/axis_data_fifo_1",
+                "parameters": {
+                  "FIFO_DEPTH": {
+                    "value": "16"
+                  },
+                  "FIFO_MEMORY_TYPE": {
+                    "value": "auto"
+                  },
+                  "IS_ACLK_ASYNC": {
+                    "value": "1"
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "axis_data_fifo_1_M_AXIS": {
+                "interface_ports": [
+                  "M_AXIS",
+                  "axis_data_fifo_1/M_AXIS"
+                ]
+              },
+              "axis_subset_converter_0_M_AXIS": {
+                "interface_ports": [
+                  "axis_data_fifo_1/S_AXIS",
+                  "axis_subset_converter_0/M_AXIS"
+                ]
+              },
+              "rfbdes_0_M_AXIS": {
+                "interface_ports": [
+                  "S_AXIS",
+                  "axis_subset_converter_0/S_AXIS"
+                ]
+              }
+            },
+            "nets": {
+              "proc_sys_reset_rfb_fclk_peripheral_aresetn": {
+                "ports": [
+                  "s_axis_aresetn",
+                  "axis_data_fifo_1/s_axis_aresetn",
+                  "axis_subset_converter_0/aresetn"
+                ]
+              },
+              "processing_system7_0_FCLK_CLK1": {
+                "ports": [
+                  "m_axis_aclk",
+                  "axis_data_fifo_1/m_axis_aclk"
+                ]
+              },
+              "util_ds_buf_rfb_fclk_IBUF_OUT": {
+                "ports": [
+                  "s_axis_aclk",
+                  "axis_data_fifo_1/s_axis_aclk",
+                  "axis_subset_converter_0/aclk"
+                ]
               }
             }
           }
         },
         "interface_nets": {
-          "axis_subset_converter_1_M_AXIS": {
+          "Conn1": {
             "interface_ports": [
               "M_AXIS",
-              "axis_subset_converter_1/M_AXIS"
+              "rfb_fir_out/M_AXIS"
+            ]
+          },
+          "axis_data_fifo_1_M_AXIS": {
+            "interface_ports": [
+              "rfb_fir_in/M_AXIS",
+              "fir_compiler_0/S_AXIS_DATA"
+            ]
+          },
+          "fir_compiler_0_M_AXIS_DATA": {
+            "interface_ports": [
+              "fir_compiler_0/M_AXIS_DATA",
+              "rfb_fir_out/S_AXIS"
+            ]
+          },
+          "rfbdes_0_M_AXIS": {
+            "interface_ports": [
+              "S_AXIS",
+              "rfb_fir_in/S_AXIS"
             ]
           }
         },
         "nets": {
-          "clk_wiz_0_clk_196M": {
-            "ports": [
-              "aclk",
-              "axis_subset_converter_1/aclk"
-            ]
-          },
-          "fir_compiler_0_m_axis_data_tdata": {
-            "ports": [
-              "s_axis_tdata",
-              "axis_subset_converter_1/s_axis_tdata"
-            ]
-          },
-          "fir_compiler_0_m_axis_data_tuser": {
-            "ports": [
-              "s_axis_data_tvalid",
-              "xlconcat_1/In0"
-            ]
-          },
-          "fir_compiler_0_m_axis_data_tvalid": {
-            "ports": [
-              "s_axis_data_tuser",
-              "xlconcat_1/In1"
-            ]
-          },
           "proc_sys_reset_rfb_288M_peripheral_aresetn": {
             "ports": [
-              "aresetn",
-              "axis_subset_converter_1/aresetn"
+              "fir_aresetn",
+              "rfb_fir_out/s_axis_aresetn",
+              "fir_compiler_0/aresetn"
             ]
           },
-          "util_reduced_logic_0_Res": {
+          "proc_sys_reset_rfb_fclk_peripheral_aresetn": {
             "ports": [
-              "util_reduced_logic_0/Res",
-              "axis_subset_converter_1/s_axis_tvalid"
+              "s_axis_aresetn",
+              "rfb_fir_in/s_axis_aresetn"
             ]
           },
-          "xlconcat_1_dout": {
+          "processing_system7_0_FCLK_CLK0": {
             "ports": [
-              "xlconcat_1/dout",
-              "util_reduced_logic_0/Op1"
+              "m_axis_aclk",
+              "rfb_fir_out/m_axis_aclk"
             ]
+          },
+          "processing_system7_0_FCLK_CLK1": {
+            "ports": [
+              "fir_aclk",
+              "rfb_fir_in/m_axis_aclk",
+              "rfb_fir_out/s_axis_aclk",
+              "fir_compiler_0/aclk"
+            ]
+          },
+          "reset_1": {
+            "ports": [
+              "fir_reset",
+              "rfb_fir_out/s_axis_reset"
+            ]
+          },
+          "rfb_fir_out_transfer_dropped_0": {
+            "ports": [
+              "rfb_fir_out/transfer_dropped",
+              "transfer_dropped"
+            ]
+          },
+          "util_ds_buf_rfb_fclk_IBUF_OUT": {
+            "ports": [
+              "s_axis_aclk",
+              "rfb_fir_in/s_axis_aclk"
+            ]
+          }
+        }
+      },
+      "xlconstant_32_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "bajie7020_xlconstant_0_3",
+        "xci_path": "ip\\bajie7020_xlconstant_0_3\\bajie7020_xlconstant_0_3.xci",
+        "inst_hier_path": "xlconstant_32_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "32"
           }
         }
       },
@@ -3670,7 +4046,7 @@
                 "value_src": "constant"
               },
               "TUSER_WIDTH": {
-                "value": "0",
+                "value": "1",
                 "value_src": "constant"
               },
               "HAS_TREADY": {
@@ -3688,17 +4064,27 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "48000000",
+                "value_src": "constant"
               }
             },
             "port_maps": {
               "TDATA": {
-                "physical_name": "rfb_axis_data",
+                "physical_name": "RFB_AXIS_DATA",
                 "direction": "O",
                 "left": "23",
                 "right": "0"
               },
+              "TUSER": {
+                "physical_name": "RFB_AXIS_USER",
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
               "TVALID": {
-                "physical_name": "rfb_axis_valid",
+                "physical_name": "RFB_AXIS_VALID",
                 "direction": "O"
               }
             }
@@ -3713,7 +4099,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "288000000",
+                "value": "144000000",
                 "value_src": "constant"
               }
             },
@@ -3794,7 +4180,7 @@
                 "value_src": "constant"
               },
               "ASSOCIATED_RESET": {
-                "value": "reset",
+                "value": "des_reset",
                 "value_src": "constant"
               },
               "FREQ_HZ": {
@@ -3810,10 +4196,24 @@
               "FREQ_HZ": {
                 "value": "200000000",
                 "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "bajie7020_processing_system7_0_0_FCLK_CLK1",
+                "value_src": "default_prop"
               }
             }
           },
-          "areset": {
+          "des_reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "iod_reset": {
             "type": "rst",
             "direction": "I",
             "parameters": {
@@ -3824,9 +4224,80 @@
             }
           }
         }
+      },
+      "axis_subset_converter_0": {
+        "vlnv": "xilinx.com:ip:axis_subset_converter:1.1",
+        "xci_name": "bajie7020_axis_subset_converter_0_3",
+        "xci_path": "ip\\bajie7020_axis_subset_converter_0_3\\bajie7020_axis_subset_converter_0_3.xci",
+        "inst_hier_path": "axis_subset_converter_0",
+        "parameters": {
+          "M_HAS_TKEEP": {
+            "value": "1"
+          },
+          "M_HAS_TLAST": {
+            "value": "1"
+          },
+          "M_HAS_TREADY": {
+            "value": "1"
+          },
+          "M_HAS_TSTRB": {
+            "value": "0"
+          },
+          "M_TDATA_NUM_BYTES": {
+            "value": "8"
+          },
+          "M_TDEST_WIDTH": {
+            "value": "0"
+          },
+          "M_TID_WIDTH": {
+            "value": "0"
+          },
+          "M_TUSER_WIDTH": {
+            "value": "0"
+          },
+          "S_HAS_TKEEP": {
+            "value": "0"
+          },
+          "S_HAS_TLAST": {
+            "value": "1"
+          },
+          "S_HAS_TREADY": {
+            "value": "1"
+          },
+          "S_HAS_TSTRB": {
+            "value": "0"
+          },
+          "S_TDATA_NUM_BYTES": {
+            "value": "8"
+          },
+          "S_TDEST_WIDTH": {
+            "value": "0"
+          },
+          "S_TID_WIDTH": {
+            "value": "0"
+          },
+          "S_TUSER_WIDTH": {
+            "value": "0"
+          },
+          "TDATA_REMAP": {
+            "value": "tdata[63:0]"
+          },
+          "TKEEP_REMAP": {
+            "value": "8'b11111111"
+          },
+          "TLAST_REMAP": {
+            "value": "tlast[0]"
+          }
+        }
       }
     },
     "interface_nets": {
+      "RFB_0_1": {
+        "interface_ports": [
+          "RFB_DATA",
+          "rfbdes_0/RFB"
+        ]
+      },
       "RFB_DCLK_1": {
         "interface_ports": [
           "RFB_DCLK",
@@ -3843,6 +4314,12 @@
         "interface_ports": [
           "axi_interconnect_gp0/S00_AXI",
           "processing_system7_0/M_AXI_GP0"
+        ]
+      },
+      "S00_AXI_2": {
+        "interface_ports": [
+          "axi_interconnect_hp0/S00_AXI",
+          "rfb_axi_dma/M_AXI_S2MM"
         ]
       },
       "axi_dma_1_M_AXIS_MM2S": {
@@ -3883,38 +4360,14 @@
       },
       "axi_mem_intercon_M00_AXI": {
         "interface_ports": [
-          "axi_mem_intercon/M00_AXI",
+          "axi_interconnect_hp0/M00_AXI",
           "processing_system7_0/S_AXI_HP0"
-        ]
-      },
-      "axis_data_fifo_0_M_AXIS": {
-        "interface_ports": [
-          "rfb_axi_dma/S_AXIS_S2MM",
-          "axis_data_fifo_0/M_AXIS"
-        ]
-      },
-      "axis_data_fifo_1_M_AXIS": {
-        "interface_ports": [
-          "axis_data_fifo_1/M_AXIS",
-          "fir_compiler_0/S_AXIS_DATA"
         ]
       },
       "axis_subset_converter_0_M_AXIS": {
         "interface_ports": [
-          "axis_data_fifo_1/S_AXIS",
+          "rfb_axi_dma/S_AXIS_S2MM",
           "axis_subset_converter_0/M_AXIS"
-        ]
-      },
-      "axis_subset_converter_1_M_AXIS": {
-        "interface_ports": [
-          "axis_data_fifo_0/S_AXIS",
-          "fir_out/M_AXIS"
-        ]
-      },
-      "hdmi_axi_dma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "rfb_axi_dma/M_AXI_S2MM",
-          "axi_mem_intercon/S00_AXI"
         ]
       },
       "processing_system7_0_CAN_0": {
@@ -3935,10 +4388,16 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
+      "rfb_fir_M_AXIS": {
+        "interface_ports": [
+          "axis_subset_converter_0/S_AXIS",
+          "rfb_fir/M_AXIS"
+        ]
+      },
       "rfbdes_0_M_AXIS": {
         "interface_ports": [
           "rfbdes_0/M_AXIS",
-          "axis_subset_converter_0/S_AXIS"
+          "rfb_fir/S_AXIS"
         ]
       },
       "xfft_0_M_AXIS_DATA": {
@@ -3953,18 +4412,6 @@
         "ports": [
           "RFB_DATAVALID",
           "rfbdes_0/RFB_DATAVALID"
-        ]
-      },
-      "RFB_DATA_N_1": {
-        "ports": [
-          "RFB_DATA_N",
-          "rfbdes_0/RFB_DATA_N"
-        ]
-      },
-      "RFB_DATA_P_1": {
-        "ports": [
-          "RFB_DATA_P",
-          "rfbdes_0/RFB_DATA_P"
         ]
       },
       "axi_dma_1_mm2s_introut": {
@@ -3991,40 +4438,6 @@
           "axi_interconnect_acp/S01_ARESETN"
         ]
       },
-      "clk_wiz_0_clk_196M": {
-        "ports": [
-          "clk_wiz_0/clk_196M",
-          "proc_sys_reset_rfb_288M/slowest_sync_clk",
-          "axis_data_fifo_1/m_axis_aclk",
-          "fir_compiler_0/aclk",
-          "axis_data_fifo_0/s_axis_aclk",
-          "fir_out/aclk"
-        ]
-      },
-      "clk_wiz_0_locked": {
-        "ports": [
-          "clk_wiz_0/locked",
-          "proc_sys_reset_rfb_288M/dcm_locked"
-        ]
-      },
-      "fir_compiler_0_m_axis_data_tdata": {
-        "ports": [
-          "fir_compiler_0/m_axis_data_tdata",
-          "fir_out/s_axis_tdata"
-        ]
-      },
-      "fir_compiler_0_m_axis_data_tuser": {
-        "ports": [
-          "fir_compiler_0/m_axis_data_tuser",
-          "fir_out/s_axis_data_tvalid"
-        ]
-      },
-      "fir_compiler_0_m_axis_data_tvalid": {
-        "ports": [
-          "fir_compiler_0/m_axis_data_tvalid",
-          "fir_out/s_axis_data_tuser"
-        ]
-      },
       "hdmi_axi_dma_0_s2mm_introut": {
         "ports": [
           "rfb_axi_dma/s2mm_introut",
@@ -4034,29 +4447,25 @@
       "hdmi_axi_dma_0_s2mm_prmry_reset_out_n": {
         "ports": [
           "rfb_axi_dma/s2mm_prmry_reset_out_n",
-          "axi_mem_intercon/S00_ARESETN"
+          "axi_interconnect_hp0/S00_ARESETN"
         ]
       },
       "proc_sys_reset_rfb_288M_peripheral_aresetn": {
         "ports": [
-          "proc_sys_reset_rfb_288M/peripheral_aresetn",
-          "fir_compiler_0/aresetn",
-          "axis_data_fifo_0/s_axis_aresetn",
-          "fir_out/aresetn"
+          "rst_ps7_0_200M/peripheral_aresetn",
+          "rfb_fir/fir_aresetn"
         ]
       },
       "proc_sys_reset_rfb_fclk_peripheral_aresetn": {
         "ports": [
           "proc_sys_reset_rfb_fclk/peripheral_aresetn",
-          "proc_sys_reset_rfb_288M/ext_reset_in",
-          "axis_subset_converter_0/aresetn",
-          "axis_data_fifo_1/s_axis_aresetn"
+          "rfb_fir/s_axis_aresetn"
         ]
       },
       "proc_sys_reset_rfb_fclk_peripheral_reset": {
         "ports": [
           "proc_sys_reset_rfb_fclk/peripheral_reset",
-          "clk_wiz_0/reset"
+          "rfbdes_0/des_reset"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -4078,17 +4487,20 @@
           "rfb_axi_dma/s_axi_lite_aclk",
           "axi_interconnect_gp0/S00_ACLK",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "axi_mem_intercon/ACLK",
-          "axi_mem_intercon/M00_ACLK",
-          "processing_system7_0/S_AXI_HP0_ACLK",
-          "axi_mem_intercon/S00_ACLK",
+          "rfb_fir/m_axis_aclk",
           "rfb_axi_dma/m_axi_s2mm_aclk",
-          "axis_data_fifo_0/m_axis_aclk"
+          "axi_interconnect_hp0/S00_ACLK",
+          "axi_interconnect_hp0/ACLK",
+          "axi_interconnect_hp0/M00_ACLK",
+          "processing_system7_0/S_AXI_HP0_ACLK",
+          "axis_subset_converter_0/aclk"
         ]
       },
       "processing_system7_0_FCLK_CLK1": {
         "ports": [
           "processing_system7_0/FCLK_CLK1",
+          "rst_ps7_0_200M/slowest_sync_clk",
+          "rfb_fir/fir_aclk",
           "rfbdes_0/idelay_refclk"
         ]
       },
@@ -4098,10 +4510,10 @@
           "rst_ps7_0_133M/ext_reset_in"
         ]
       },
-      "rst_ps7_0_133M_peripheral_reset": {
+      "rfb_fir_transfer_dropped": {
         "ports": [
-          "rst_ps7_0_133M/peripheral_reset",
-          "rfbdes_0/areset"
+          "rfb_fir/transfer_dropped",
+          "xlconcat_0/In3"
         ]
       },
       "rst_ps7_0_160M_peripheral_aresetn": {
@@ -4116,18 +4528,25 @@
           "axi_interconnect_gp0/M00_ARESETN",
           "rfb_axi_dma/axi_resetn",
           "axi_interconnect_gp0/S00_ARESETN",
-          "axi_mem_intercon/ARESETN",
-          "axi_mem_intercon/M00_ARESETN",
-          "proc_sys_reset_rfb_fclk/ext_reset_in"
+          "proc_sys_reset_rfb_fclk/ext_reset_in",
+          "rst_ps7_0_200M/ext_reset_in",
+          "axi_interconnect_hp0/ARESETN",
+          "axi_interconnect_hp0/M00_ARESETN",
+          "axis_subset_converter_0/aresetn"
+        ]
+      },
+      "rst_ps7_0_200M_peripheral_reset": {
+        "ports": [
+          "rst_ps7_0_200M/peripheral_reset",
+          "rfbdes_0/iod_reset",
+          "rfb_fir/fir_reset"
         ]
       },
       "util_ds_buf_rfb_fclk_IBUF_OUT": {
         "ports": [
           "rfbdes_0/RFB_AXIS_CLK",
-          "clk_wiz_0/clk_in1",
-          "axis_subset_converter_0/aclk",
-          "axis_data_fifo_1/s_axis_aclk",
-          "proc_sys_reset_rfb_fclk/slowest_sync_clk"
+          "proc_sys_reset_rfb_fclk/slowest_sync_clk",
+          "rfb_fir/s_axis_aclk"
         ]
       },
       "xfft_0_s_axis_config_tready": {

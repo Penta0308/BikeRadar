@@ -30,6 +30,8 @@ extern "C" {
 
 /* USER CODE BEGIN Includes */
 
+#include <math.h>
+
 /* USER CODE END Includes */
 
 extern SPI_HandleTypeDef hspi2;
@@ -44,12 +46,13 @@ extern const uint8_t TIPLL_POSTR;
 extern const float TIPLL_FPD;
 extern uint8_t TIPLL_DENQ;
 
+#define RFBPllDataLen			2
 
 #define RFBPllData_SweepLow		0u
 #define RFBPllData_SweepHigh	1u
-#define RFBPllData_SweepDur		2u
+//#define RFBPllData_SweepDur		2u
 
-extern uint32_t RFBPllData[3];
+extern uint32_t RFBPllData[RFBPllDataLen];
 
 
 #define SPIInitTiAdcW_GenH(addr, value) (0b01000000 | (0b00111111 & (uint8_t)((addr) >> 6)))

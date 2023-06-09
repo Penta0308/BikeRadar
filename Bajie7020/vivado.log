@@ -308,3 +308,1360 @@ WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /pr
 WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
 WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
 WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.083 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.083 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.083 MB.
+[Mon Jun  5 16:54:54 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Mon Jun  5 16:54:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:31 ; elapsed = 00:01:44 . Memory (MB): peak = 3284.461 ; gain = 0.000
+regenerate_bd_layout
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3330.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3330.918 ; gain = 0.000
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3330.918 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:36 . Memory (MB): peak = 3330.918 ; gain = 46.457
+open_report: Time (s): cpu = 00:00:39 ; elapsed = 00:00:32 . Memory (MB): peak = 3428.242 ; gain = 97.324
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+open_bd_design {C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd}
+save_constraints
+close_design
+close_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3639.078 ; gain = 191.051
+delete_bd_objs [get_bd_nets RFB_DATA_P_1] [get_bd_ports RFB_DATA_P]
+delete_bd_objs [get_bd_nets RFB_DATA_N_1] [get_bd_ports RFB_DATA_N]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rfbdes_0/RFB]
+endgroup
+set_property name RFB_DAAT [get_bd_intf_ports RFB_0]
+set_property name RFB_DATA [get_bd_intf_ports RFB_DAAT]
+save_bd_design
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+launch_runs synth_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.160 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.160 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.160 MB.
+[Mon Jun  5 17:20:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 3644.359 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axis_data_fifo_0_0/bajie7020_axis_data_fifo_0_0.dcp' for cell 'bajie7020_i/axis_data_fifo_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axis_data_fifo_1_0/bajie7020_axis_data_fifo_1_0.dcp' for cell 'bajie7020_i/axis_data_fifo_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axis_subset_converter_0_2/bajie7020_axis_subset_converter_0_2.dcp' for cell 'bajie7020_i/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1.dcp' for cell 'bajie7020_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_fir_compiler_0_0/bajie7020_fir_compiler_0_0.dcp' for cell 'bajie7020_i/fir_compiler_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_1/bajie7020_proc_sys_reset_0_1.dcp' for cell 'bajie7020_i/proc_sys_reset_rfb_288M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_0/bajie7020_proc_sys_reset_0_0.dcp' for cell 'bajie7020_i/proc_sys_reset_rfb_fclk'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_processing_system7_0_0/bajie7020_processing_system7_0_0.dcp' for cell 'bajie7020_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2.dcp' for cell 'bajie7020_i/rfb_axi_dma'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_rfbdes_0_0/bajie7020_rfbdes_0_0.dcp' for cell 'bajie7020_i/rfbdes_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_rst_ps7_0_200M_0/bajie7020_rst_ps7_0_200M_0.dcp' for cell 'bajie7020_i/rst_ps7_0_133M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_xfft_0_0/bajie7020_xfft_0_0.dcp' for cell 'bajie7020_i/xfft_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1.dcp' for cell 'bajie7020_i/xfft_axi_dma'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_xbar_4/bajie7020_xbar_4.dcp' for cell 'bajie7020_i/axi_interconnect_acp/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1.dcp' for cell 'bajie7020_i/axi_interconnect_acp/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_xbar_3/bajie7020_xbar_3.dcp' for cell 'bajie7020_i/axi_interconnect_gp0/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0.dcp' for cell 'bajie7020_i/axi_interconnect_gp0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2.dcp' for cell 'bajie7020_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axis_subset_converter_1_2/bajie7020_axis_subset_converter_1_2.dcp' for cell 'bajie7020_i/fir_out/axis_subset_converter_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_util_reduced_logic_0_1/bajie7020_util_reduced_logic_0_1.dcp' for cell 'bajie7020_i/fir_out/util_reduced_logic_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3644.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 595 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_processing_system7_0_0/bajie7020_processing_system7_0_0.xdc] for cell 'bajie7020_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.224970 which will be rounded to 0.225 to ensure it is an integer multiple of 1 picosecond [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_processing_system7_0_0/bajie7020_processing_system7_0_0.xdc:24]
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_processing_system7_0_0/bajie7020_processing_system7_0_0.xdc] for cell 'bajie7020_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_rst_ps7_0_200M_0/bajie7020_rst_ps7_0_200M_0_board.xdc] for cell 'bajie7020_i/rst_ps7_0_133M/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_rst_ps7_0_200M_0/bajie7020_rst_ps7_0_200M_0_board.xdc] for cell 'bajie7020_i/rst_ps7_0_133M/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_rst_ps7_0_200M_0/bajie7020_rst_ps7_0_200M_0.xdc] for cell 'bajie7020_i/rst_ps7_0_133M/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_rst_ps7_0_200M_0/bajie7020_rst_ps7_0_200M_0.xdc] for cell 'bajie7020_i/rst_ps7_0_133M/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1.xdc] for cell 'bajie7020_i/xfft_axi_dma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1.xdc:61]
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1.xdc] for cell 'bajie7020_i/xfft_axi_dma/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2.xdc] for cell 'bajie7020_i/rfb_axi_dma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2.xdc:61]
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2.xdc] for cell 'bajie7020_i/rfb_axi_dma/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_0/bajie7020_proc_sys_reset_0_0_board.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_fclk/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_0/bajie7020_proc_sys_reset_0_0_board.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_fclk/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_0/bajie7020_proc_sys_reset_0_0.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_fclk/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_0/bajie7020_proc_sys_reset_0_0.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_fclk/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'bajie7020_i/fir_compiler_0/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'bajie7020_i/fir_compiler_0/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1_board.xdc] for cell 'bajie7020_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1_board.xdc] for cell 'bajie7020_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1.xdc] for cell 'bajie7020_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1.xdc] for cell 'bajie7020_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_1/bajie7020_proc_sys_reset_0_1_board.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_288M/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_1/bajie7020_proc_sys_reset_0_1_board.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_288M/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_1/bajie7020_proc_sys_reset_0_1.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_288M/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_proc_sys_reset_0_1/bajie7020_proc_sys_reset_0_1.xdc] for cell 'bajie7020_i/proc_sys_reset_rfb_288M/U0'
+Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc]
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[0]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[0]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[1]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[1]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[2]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[2]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[3]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[3]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[0]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[0]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[1]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[1]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[2]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[2]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[3]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_N[3]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[*]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:62]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {RFB_DATA_P[*]}]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:62]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[*]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:63]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {RFB_DATA_P[*]}]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:63]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[*]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:64]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {RFB_DATA_P[*]}]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:64]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'RFB_DATA_P[*]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:65]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {RFB_DATA_P[*]}]'. [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc:65]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/bajie7020.xdc]
+Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/hdmi_in.xdc]
+Finished Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/hdmi_in.xdc]
+Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/linux_base.xdc]
+Finished Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/linux_base.xdc]
+Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/led.xdc]
+Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/key.xdc]
+Finished Parsing XDC File [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/constrs_1/new/key.xdc]
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1_clocks.xdc] for cell 'bajie7020_i/xfft_axi_dma/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_1_1/bajie7020_axi_dma_1_1_clocks.xdc] for cell 'bajie7020_i/xfft_axi_dma/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2_clocks.xdc] for cell 'bajie7020_i/rfb_axi_dma/U0'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_axi_dma_0_2/bajie7020_axi_dma_0_2_clocks.xdc] for cell 'bajie7020_i/rfb_axi_dma/U0'
+Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1_late.xdc] for cell 'bajie7020_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_clk_wiz_0_1/bajie7020_clk_wiz_0_1_late.xdc] for cell 'bajie7020_i/clk_wiz_0/inst'
+INFO: [Project 1-1714] 26 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.036 . Memory (MB): peak = 3644.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+open_run: Time (s): cpu = 00:00:49 ; elapsed = 00:00:43 . Memory (MB): peak = 3644.359 ; gain = 0.000
+place_ports {RFB_DATA_data_p[3]} T20
+set_property package_pin "" [get_ports [list  {RFB_DATA_data_p[1]}]]
+place_ports {RFB_DATA_data_p[2]} V20
+place_ports {RFB_DATA_data_p[1]} T17
+place_ports {RFB_DATA_data_p[0]} T16
+save_constraints
+set_property OFFCHIP_TERM NONE [get_ports [list {RFB_DATA_data_p[3]} {RFB_DATA_data_p[2]} {RFB_DATA_data_p[1]} {RFB_DATA_data_p[0]}]]
+set_property PULLTYPE NONE [get_ports [list {RFB_DATA_data_p[3]} {RFB_DATA_data_p[2]} {RFB_DATA_data_p[1]} {RFB_DATA_data_p[0]}]]
+save_constraints
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Jun  5 17:25:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Mon Jun  5 17:25:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+startgroup
+create_interface RFB
+set_property interface RFB [get_ports [list  {RFB_DCLK_clk_p[0]} {RFB_DCLK_clk_n[0]} {RFB_DATA_data_p[3]} {RFB_DATA_data_p[2]} {RFB_DATA_data_p[1]} {RFB_DATA_data_p[0]} {RFB_DATA_data_n[3]} {RFB_DATA_data_n[2]} {RFB_DATA_data_n[1]} {RFB_DATA_data_n[0]} {RFB_FCLK_clk_p[0]} {RFB_FCLK_clk_n[0]}]]
+endgroup
+save_constraints -force
+startgroup
+delete_interface RFB_44591
+delete_interface RFB_DCLK_3633
+delete_interface RFB_FCLK_3633
+endgroup
+save_constraints -force
+set_property interface RFB [get_ports [list  RFB_DATAVALID]]
+save_constraints -force
+close_design
+close_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3644.359 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1
+
+regenerate_bd_layout
+launch_runs impl_1 -jobs 2
+[Mon Jun  5 17:30:09 2023] Launched synth_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Mon Jun  5 17:30:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3644.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3644.359 ; gain = 0.000
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3644.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3644.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 3644.359 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3644.359 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+close_design
+close_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3661.102 ; gain = 0.000
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '24000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'areset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '24000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3155] Bus Interface 'RFB_AXIS_CLK': ASSOCIATED_RESET port 'reset' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+update_module_reference: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3661.102 ; gain = 0.000
+set_property -dict [list CONFIG.FREQ_HZ {144000000}] [get_bd_intf_ports RFB_DCLK]
+set_property -dict [list CONFIG.FREQ_HZ {24000000}] [get_bd_intf_ports RFB_FCLK]
+set_property -dict [list CONFIG.FREQ_HZ {48000000}] [get_bd_intf_ports RFB_FCLK]
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'areset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3155] Bus Interface 'RFB_AXIS_CLK': ASSOCIATED_RESET port 'reset' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'areset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3155] Bus Interface 'RFB_AXIS_CLK': ASSOCIATED_RESET port 'reset' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+launch_runs impl_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.160 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.160 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.160 MB.
+[Mon Jun  5 19:07:42 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Mon Jun  5 19:07:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 3661.102 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Mon Jun  5 22:34:37 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'areset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3155] Bus Interface 'RFB_AXIS_CLK': ASSOCIATED_RESET port 'reset' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+update_module_reference: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 3661.102 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+launch_runs impl_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.160 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.160 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.160 MB.
+[Mon Jun  5 22:50:19 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Mon Jun  5 22:50:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 3661.102 ; gain = 0.000
+set_property location {3 926 668} [get_bd_cells clk_wiz_0]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+launch_runs impl_1 -jobs 2
+[Mon Jun  5 23:35:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Mon Jun  5 23:35:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3661.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3687.793 ; gain = 0.000
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3687.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3687.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 3711.609 ; gain = 50.508
+open_report: Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 3772.527 ; gain = 59.238
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+save_constraints -force
+launch_runs impl_1 -jobs 2
+[Tue Jun  6 15:44:06 2023] Launched synth_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Tue Jun  6 15:44:06 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3902.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3935.230 ; gain = 0.000
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3935.230 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 3935.230 ; gain = 39.895
+open_report: Time (s): cpu = 00:00:41 ; elapsed = 00:00:35 . Memory (MB): peak = 3961.957 ; gain = 26.727
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'areset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3155] Bus Interface 'RFB_AXIS_CLK': ASSOCIATED_RESET port 'reset' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4004.863 ; gain = 35.281
+update_module_reference: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 4004.863 ; gain = 35.281
+launch_runs impl_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.238 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.238 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.238 MB.
+[Tue Jun  6 16:14:09 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Tue Jun  6 16:14:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:54 ; elapsed = 00:02:20 . Memory (MB): peak = 4004.863 ; gain = 0.000
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4024.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 4024.039 ; gain = 0.000
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 4024.039 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:39 . Memory (MB): peak = 4024.039 ; gain = 19.176
+open_report: Time (s): cpu = 00:00:43 ; elapsed = 00:00:36 . Memory (MB): peak = 4026.891 ; gain = 2.852
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+open_bd_design {C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd}
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'areset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'areset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3155] Bus Interface 'RFB_AXIS_CLK': ASSOCIATED_RESET port 'reset' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'des_reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'des_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'io_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'areset'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'des_reset' (xilinx.com:signal:reset:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'io_reset' (xilinx.com:signal:reset:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'bajie7020_rfbdes_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'areset'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'des_reset'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'iod_reset'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'bajie7020_rfbdes_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'areset' is not found on the upgraded version of the cell '/rfbdes_0'. Its connection to the net 'rst_ps7_0_133M_peripheral_reset' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'bajie7020_rfbdes_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+connect_bd_net [get_bd_pins rfbdes_0/des_reset] [get_bd_pins proc_sys_reset_rfb_fclk/peripheral_reset]
+regenerate_bd_layout
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+copy_bd_objs /  [get_bd_cells {rst_ps7_0_133M}]
+set_property name rst_ps7_0_200M [get_bd_cells rst_ps7_0_133M1]
+delete_bd_objs [get_bd_nets rst_ps7_0_133M_peripheral_reset]
+connect_bd_net [get_bd_pins rst_ps7_0_200M/ext_reset_in] [get_bd_pins rst_ps7_0_133M/peripheral_aresetn]
+connect_bd_net [get_bd_pins rst_ps7_0_200M/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+connect_bd_net [get_bd_pins rst_ps7_0_200M/peripheral_reset] [get_bd_pins rfbdes_0/iod_reset]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+launch_runs impl_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_ACP'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_200M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 344.315 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 344.315 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 344.315 MB.
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID b7e972df4052d9d9) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips bajie7020_rst_ps7_0_133M_0]'
+[Tue Jun  6 16:53:41 2023] Launched bajie7020_processing_system7_0_0_synth_1, bajie7020_rfbdes_0_0_synth_1, bajie7020_rst_ps7_0_133M_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_processing_system7_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_processing_system7_0_0_synth_1/runme.log
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+bajie7020_rst_ps7_0_133M_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rst_ps7_0_133M_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Tue Jun  6 16:53:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:03:16 ; elapsed = 00:03:59 . Memory (MB): peak = 4051.934 ; gain = 0.000
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4051.934 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 564 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 4092.762 ; gain = 0.000
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 4092.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 4092.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 13 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 4119.586 ; gain = 67.652
+open_report: Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 4173.965 ; gain = 49.770
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+launch_runs impl_1 -jobs 2
+[Tue Jun  6 19:00:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Tue Jun  6 19:00:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4231.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 564 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4231.020 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4231.020 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:32 . Memory (MB): peak = 4231.020 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 4257.691 ; gain = 24.102
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+CRITICAL WARNING: [HDL 9-806] Syntax error near "always". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:317]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:332]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:335]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:335]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "output". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:326]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "always". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:328]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:341]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "output". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:326]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "always". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:328]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:341]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "output". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:326]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "always". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:328]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:341]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "output". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:326]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "always". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:328]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:341]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "output". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:326]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "always". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:328]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/rfbdes.v:341]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'des_reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'des_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'io_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+INFO: [IP_Flow 19-4702] Upgrade has renamed port 'rfb_axis_data' as 'RFB_AXIS_DATA'
+INFO: [IP_Flow 19-4702] Upgrade has renamed port 'rfb_axis_valid' as 'RFB_AXIS_VALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'RFB_AXIS_BEGIN'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'RFB_AXIS_LAST'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'bajie7020_rfbdes_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'bajie7020_rfbdes_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+upgrade_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4535.984 ; gain = 20.605
+update_module_reference: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4535.984 ; gain = 20.605
+launch_runs impl_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 345.238 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 345.238 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 345.238 MB.
+[Tue Jun  6 20:41:43 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Tue Jun  6 20:41:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:44 ; elapsed = 00:02:16 . Memory (MB): peak = 4535.984 ; gain = 0.000
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4556.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 574 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4556.562 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4556.562 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 4556.562 ; gain = 12.664
+open_report: Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 4556.562 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp with file C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/bajie7020_wrapper.dcp
+save_constraints -force
+update_module_reference bajie7020_rfbdes_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'des_reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'des_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'io_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/penta/Documents/digilent-vivado-library-master'.
+Upgrading 'C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd'
+INFO: [IP_Flow 19-3420] Updated bajie7020_rfbdes_0_0 to use current project options
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+Wrote  : <C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+upgrade_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4596.840 ; gain = 15.816
+update_module_reference: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4596.840 ; gain = 15.816
+launch_runs impl_1 -jobs 2
+clk_domain: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clk_domain_1: bajie7020_rfbdes_0_0_RFB_AXIS_CLK, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /rfb_axi_dma
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+Wrote  : <C:\Users\penta\Documents\BikeRadar\Bajie7020\Bajie7020.srcs\sources_1\bd\bajie7020\bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+VHDL Output written to : c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rfbdes_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File c:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = ee8d4068e9e1d5c0; cache size = 345.355 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 028d8ea6de61c178; cache size = 345.355 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 11a7d46189ed44f1; cache size = 345.355 MB.
+[Tue Jun  6 21:08:46 2023] Launched bajie7020_rfbdes_0_0_synth_1, synth_1...
+Run output will be captured here:
+bajie7020_rfbdes_0_0_synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/bajie7020_rfbdes_0_0_synth_1/runme.log
+synth_1: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+[Tue Jun  6 21:08:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:02:25 ; elapsed = 00:02:51 . Memory (MB): peak = 4597.184 ; gain = 0.344

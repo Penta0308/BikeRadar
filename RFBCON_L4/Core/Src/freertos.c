@@ -29,10 +29,13 @@
 #include "queue.h"
 #include "can.h"
 #include "spi.h"
+#include "tim.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
+typedef StaticTask_t osStaticThreadDef_t;
+typedef StaticQueue_t osStaticMessageQDef_t;
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
@@ -53,9 +56,14 @@
 /* USER CODE END Variables */
 /* Definitions for CanTask */
 osThreadId_t CanTaskHandle;
+uint32_t CanTaskBuffer[ 512 ];
+osStaticThreadDef_t CanTaskControlBlock;
 const osThreadAttr_t CanTask_attributes = {
   .name = "CanTask",
-  .stack_size = 128 * 4,
+  .cb_mem = &CanTaskControlBlock,
+  .cb_size = sizeof(CanTaskControlBlock),
+  .stack_mem = &CanTaskBuffer[0],
+  .stack_size = sizeof(CanTaskBuffer),
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
 /* Definitions for TxMgr */
@@ -67,8 +75,14 @@ const osThreadAttr_t TxMgr_attributes = {
 };
 /* Definitions for CANRxQueue */
 osMessageQueueId_t CANRxQueueHandle;
+uint8_t CANRxQueueBuffer[ 6 * sizeof( uint64_t ) ];
+osStaticMessageQDef_t CANRxQueueControlBlock;
 const osMessageQueueAttr_t CANRxQueue_attributes = {
-  .name = "CANRxQueue"
+  .name = "CANRxQueue",
+  .cb_mem = &CANRxQueueControlBlock,
+  .cb_size = sizeof(CANRxQueueControlBlock),
+  .mq_mem = &CANRxQueueBuffer,
+  .mq_size = sizeof(CANRxQueueBuffer)
 };
 /* Definitions for TxMgrEvent */
 osEventFlagsId_t TxMgrEventHandle;
@@ -110,7 +124,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the queue(s) */
   /* creation of CANRxQueue */
-  CANRxQueueHandle = osMessageQueueNew (16, sizeof(uint64_t), &CANRxQueue_attributes);
+  CANRxQueueHandle = osMessageQueueNew (6, sizeof(uint64_t), &CANRxQueue_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
@@ -161,7 +175,7 @@ void StartCanTask(void *argument)
 			SPISetTiPllFreq((float)qm.u4);
 		}; break;
 		case RFBCANMessage_StartPllSweep: {
-
+			TIM15TiPllRampStart();
 		}; break;
 		case RFBCANMessage_PushPllData: {
 			RFBPllData[qm.a] = qm.u4;
