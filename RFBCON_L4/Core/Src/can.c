@@ -29,14 +29,6 @@ uint8_t canRxData[64];
 uint32_t TxMailBox;
 uint8_t canTxData[64];
 
-void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-	if(hcan->Instance == CAN1) {
-	  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &canRxHeader, canRxData) != HAL_OK) { Error_Handler(); }
-
-	  xQueueSendFromISR(CANRxQueueHandle, (RFBCANMessage*)canRxData, NULL);
-	}
-}
-
 /* USER CODE END 0 */
 
 CAN_HandleTypeDef hcan1;
@@ -146,5 +138,13 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef* canHandle)
 }
 
 /* USER CODE BEGIN 1 */
+
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+    if(hcan->Instance == CAN1) {
+        if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &canRxHeader, canRxData) != HAL_OK) { Error_Handler(); }
+
+        xQueueSendFromISR(CANRxQueueHandle, (RFBCANMessage*)canRxData, NULL);
+    }
+}
 
 /* USER CODE END 1 */

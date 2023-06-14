@@ -85,7 +85,8 @@ const osSemaphoreAttr_t SampleActive_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
-void StartCanTask(void *argument);
+
+_Noreturn _Noreturn void StartCanTask(void *argument);
 void StartPATxPwrMgr(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -169,7 +170,7 @@ void StartDefaultTask(void *argument)
 * @retval None
 */
 /* USER CODE END Header_StartCanTask */
-void StartCanTask(void *argument)
+_Noreturn _Noreturn void StartCanTask(void *argument)
 {
   /* USER CODE BEGIN StartCanTask */
   /* Infinite loop */

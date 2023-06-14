@@ -29,3 +29,10 @@ Project06_PetaLinux_With_HDMI_20200412_V02/
 Bajie7020.7z
 Project06_PetaLinux_20200412_V02_No_HDMI.zip
 Project06_PetaLinux_With_HDMI_20200412_V02.zip
+
+petalinux/bajie7020/images/
+
+RFBCON_L4/Drivers/
+RFBCON_L4/Middlewares/
+RFBCON_L4/cmake-build-debug/
+vitisworkspace/

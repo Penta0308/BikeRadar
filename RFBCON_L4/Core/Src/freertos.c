@@ -35,13 +35,14 @@
 
 /* Private typedef -----------------------------------------------------------*/
 typedef StaticTask_t osStaticThreadDef_t;
-typedef StaticQueue_t osStaticMessageQDef_t;
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+#define TXMGR_NOTIFICATION_BIT_STARTSWEEP 1 // LSB
 
 /* USER CODE END PD */
 
@@ -56,38 +57,27 @@ typedef StaticQueue_t osStaticMessageQDef_t;
 /* USER CODE END Variables */
 /* Definitions for CanTask */
 osThreadId_t CanTaskHandle;
-uint32_t CanTaskBuffer[ 512 ];
-osStaticThreadDef_t CanTaskControlBlock;
 const osThreadAttr_t CanTask_attributes = {
   .name = "CanTask",
-  .cb_mem = &CanTaskControlBlock,
-  .cb_size = sizeof(CanTaskControlBlock),
-  .stack_mem = &CanTaskBuffer[0],
-  .stack_size = sizeof(CanTaskBuffer),
+  .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
 /* Definitions for TxMgr */
 osThreadId_t TxMgrHandle;
+uint32_t TxMgrBuffer[ 128 ];
+osStaticThreadDef_t TxMgrControlBlock;
 const osThreadAttr_t TxMgr_attributes = {
   .name = "TxMgr",
-  .stack_size = 128 * 4,
+  .cb_mem = &TxMgrControlBlock,
+  .cb_size = sizeof(TxMgrControlBlock),
+  .stack_mem = &TxMgrBuffer[0],
+  .stack_size = sizeof(TxMgrBuffer),
   .priority = (osPriority_t) osPriorityAboveNormal,
 };
 /* Definitions for CANRxQueue */
 osMessageQueueId_t CANRxQueueHandle;
-uint8_t CANRxQueueBuffer[ 6 * sizeof( uint64_t ) ];
-osStaticMessageQDef_t CANRxQueueControlBlock;
 const osMessageQueueAttr_t CANRxQueue_attributes = {
-  .name = "CANRxQueue",
-  .cb_mem = &CANRxQueueControlBlock,
-  .cb_size = sizeof(CANRxQueueControlBlock),
-  .mq_mem = &CANRxQueueBuffer,
-  .mq_size = sizeof(CANRxQueueBuffer)
-};
-/* Definitions for TxMgrEvent */
-osEventFlagsId_t TxMgrEventHandle;
-const osEventFlagsAttr_t TxMgrEvent_attributes = {
-  .name = "TxMgrEvent"
+  .name = "CANRxQueue"
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -95,8 +85,9 @@ const osEventFlagsAttr_t TxMgrEvent_attributes = {
 
 /* USER CODE END FunctionPrototypes */
 
-void StartCanTask(void *argument);
-void StartTxMgr(void *argument);
+_Noreturn void StartCanTask(void *argument);
+
+_Noreturn void StartTxMgr(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -141,10 +132,6 @@ void MX_FREERTOS_Init(void) {
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
 
-  /* Create the event(s) */
-  /* creation of TxMgrEvent */
-  TxMgrEventHandle = osEventFlagsNew(&TxMgrEvent_attributes);
-
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
@@ -158,7 +145,7 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_StartCanTask */
-void StartCanTask(void *argument)
+_Noreturn void StartCanTask(void *argument)
 {
   /* USER CODE BEGIN StartCanTask */
 
@@ -175,7 +162,7 @@ void StartCanTask(void *argument)
 			SPISetTiPllFreq((float)qm.u4);
 		}; break;
 		case RFBCANMessage_StartPllSweep: {
-			TIM15TiPllRampStart();
+            xTaskNotify(TxMgrHandle, 1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP, eSetBits);
 		}; break;
 		case RFBCANMessage_PushPllData: {
 			RFBPllData[qm.a] = qm.u4;
@@ -198,13 +185,14 @@ void StartCanTask(void *argument)
 * @retval None
 */
 /* USER CODE END Header_StartTxMgr */
-void StartTxMgr(void *argument)
+_Noreturn void StartTxMgr(void *argument)
 {
   /* USER CODE BEGIN StartTxMgr */
   /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
+  for(;;) {
+      xTaskNotifyWait(0, 1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP, NULL, 0);
+
+      TIM15TiPllRampStart();
   }
   /* USER CODE END StartTxMgr */
 }
