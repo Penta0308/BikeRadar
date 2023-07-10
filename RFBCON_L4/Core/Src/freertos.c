@@ -74,6 +74,13 @@ const osThreadAttr_t TxMgr_attributes = {
   .stack_size = sizeof(TxMgrBuffer),
   .priority = (osPriority_t) osPriorityAboveNormal,
 };
+/* Definitions for Blink */
+osThreadId_t BlinkHandle;
+const osThreadAttr_t Blink_attributes = {
+  .name = "Blink",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 /* Definitions for CANRxQueue */
 osMessageQueueId_t CANRxQueueHandle;
 const osMessageQueueAttr_t CANRxQueue_attributes = {
@@ -85,9 +92,9 @@ const osMessageQueueAttr_t CANRxQueue_attributes = {
 
 /* USER CODE END FunctionPrototypes */
 
-_Noreturn void StartCanTask(void *argument);
-
-_Noreturn void StartTxMgr(void *argument);
+void StartCanTask(void *argument);
+void StartTxMgr(void *argument);
+void StartBlink(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -98,7 +105,6 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -128,6 +134,9 @@ void MX_FREERTOS_Init(void) {
   /* creation of TxMgr */
   TxMgrHandle = osThreadNew(StartTxMgr, NULL, &TxMgr_attributes);
 
+  /* creation of Blink */
+  BlinkHandle = osThreadNew(StartBlink, NULL, &Blink_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -145,7 +154,7 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_StartCanTask */
-_Noreturn void StartCanTask(void *argument)
+void StartCanTask(void *argument)
 {
   /* USER CODE BEGIN StartCanTask */
 
@@ -185,16 +194,44 @@ _Noreturn void StartCanTask(void *argument)
 * @retval None
 */
 /* USER CODE END Header_StartTxMgr */
-_Noreturn void StartTxMgr(void *argument)
+void StartTxMgr(void *argument)
 {
   /* USER CODE BEGIN StartTxMgr */
-  /* Infinite loop */
+
+    LL_GPIO_ResetOutputPin(ADC_RESET_GPIO_Port, ADC_RESET_Pin);
+    SPIInitTiAdc();
+
+    SPIInitTiPll();
+
+
+    /* Infinite loop */
   for(;;) {
       xTaskNotifyWait(0, 1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP, NULL, 0);
 
       TIM15TiPllRampStart();
   }
   /* USER CODE END StartTxMgr */
+}
+
+/* USER CODE BEGIN Header_StartBlink */
+/**
+* @brief Function implementing the Blink thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartBlink */
+void StartBlink(void *argument)
+{
+  /* USER CODE BEGIN StartBlink */
+  /* Infinite loop */
+  for(;;)
+  {
+      LL_GPIO_ResetOutputPin(LED1_GPIO_Port, LED1_Pin);
+      osDelay(500);
+      LL_GPIO_SetOutputPin(LED1_GPIO_Port, LED1_Pin);
+      osDelay(500);
+  }
+  /* USER CODE END StartBlink */
 }
 
 /* Private application code --------------------------------------------------*/

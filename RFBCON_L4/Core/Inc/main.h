@@ -30,12 +30,13 @@ extern "C" {
 #include "stm32l4xx_hal.h"
 
 #include "stm32l4xx_ll_tim.h"
+#include "stm32l4xx_ll_usart.h"
+#include "stm32l4xx_ll_rcc.h"
 #include "stm32l4xx_ll_system.h"
 #include "stm32l4xx_ll_gpio.h"
 #include "stm32l4xx_ll_exti.h"
 #include "stm32l4xx_ll_bus.h"
 #include "stm32l4xx_ll_cortex.h"
-#include "stm32l4xx_ll_rcc.h"
 #include "stm32l4xx_ll_utils.h"
 #include "stm32l4xx_ll_pwr.h"
 #include "stm32l4xx_ll_dma.h"
@@ -104,10 +105,6 @@ void Error_Handler(void);
 #define FGPB13_GPIO_Port GPIOB
 #define GPA8_Pin LL_GPIO_PIN_8
 #define GPA8_GPIO_Port GPIOA
-#define LNA_S2_Pin LL_GPIO_PIN_9
-#define LNA_S2_GPIO_Port GPIOA
-#define LNA_S1_Pin LL_GPIO_PIN_10
-#define LNA_S1_GPIO_Port GPIOA
 #define GPB4_Pin LL_GPIO_PIN_4
 #define GPB4_GPIO_Port GPIOB
 #define GPB5_Pin LL_GPIO_PIN_5

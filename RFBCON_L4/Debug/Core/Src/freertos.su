@@ -1,0 +1,6 @@
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h:956:22:LL_GPIO_SetOutputPin	16	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h:985:22:LL_GPIO_ResetOutputPin	16	static
+../Core/Src/freertos.c:106:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:157:6:StartCanTask	24	static
+../Core/Src/freertos.c:197:6:StartTxMgr	16	static
+../Core/Src/freertos.c:223:6:StartBlink	16	static

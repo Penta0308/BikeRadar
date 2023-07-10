@@ -1,0 +1,15 @@
+../Drivers/CMSIS/Include/core_cm4.h:1667:26:__NVIC_GetPriorityGrouping	4	static
+../Drivers/CMSIS/Include/core_cm4.h:1679:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Drivers/CMSIS/Include/core_cm4.h:1809:22:__NVIC_SetPriority	16	static
+../Drivers/CMSIS/Include/core_cm4.h:1856:26:NVIC_EncodePriority	40	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h:1486:22:LL_TIM_EnableCounter	16	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h:1677:22:LL_TIM_DisableARRPreload	16	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h:2383:22:LL_TIM_OC_DisableFast	24	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h:3254:22:LL_TIM_SetClockSource	16	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h:3300:22:LL_TIM_SetTriggerOutput	16	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_tim.h:3397:22:LL_TIM_DisableMasterSlaveMode	16	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_bus.h:563:22:LL_AHB2_GRP1_EnableClock	24	static
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_bus.h:1673:22:LL_APB2_GRP1_EnableClock	24	static
+../Core/Src/tim.c:28:6:MX_TIM15_Init	128	static
+../Core/Src/tim.c:111:6:TIM15TiPllRampStart	8	static
+../Core/Src/tim.c:117:6:TIM1_BRK_TIM15_IRQHandler	4	static

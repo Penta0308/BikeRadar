@@ -25,6 +25,7 @@
 #include "rng.h"
 #include "spi.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -98,8 +99,8 @@ int main(void)
   MX_SPI2_Init();
   MX_TIM15_Init();
   MX_ADC1_Init();
-  MX_TIM2_Init();
   MX_RNG_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -201,6 +202,8 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+      LL_USART_TransmitData8(USART1, 'e');
+      LL_GPIO_SetOutputPin(LED1_GPIO_Port, LED1_Pin);
   }
   /* USER CODE END Error_Handler_Debug */
 }

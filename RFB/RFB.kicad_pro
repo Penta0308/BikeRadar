@@ -60,13 +60,7 @@
           "width": 0.107
         }
       ],
-      "drc_exclusions": [
-        "silk_over_copper|59564301|97344811|2fe0466e-a849-4901-a947-21eadb5f54cd|5940c478-dedb-46c1-918e-abd1bf230be6",
-        "silk_over_copper|59564301|97344811|387c8cfc-986a-41a0-97a8-29febaaa1fe4|5940c478-dedb-46c1-918e-abd1bf230be6",
-        "silk_over_copper|64308458|87806317|0c52eb5c-2d75-47ba-ba99-a274faadb77a|78126598-5109-4837-9074-d73464ae559b",
-        "silk_overlap|60328914|38845266|fffafe42-3ee1-4954-8974-d296bfae351f|3bd32fdb-5e30-4ac9-8952-5c209613e852",
-        "silk_overlap|61471771|38455678|fffafe42-3ee1-4954-8974-d296bfae351f|25222442-535a-4003-b5e6-9aed9b9d4b7b"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },

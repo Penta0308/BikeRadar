@@ -63,7 +63,7 @@ extern uint32_t RFBPllData[RFBPllDataLen];
 #define SPIInitTiPllW_GenH(addr, value) (0b01111111 & (uint8_t)(addr))
 #define SPIInitTiPllW_GenM(addr, value) ((uint8_t)(value >> 8))
 #define SPIInitTiPllW_GenL(addr, value) ((uint8_t)(value))
-#define SPIInitTiPllW_GenArray(addr, value) {SPIInitTiAdcW_GenH(addr, value), SPIInitTiAdcW_GenM(addr, value), SPIInitTiAdcW_GenL(addr, value)}
+#define SPIInitTiPllW_GenArray(addr, value) {SPIInitTiPllW_GenH(addr, value), SPIInitTiPllW_GenM(addr, value), SPIInitTiPllW_GenL(addr, value)}
 
 
 
@@ -78,6 +78,7 @@ void SPISetTiPllOutAPwr(uint8_t power, uint8_t powerdown);
 void SPISetTiPllFreq(float f);
 void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, float limithigh, float limitlow);
 void SPISetTiPllRampFreqFromBuf();
+void SPIInitTiAdc();
 
 /* USER CODE END Prototypes */
 
