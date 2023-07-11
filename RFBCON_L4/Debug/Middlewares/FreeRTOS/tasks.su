@@ -24,7 +24,7 @@ C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Pa
 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2505:14:uxTaskGetSystemState	32	static
 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2609:12:xTaskCatchUpTicks	24	static,ignoring_inline_asm
 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2707:12:xTaskIncrementTick	32	static,ignoring_inline_asm
-C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2989:6:vTaskSwitchContext	24	static,ignoring_inline_asm
+C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:2989:6:vTaskSwitchContext	32	static,ignoring_inline_asm
 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3064:6:vTaskPlaceOnEventList	24	static,ignoring_inline_asm
 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3081:6:vTaskPlaceOnUnorderedEventList	32	static,ignoring_inline_asm
 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/tasks.c:3107:7:vTaskPlaceOnEventListRestricted	32	static,ignoring_inline_asm

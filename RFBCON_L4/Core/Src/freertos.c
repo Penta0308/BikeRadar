@@ -58,7 +58,7 @@
 osThreadId_t CanTaskHandle;
 const osThreadAttr_t CanTask_attributes = {
   .name = "CanTask",
-  .stack_size = 512 * 4,
+  .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
 /* Definitions for TxMgr */
@@ -92,6 +92,19 @@ void StartBlink(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
+/* Hook prototypes */
+void vApplicationStackOverflowHook(xTaskHandle xTask, signed char *pcTaskName);
+
+/* USER CODE BEGIN 4 */
+void vApplicationStackOverflowHook(xTaskHandle xTask, signed char *pcTaskName)
+{
+   /* Run time stack overflow checking is performed if
+   configCHECK_FOR_STACK_OVERFLOW is defined to 1 or 2. This hook function is
+   called if a stack overflow is detected. */
+	while(1) {}
+}
+/* USER CODE END 4 */
+
 /**
   * @brief  FreeRTOS initialization
   * @param  None
@@ -115,7 +128,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the queue(s) */
   /* creation of CANRxQueue */
-  CANRxQueueHandle = osMessageQueueNew (6, sizeof(uint64_t), &CANRxQueue_attributes);
+  CANRxQueueHandle = osMessageQueueNew (6, 8, &CANRxQueue_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */

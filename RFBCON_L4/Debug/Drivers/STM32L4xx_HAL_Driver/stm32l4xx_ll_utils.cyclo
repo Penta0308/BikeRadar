@@ -29,7 +29,7 @@ stm32l4xx_ll_utils.c:278:6:LL_SetSystemCoreClock	1
 stm32l4xx_ll_utils.c:292:13:LL_SetFlashLatency	13
 stm32l4xx_ll_utils.c:444:13:LL_PLL_ConfigSystemClock_MSI	19
 stm32l4xx_ll_utils.c:579:13:LL_PLL_ConfigSystemClock_HSI	4
-stm32l4xx_ll_utils.c:669:13:LL_PLL_ConfigSystemClock_HSE	5
-stm32l4xx_ll_utils.c:772:17:UTILS_GetPLLOutputFrequency	1
+stm32l4xx_ll_utils.c:669:13:LL_PLL_ConfigSystemClock_HSE	9
+stm32l4xx_ll_utils.c:772:17:UTILS_GetPLLOutputFrequency	21
 stm32l4xx_ll_utils.c:803:20:UTILS_PLL_IsBusy	3
-stm32l4xx_ll_utils.c:844:20:UTILS_EnablePLLAndSwitchSystem	7
+stm32l4xx_ll_utils.c:844:20:UTILS_EnablePLLAndSwitchSystem	26

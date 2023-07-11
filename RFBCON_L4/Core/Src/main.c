@@ -74,8 +74,6 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 
-	NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -175,6 +173,27 @@ void SystemClock_Config(void)
 /* USER CODE END 4 */
 
 /**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM6 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM6) {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
+
+/**
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
@@ -185,8 +204,6 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
-      LL_USART_TransmitData8(USART1, 'e');
-      LL_GPIO_SetOutputPin(LED1_GPIO_Port, LED1_Pin);
   }
   /* USER CODE END Error_Handler_Debug */
 }
@@ -204,6 +221,7 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+	for(;;) {}
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */

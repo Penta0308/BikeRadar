@@ -77,7 +77,7 @@
 #define HAL_SPI_MODULE_ENABLED
 /*#define HAL_SRAM_MODULE_ENABLED   */
 /*#define HAL_SWPMI_MODULE_ENABLED   */
-/*#define HAL_TIM_MODULE_ENABLED   */
+#define HAL_TIM_MODULE_ENABLED
 /*#define HAL_TSC_MODULE_ENABLED   */
 /*#define HAL_UART_MODULE_ENABLED   */
 /*#define HAL_USART_MODULE_ENABLED   */
@@ -182,7 +182,7 @@
   */
 
 #define  VDD_VALUE					  2400U /*!< Value of VDD in mv */
-#define  TICK_INT_PRIORITY            15U    /*!< tick interrupt priority */
+#define  TICK_INT_PRIORITY            0U    /*!< tick interrupt priority */
 #define  USE_RTOS                     0U
 #define  PREFETCH_ENABLE              0U
 #define  INSTRUCTION_CACHE_ENABLE     1U
@@ -193,7 +193,7 @@
   * @brief Uncomment the line below to expanse the "assert_param" macro in the
   *        HAL drivers code
   */
-/* #define USE_FULL_ASSERT    1U */
+ #define USE_FULL_ASSERT    1U
 
 /* ################## Register callback feature configuration ############### */
 /**
