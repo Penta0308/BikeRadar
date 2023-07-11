@@ -98,3 +98,8 @@ Cannot find bounds of current function
 java.lang.Exception: Cannot find bounds of current function
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 2 2 2023-07-11 22:35:12.986
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-07-11 22:35:12.987
+!MESSAGE The project description file (.project) for 'RFBCON_L4' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
