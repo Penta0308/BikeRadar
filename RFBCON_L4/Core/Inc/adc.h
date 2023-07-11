@@ -36,9 +36,9 @@ extern ADC_HandleTypeDef hadc1;
 
 /* USER CODE BEGIN Private defines */
 
-#define ADCSAMPLE_SIZE (uint32_t)2
-#define ADCSAMPLE_PAPWR 1
-#define ADCSAMPLE_INTTEMP 0
+#define ADCSAMPLE_SIZE (uint32_t)1
+#define ADCSAMPLE_PAPWR 0
+//#define ADCSAMPLE_INTTEMP 0
 
 
 #define INTERNAL_TEMPSENSOR_V25        ((int32_t)741)

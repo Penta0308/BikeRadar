@@ -49,7 +49,7 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(Core/Inc Drivers/STM32L4xx_HAL_Driver/Inc Drivers/STM32L4xx_HAL_Driver/Inc/Legacy Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Drivers/CMSIS/Device/ST/STM32L4xx/Include Drivers/CMSIS/Include)
+include_directories(Core/Inc C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Drivers/STM32L4xx_HAL_Driver/Inc C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/include C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Drivers/CMSIS/Device/ST/STM32L4xx/Include C:/Users/penta/STM32Cube/Repository/STM32Cube_FW_L4_V1.17.2/Drivers/CMSIS/Include)
 
 add_definitions(-DDEBUG -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32L431xx)
 

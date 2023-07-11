@@ -34,7 +34,6 @@
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
-typedef StaticTask_t osStaticThreadDef_t;
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
@@ -59,19 +58,14 @@ typedef StaticTask_t osStaticThreadDef_t;
 osThreadId_t CanTaskHandle;
 const osThreadAttr_t CanTask_attributes = {
   .name = "CanTask",
-  .stack_size = 128 * 4,
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
 /* Definitions for TxMgr */
 osThreadId_t TxMgrHandle;
-uint32_t TxMgrBuffer[ 128 ];
-osStaticThreadDef_t TxMgrControlBlock;
 const osThreadAttr_t TxMgr_attributes = {
   .name = "TxMgr",
-  .cb_mem = &TxMgrControlBlock,
-  .cb_size = sizeof(TxMgrControlBlock),
-  .stack_mem = &TxMgrBuffer[0],
-  .stack_size = sizeof(TxMgrBuffer),
+  .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityAboveNormal,
 };
 /* Definitions for Blink */

@@ -42,7 +42,6 @@ void MX_TIM15_Init(void)
 
   /* TIM15 interrupt Init */
   NVIC_SetPriority(TIM1_BRK_TIM15_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),5, 0));
-  NVIC_EnableIRQ(TIM1_BRK_TIM15_IRQn);
 
   /* USER CODE BEGIN TIM15_Init 1 */
 
@@ -113,17 +112,5 @@ void TIM15TiPllRampStart() {
 	  LL_TIM_EnableCounter(TIM15);
   //}
 }
-
-void TIM1_BRK_TIM15_IRQHandler(void)
-{
-  /* USER CODE BEGIN TIM1_BRK_TIM15_IRQn 0 */
-
-  /* USER CODE END TIM1_BRK_TIM15_IRQn 0 */
-
-  /* USER CODE BEGIN TIM1_BRK_TIM15_IRQn 1 */
-
-  /* USER CODE END TIM1_BRK_TIM15_IRQn 1 */
-}
-
 
 /* USER CODE END 1 */
