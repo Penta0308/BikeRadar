@@ -70,6 +70,8 @@ void MX_CAN1_Init(void)
   can1Filter0.FilterScale = RFBCAN_FILTER0_FilterScale;
   can1Filter0.FilterFIFOAssignment = CAN_FILTER_FIFO0;
   can1Filter0.FilterBank = 0;
+  can1Filter0.SlaveStartFilterBank = 14;
+  can1Filter0.FilterFIFOAssignment = CAN_FILTER_FIFO0;
   can1Filter0.FilterActivation = ENABLE;
 
   if (HAL_CAN_ConfigFilter(&hcan1, &can1Filter0) != HAL_OK) { Error_Handler(); }
@@ -99,10 +101,13 @@ void HAL_CAN_MspInit(CAN_HandleTypeDef* canHandle)
     GPIO_InitStruct.Pin = GPIO_PIN_11|GPIO_PIN_12;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
     GPIO_InitStruct.Alternate = GPIO_AF9_CAN1;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+    /* CAN1 interrupt Init */
+    HAL_NVIC_SetPriority(CAN1_RX0_IRQn, 5, 0);
+    HAL_NVIC_EnableIRQ(CAN1_RX0_IRQn);
   /* USER CODE BEGIN CAN1_MspInit 1 */
 
   /* USER CODE END CAN1_MspInit 1 */
@@ -126,6 +131,8 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef* canHandle)
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_11|GPIO_PIN_12);
 
+    /* CAN1 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(CAN1_RX0_IRQn);
   /* USER CODE BEGIN CAN1_MspDeInit 1 */
 
   /* USER CODE END CAN1_MspDeInit 1 */
@@ -137,6 +144,14 @@ void HAL_CAN_MspDeInit(CAN_HandleTypeDef* canHandle)
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     if(hcan->Instance == CAN1) {
         if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &canRxHeader, canRxData) != HAL_OK) { Error_Handler(); }
+        canTxHeader.StdId = canRxHeader.StdId + 1;
+        canTxHeader.ExtId = canRxHeader.ExtId;
+        canTxHeader.RTR = canRxHeader.RTR;
+        canTxHeader.DLC = canRxHeader.DLC;
+        canTxHeader.IDE = canRxHeader.IDE;
+        canTxHeader.TransmitGlobalTime = DISABLE;
+
+        //HAL_CAN_AddTxMessage(hcan, &canTxHeader, canRxData, &TxMailBox);
 
         xQueueSendFromISR(CANRxQueueHandle, (RFBCANMessage*)canRxData, NULL);
     }

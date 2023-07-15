@@ -103,8 +103,6 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  LL_USART_TransmitData8(USART1, '\n');
-
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -113,6 +111,7 @@ int main(void)
 
   /* Start scheduler */
   osKernelStart();
+
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

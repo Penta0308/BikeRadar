@@ -36,7 +36,7 @@ extern ADC_HandleTypeDef hadc1;
 
 /* USER CODE BEGIN Private defines */
 
-#define ADCSAMPLE_SIZE (uint32_t)1
+#define ADCSAMPLE_SIZE (uint32_t)3
 #define ADCSAMPLE_PAPWR 0
 //#define ADCSAMPLE_INTTEMP 0
 
@@ -54,8 +54,7 @@ extern const uint32_t VDD_APPLIED;
    ) + 25                                                                      \
   )
 
-#define COMPUTATION_DIGITAL_12BITS_TO_VOLTAGE(ADC_DATA) ( ((ADC_DATA) * VDD_APPLIED) / 4095)
-
+#define COMPUTATION_DIGITAL_12BITS_TO_mV(ADC_DATA) ( ((ADC_DATA) * VDD_APPLIED) / 4095.0f)
 
 /* USER CODE END Private defines */
 
@@ -63,7 +62,8 @@ void MX_ADC1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
-extern __IO uint16_t ADCSample_values[ADCSAMPLE_SIZE];
+float SE5004LmV2dB(float x);
+extern __IO uint32_t ADCSample_values[ADCSAMPLE_SIZE];
 
 /* USER CODE END Prototypes */
 

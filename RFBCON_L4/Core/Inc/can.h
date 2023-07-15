@@ -40,11 +40,11 @@ extern CAN_HandleTypeDef hcan1;
 
 /* USER CODE BEGIN Private defines */
 
-#define RFBCAN_FILTER0_MaskIdHigh 	 	(uint16_t)(0x7f3 << 5)
-#define RFBCAN_FILTER0_IdHigh 			(uint16_t)(0x106 << 5)
-#define RFBCAN_FILTER0_MaskIdLow 	 	(uint16_t)(0x7f3 << 5)
-#define RFBCAN_FILTER0_IdLow 			(uint16_t)(0x106 << 5)
-#define RFBCAN_FILTER0_FilterMode 		CAN_FILTERMODE_IDMASK
+#define RFBCAN_FILTER0_MaskIdHigh 	 	(uint16_t)(0x106 << 5)
+#define RFBCAN_FILTER0_IdHigh 			(uint16_t)(0x107 << 5)
+#define RFBCAN_FILTER0_MaskIdLow 	 	(uint16_t)(0x108 << 5)
+#define RFBCAN_FILTER0_IdLow 			(uint16_t)(0x109 << 5)
+#define RFBCAN_FILTER0_FilterMode 		CAN_FILTERMODE_IDLIST
 #define RFBCAN_FILTER0_FilterScale 		CAN_FILTERSCALE_16BIT
 
 #define RFBCANMessage_SetPllPwr  		(uint8_t)0x01	// f = data (sign neg: Off, [5:0]: data)
@@ -52,14 +52,24 @@ extern CAN_HandleTypeDef hcan1;
 #define RFBCANMessage_StartPllSweep  	(uint8_t)0x03
 #define RFBCANMessage_PushPllData		(uint8_t)0x04	// a = addr, f = data
 #define RFBCANMessage_SetPllSweepData	(uint8_t)0x05
+#define RFBCANMessage_SetPaEn			(uint8_t)0x06	// f = data (sign neg: Off, pos: On)
+#define RFBCANMessage_GetPllLocked		(uint8_t)0x07
+#define RFBCANMessage_GetPaPwr			(uint8_t)0x08
 
+typedef union __attribute__((packed())) _D4 {
+	uint32_t u4;
+	float f;
+	int32_t i4;
+	uint8_t b[4];
+	int8_t c[4];
+} D4;
 
 typedef struct __attribute__((packed())) _RFBCANMessage {
 	uint8_t h;
 	uint8_t a;
 	uint8_t b;
 	uint8_t c;
-	uint32_t u4;
+	D4 d;
 } RFBCANMessage;
 
 /* USER CODE END Private defines */
@@ -68,6 +78,12 @@ void MX_CAN1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
+extern CAN_FilterTypeDef can1Filter0;
+extern CAN_RxHeaderTypeDef canRxHeader;
+extern CAN_TxHeaderTypeDef canTxHeader;
+extern uint8_t canRxData[64];
+extern uint32_t TxMailBox;
+extern uint8_t canTxData[64];
 extern osMessageQueueId_t CANRxQueueHandle;
 
 /* USER CODE END Prototypes */

@@ -46,11 +46,11 @@ extern const uint8_t TIPLL_POSTR;
 extern const float TIPLL_FPD;
 extern uint8_t TIPLL_DENQ;
 
-#define RFBPllDataLen			2
+#define RFBPllDataLen			3
 
 #define RFBPllData_SweepLow		0u
 #define RFBPllData_SweepHigh	1u
-//#define RFBPllData_SweepDur		2u
+#define RFBPllData_SweepN		2u
 
 extern uint32_t RFBPllData[RFBPllDataLen];
 
@@ -59,6 +59,9 @@ extern uint32_t RFBPllData[RFBPllDataLen];
 #define SPIInitTiAdcW_GenM(addr, value) ((uint8_t)(addr))
 #define SPIInitTiAdcW_GenL(addr, value) ((uint8_t)(value))
 #define SPIInitTiAdcW_GenArray(addr, value) {SPIInitTiAdcW_GenH(addr, value), SPIInitTiAdcW_GenM(addr, value), SPIInitTiAdcW_GenL(addr, value)}
+
+#define SPIInitTiPllR_GenH(addr, value) ((0b01111111 & (uint8_t)(addr)) | 0b10000000)
+#define SPIInitTiPllR_GenArray(addr) {SPIInitTiPllR_GenH(addr, 0), 0, 0}
 
 #define SPIInitTiPllW_GenH(addr, value) (0b01111111 & (uint8_t)(addr))
 #define SPIInitTiPllW_GenM(addr, value) ((uint8_t)(value >> 8))
@@ -74,8 +77,9 @@ void MX_SPI2_Init(void);
 /* USER CODE BEGIN Prototypes */
 
 void SPIInitTiPll(void);
+uint8_t SPIGetTiPllLocked(void);
 void SPISetTiPllOutAPwr(uint8_t power, uint8_t powerdown);
-void SPISetTiPllFreq(float f);
+float SPISetTiPllFreq(float f);
 void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, float limithigh, float limitlow);
 void SPISetTiPllRampFreqFromBuf();
 void SPIInitTiAdc();
