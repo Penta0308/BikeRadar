@@ -1,5 +1,6 @@
 RFB/STM32L431/workspace/
 RFB/STM32L431/STM32CubeIDE/Debug/
+RFB/RFB-backups/
 
 RFBCON_L4/debug/
 cubeideworkspace/
@@ -40,3 +41,4 @@ RFBCON_L4/Drivers/
 RFBCON_L4/Middlewares/
 RFBCON_L4/cmake-build-debug/
 vitisworkspace/
+.Rproj.user

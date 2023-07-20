@@ -54,12 +54,13 @@ void MX_GPIO_Init(void)
   LL_GPIO_ResetOutputPin(GPIOC, GPA3_Pin|PLL_RAMPDIR_Pin);
 
   /**/
-  LL_GPIO_ResetOutputPin(GPIOA, GPA0_Pin|GPA1_Pin|GPA2_Pin|GPA4_Pin
-                          |GPA5_Pin|GPA8_Pin);
+  LL_GPIO_ResetOutputPin(GPIOA, GPA0_Pin|GPA1_Pin|GPA2_Pin|PLL_RAMPCLK_Pin
+                          |GPA4_Pin|GPA5_Pin|GPA8_Pin|ANT2_EN_Pin
+                          |ANT1_EN_Pin);
 
   /**/
-  LL_GPIO_ResetOutputPin(GPIOB, GPB12_Pin|GPB4_Pin|GPB5_Pin|GPB8_Pin
-                          |PLL_CE_Pin);
+  LL_GPIO_ResetOutputPin(GPIOB, GPB12_Pin|FGPB13_Pin|GPB4_Pin|GPB5_Pin
+                          |GPB8_Pin|PLL_CE_Pin);
 
   /**/
   LL_GPIO_SetOutputPin(SPI_CS_PLL_GPIO_Port, SPI_CS_PLL_Pin);
@@ -90,8 +91,9 @@ void MX_GPIO_Init(void)
   LL_GPIO_Init(LED1_GPIO_Port, &GPIO_InitStruct);
 
   /**/
-  GPIO_InitStruct.Pin = GPA0_Pin|GPA1_Pin|GPA2_Pin|GPA4_Pin
-                          |GPA5_Pin|PA_EN_Pin|GPA8_Pin;
+  GPIO_InitStruct.Pin = GPA0_Pin|GPA1_Pin|GPA2_Pin|PLL_RAMPCLK_Pin
+                          |GPA4_Pin|GPA5_Pin|PA_EN_Pin|GPA8_Pin
+                          |ANT2_EN_Pin|ANT1_EN_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
@@ -106,6 +108,14 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = FGPB13_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(FGPB13_GPIO_Port, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = PLL_CE_Pin;

@@ -104,6 +104,10 @@ void Error_Handler(void);
 #define FGPB13_GPIO_Port GPIOB
 #define GPA8_Pin LL_GPIO_PIN_8
 #define GPA8_GPIO_Port GPIOA
+#define ANT2_EN_Pin LL_GPIO_PIN_9
+#define ANT2_EN_GPIO_Port GPIOA
+#define ANT1_EN_Pin LL_GPIO_PIN_10
+#define ANT1_EN_GPIO_Port GPIOA
 #define GPB4_Pin LL_GPIO_PIN_4
 #define GPB4_GPIO_Port GPIOB
 #define GPB5_Pin LL_GPIO_PIN_5

@@ -55,6 +55,9 @@ extern CAN_HandleTypeDef hcan1;
 #define RFBCANMessage_SetPaEn			(uint8_t)0x06	// f = data (sign neg: Off, pos: On)
 #define RFBCANMessage_GetPllLocked		(uint8_t)0x07
 #define RFBCANMessage_GetPaPwr			(uint8_t)0x08
+#define RFBCANMessage_SetAntennaState	(uint8_t)0x09   // f = data lsb 0, 1
+#define RFBCANMessage_GetPllRegister	(uint8_t)0x0A   // a = addr
+#define RFBCANMessage_SetPllRegister	(uint8_t)0x0B   // a = addr, f = data
 
 typedef union __attribute__((packed())) _D4 {
 	uint32_t u4;
@@ -62,6 +65,7 @@ typedef union __attribute__((packed())) _D4 {
 	int32_t i4;
 	uint8_t b[4];
 	int8_t c[4];
+	uint16_t h[2];
 } D4;
 
 typedef struct __attribute__((packed())) _RFBCANMessage {

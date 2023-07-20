@@ -29,6 +29,7 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
+#include "can.h"
 
 #include <math.h>
 
@@ -52,7 +53,7 @@ extern uint8_t TIPLL_DENQ;
 #define RFBPllData_SweepHigh	1u
 #define RFBPllData_SweepN		2u
 
-extern uint32_t RFBPllData[RFBPllDataLen];
+extern D4 RFBPllData[RFBPllDataLen];
 
 
 #define SPIInitTiAdcW_GenH(addr, value) (0b01000000 | (0b00111111 & (uint8_t)((addr) >> 6)))
@@ -60,13 +61,13 @@ extern uint32_t RFBPllData[RFBPllDataLen];
 #define SPIInitTiAdcW_GenL(addr, value) ((uint8_t)(value))
 #define SPIInitTiAdcW_GenArray(addr, value) {SPIInitTiAdcW_GenH(addr, value), SPIInitTiAdcW_GenM(addr, value), SPIInitTiAdcW_GenL(addr, value)}
 
-#define SPIInitTiPllR_GenH(addr, value) ((0b01111111 & (uint8_t)(addr)) | 0b10000000)
-#define SPIInitTiPllR_GenArray(addr) {SPIInitTiPllR_GenH(addr, 0), 0, 0}
+//#define SPIInitTiPllR_GenH(addr, value) ((0b01111111 & (uint8_t)(addr)) | 0b10000000)
+//#define SPIInitTiPllR_GenArray(addr) {SPIInitTiPllR_GenH(addr, 0), 0, 0}
 
-#define SPIInitTiPllW_GenH(addr, value) (0b01111111 & (uint8_t)(addr))
-#define SPIInitTiPllW_GenM(addr, value) ((uint8_t)(value >> 8))
-#define SPIInitTiPllW_GenL(addr, value) ((uint8_t)(value))
-#define SPIInitTiPllW_GenArray(addr, value) {SPIInitTiPllW_GenH(addr, value), SPIInitTiPllW_GenM(addr, value), SPIInitTiPllW_GenL(addr, value)}
+//#define SPIInitTiPllW_GenH(addr, value) (0b01111111 & (uint8_t)(addr))
+//#define SPIInitTiPllW_GenM(addr, value) ((uint8_t)(value >> 8))
+//#define SPIInitTiPllW_GenL(addr, value) ((uint8_t)(value))
+//#define SPIInitTiPllW_GenArray(addr, value) {SPIInitTiPllW_GenH(addr, value), SPIInitTiPllW_GenM(addr, value), SPIInitTiPllW_GenL(addr, value)}
 
 
 
@@ -78,11 +79,13 @@ void MX_SPI2_Init(void);
 
 void SPIInitTiPll(void);
 uint8_t SPIGetTiPllLocked(void);
-void SPISetTiPllOutAPwr(uint8_t power, uint8_t powerdown);
+uint8_t SPISetTiPllOutAPwr(uint8_t power, uint8_t powerdown);
 float SPISetTiPllFreq(float f);
 void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, float limithigh, float limitlow);
 void SPISetTiPllRampFreqFromBuf();
 void SPIInitTiAdc();
+void SPIWriteTiPll(uint8_t addr, uint16_t data);
+uint16_t SPIReadTiPll(uint8_t addr);
 
 /* USER CODE END Prototypes */
 

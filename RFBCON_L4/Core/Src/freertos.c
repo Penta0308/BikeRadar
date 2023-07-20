@@ -32,6 +32,7 @@
 #include "tim.h"
 #include "adc.h"
 #include "can.h"
+#include <string.h>
 
 /* USER CODE END Includes */
 
@@ -60,7 +61,7 @@
 osThreadId_t CanTaskHandle;
 const osThreadAttr_t CanTask_attributes = {
   .name = "CanTask",
-  .stack_size = 128 * 4,
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
 /* Definitions for TxMgr */
@@ -177,7 +178,10 @@ void StartCanTask(void *argument)
 	if(xQueueReceive(CANRxQueueHandle, &qm, portMAX_DELAY)) {
 		switch(qm.h) {
 		case RFBCANMessage_SetPllPwr: {
-			SPISetTiPllOutAPwr(qm.d.b[3], qm.d.b[3] >> 7);
+			uint8_t p = SPISetTiPllOutAPwr(qm.d.b[3], qm.d.b[2]);
+			memset((void*)canTxData, 0u, 7);
+			canTxData[7] = p;
+	        HAL_CAN_AddTxMessage(&hcan1, &canTxHeader, canTxData, &TxMailBox);
 		}; break;
 		case RFBCANMessage_SetPllContFreq: {
 			float rf = SPISetTiPllFreq(qm.d.f);
@@ -189,7 +193,7 @@ void StartCanTask(void *argument)
             xTaskNotify(TxMgrHandle, 1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP, eSetBits);
 		}; break;
 		case RFBCANMessage_PushPllData: {
-			RFBPllData[qm.a] = qm.d.u4;
+			RFBPllData[qm.a].u4 = qm.d.u4;
 		}; break;
 		case RFBCANMessage_SetPllSweepData: {
 			SPISetTiPllRampFreqFromBuf();
@@ -221,6 +225,33 @@ void StartCanTask(void *argument)
 			memcpy((void*)canTxData + 4, (const void*)&op, 4);
 			memcpy((void*)canTxData, (const void*)&uk, 4);
 	        HAL_CAN_AddTxMessage(&hcan1, &canTxHeader, canTxData, &TxMailBox);
+		}; break;
+		case RFBCANMessage_SetAntennaState: {
+			if(qm.d.b[3] & 0x1) {
+				LL_GPIO_ResetOutputPin(ANT1_EN_GPIO_Port, ANT1_EN_Pin);
+			} else {
+				LL_GPIO_SetOutputPin(ANT1_EN_GPIO_Port, ANT1_EN_Pin);
+			}
+			if(qm.d.b[3] & 0x2) {
+				LL_GPIO_ResetOutputPin(ANT2_EN_GPIO_Port, ANT2_EN_Pin);
+			} else {
+				LL_GPIO_SetOutputPin(ANT2_EN_GPIO_Port, ANT2_EN_Pin);
+			}
+		}; break;
+		case RFBCANMessage_GetPllRegister: {
+			uint16_t c = SPIReadTiPll(qm.a);
+			canTxData[0] = 0;
+			canTxData[1] = 0;
+			canTxData[2] = 0;
+			canTxData[3] = 0;
+			canTxData[4] = 0;
+			canTxData[5] = 0;
+			canTxData[6] = (uint8_t)(c >> 8);
+			canTxData[7] = (uint8_t)c;
+	        HAL_CAN_AddTxMessage(&hcan1, &canTxHeader, canTxData, &TxMailBox);
+		}; break;
+		case RFBCANMessage_SetPllRegister: {
+			SPIWriteTiPll(qm.a, qm.d.h[1]);
 		}; break;
 		default:
 			break;
@@ -258,13 +289,19 @@ void StartTxMgr(void *argument)
     for(;;) {
     	xTaskNotifyWait(0, 1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP, &ulNotifiedValue, portMAX_DELAY);
     	if(ulNotifiedValue & (1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP)) {
-    		LL_TIM_SetAutoReload(TIM15, RFBPllData[RFBPllData_SweepN]);
+    		taskENTER_CRITICAL();
+    		SPIWriteTiPll(  0, 0b1010000010011000);
+    		LL_GPIO_TogglePin(FGPB13_GPIO_Port, FGPB13_Pin);
+    		//LL_GPIO_TogglePin(PLL_RAMPCLK_GPIO_Port, PLL_RAMPCLK_Pin);
+    		taskEXIT_CRITICAL();
+    		//HAL_TIM_Base_Start(&htim15);
+    		/*LL_TIM_SetAutoReload(TIM15, RFBPllData[RFBPllData_SweepN].u4);
     		LL_TIM_EnableCounter(TIM15);
     		while(!LL_TIM_IsActiveFlag_UPDATE(TIM15)) {
     			osDelay(0);
     			float op = SE5004LmV2dB(COMPUTATION_DIGITAL_12BITS_TO_mV(ADCSample_values[ADCSAMPLE_PAPWR]));
     		}
-    		LL_TIM_ClearFlag_UPDATE(TIM15);
+    		LL_TIM_ClearFlag_UPDATE(TIM15);*/
     	}
     }
 
