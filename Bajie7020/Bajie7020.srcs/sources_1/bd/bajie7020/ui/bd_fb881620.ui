@@ -1,0 +1,35 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-205,-54",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x -360 -y 90 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 4 -x 940 -y 220 -defaultsOSRD
+preplace port port-id_fir_aresetn -pg 1 -lvl 0 -x -360 -y 20 -defaultsOSRD
+preplace port port-id_fir_aclk -pg 1 -lvl 0 -x -360 -y 150 -defaultsOSRD
+preplace port port-id_m_axis_aclk -pg 1 -lvl 0 -x -360 -y 260 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x -360 -y 110 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x -360 -y 130 -defaultsOSRD
+preplace port port-id_transfer_dropped -pg 1 -lvl 4 -x 940 -y 240 -defaultsOSRD
+preplace port port-id_fir_reset -pg 1 -lvl 0 -x -360 -y 322 -defaultsOSRD
+preplace inst rfb_fir_out -pg 1 -lvl 3 -x 770 -y 230 -defaultsOSRD
+preplace inst rfb_fir_in -pg 1 -lvl 1 -x -80 -y 120 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 2 -x 320 -y 180 -defaultsOSRD
+preplace netloc proc_sys_reset_rfb_288M_peripheral_aresetn 1 0 3 NJ 20 N 20 500J
+preplace netloc proc_sys_reset_rfb_fclk_peripheral_aresetn 1 0 1 NJ 130
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -340J 30 NJ 30 470J
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 3 -330 200 50 100 490J
+preplace netloc reset_1 1 0 3 -330J 270 NJ 270 NJ
+preplace netloc rfb_fir_out_transfer_dropped_0 1 3 1 NJ 240
+preplace netloc util_ds_buf_rfb_fclk_IBUF_OUT 1 0 1 NJ 110
+preplace netloc Conn1 1 3 1 N 220
+preplace netloc axis_data_fifo_1_M_AXIS 1 1 1 40 120n
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 2 1 480 180n
+preplace netloc rfbdes_0_M_AXIS 1 0 1 NJ 90
+levelinfo -pg 1 -360 -80 320 770 940
+pagesize -pg 1 -db -bbox -sgen -520 0 1120 520
+"
+}
+0

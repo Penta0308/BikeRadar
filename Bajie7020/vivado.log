@@ -1,0 +1,490 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Jun 24 22:03:47 2023
+# Process ID: 3883196
+# Current directory: /home/penta/Documents/BikeRadar/Bajie7020
+# Command line: vivado
+# Log file: /home/penta/Documents/BikeRadar/Bajie7020/vivado.log
+# Journal file: /home/penta/Documents/BikeRadar/Bajie7020/vivado.jou
+# Running On: Penta0308-15U560-U, OS: Linux, CPU Frequency: 2298.747 MHz, CPU Physical cores: 2, Host memory: 8179 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file /home/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/penta/Documents/digilent-vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:13 . Memory (MB): peak = 7739.008 ; gain = 170.000 ; free physical = 1448 ; free virtual = 18351
+update_compile_order -fileset sources_1
+open_bd_design {/home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd}
+Reading block design file </home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_160M
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_rfb_fclk
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_200M
+Adding component instance block -- xilinx.com:module_ref:firoutmixer:1.0 - firoutmixer_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_1
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_compiler_0
+Adding component instance block -- xilinx.com:module_ref:rfbdes:1.0 - rfbdes_0
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - rfb_axi_dma
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - xfft_axi_dma
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_gp0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_acp
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hp0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:xfft:9.1 - xfft_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_32_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Successfully read diagram <bajie7020> from block design file </home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd>
+open_bd_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 7920.113 ; gain = 0.000 ; free physical = 1384 ; free virtual = 18256
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Attempt to kill process failed
+
+launch_runs synth_1 -jobs 4
+[Sat Jun 24 22:05:44 2023] Launched synth_1...
+Run output will be captured here: /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+delete_bd_objs [get_bd_intf_nets RFB_0_1] [get_bd_intf_ports RFB_DATA]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rfbdes_0/RFB]
+endgroup
+set_property name RFB_DATA [get_bd_intf_ports RFB_0]
+save_bd_design
+Wrote  : </home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd> 
+Wrote  : </home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/ui/bd_f03a5fde.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-1629] Slave segment </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </processing_system7_0/S_AXI_ACP/ACP_IOP> is excluded from all addressing paths.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_IOP'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0'
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_IOP from address space /xfft_axi_dma/Data_S2MM.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_MM2S.
+Excluding slave segment /processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0 from address space /xfft_axi_dma/Data_S2MM.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 Data_Sign has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 Data_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 Data_Fractional_Bits has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:fir_compiler:7.2-913] /rfb_fir/fir_compiler_0 DATA_TUSER_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /axi_interconnect_acp/m00_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-926] Following properties on interface pin /rfb_fir/rfb_fir_out/firoutmixer_0/S_AXIS have been updated from connected ip, but BD cell '/rfb_fir/rfb_fir_out/firoutmixer_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 64} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value path} size {attribs {resolve_type generated dependency path_size format long minimum {} maximum {}} value 2} stride {attribs {resolve_type generated dependency path_stride format long minimum {} maximum {}} value 32} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency out_width format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency out_fractwidth format long minimum {} maximum {}} value 19} signed {attribs {resolve_type generated dependency out_signed format bool minimum {} maximum {}} value true}}}}}}}}} TDATA_WIDTH 64 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_data_valid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data_valid} enabled {attribs {resolve_type generated dependency data_valid_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency data_valid_bitwidth format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency chanid_bitoffset format long minimum {} maximum {}} value 1} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_bitwidth format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type generated dependency user_bitoffset format long minimum {} maximum {}} value 1}}}}}} TUSER_WIDTH 2}
+
+Please resolve any mismatches by directly setting properties on BD cell </rfb_fir/rfb_fir_out/firoutmixer_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 1.33333e+08 
+Please resolve any mismatches by directly setting properties on BD cell </xadc_wiz_0> to completely resolve these warnings.
+Wrote  : </home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/rfb_fir/rfb_fir_out/firoutmixer_0/s_axis_user'(1) to pin: '/rfb_fir/rfb_fir_out/S_AXIS_tuser'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+Verilog Output written to : /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/rfb_fir/rfb_fir_out/firoutmixer_0/s_axis_user'(1) to pin: '/rfb_fir/rfb_fir_out/S_AXIS_tuser'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_interconnect_acp/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_interconnect_acp/m00_couplers/M_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_AWID'(3) to pin: '/axi_interconnect_acp/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_WID'(3) to pin: '/axi_interconnect_acp/M00_AXI_wid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_ACP_ARID'(3) to pin: '/axi_interconnect_acp/M00_AXI_arid'(1) - Only lower order bits will be connected.
+Verilog Output written to : /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/sim/bajie7020.v
+Verilog Output written to : /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_system_ila_0_0/bajie7020_system_ila_0_0_ooc.xdc'
+Exporting to file /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_system_ila_0_0/bd_0/hw_handoff/bajie7020_system_ila_0_0.hwh
+Generated Hardware Definition File /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_system_ila_0_0/bd_0/synth/bajie7020_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_0/bajie7020_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_gp0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_1/bajie7020_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_acp/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/ip/bajie7020_auto_pc_2/bajie7020_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_hp0/s00_couplers/auto_pc .
+Exporting to file /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/hw_handoff/bajie7020.hwh
+Generated Hardware Definition File /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.gen/sources_1/bd/bajie7020/synth/bajie7020.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_1, cache-ID = 6bfb868fe3ebe40f; cache size = 46.337 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_0, cache-ID = 0a6544b7b2ea787f; cache size = 46.337 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_auto_pc_2, cache-ID = 26e48ec19ab4cb32; cache size = 46.336 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP bajie7020_system_ila_0_0, cache-ID = a92ae531f86b35de; cache size = 46.337 MB.
+config_ip_cache: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 9424.094 ; gain = 0.000 ; free physical = 1866 ; free virtual = 17982
+[Sat Jun 24 22:08:41 2023] Launched synth_1...
+Run output will be captured here: /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:57 ; elapsed = 00:01:22 . Memory (MB): peak = 9674.762 ; gain = 250.668 ; free physical = 1844 ; free virtual = 17967
+launch_runs impl_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run impl_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sat Jun 24 22:10:13 2023] Launched impl_1...
+Run output will be captured here: /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run impl_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Jun 25 00:49:43 2023] Launched impl_1...
+Run output will be captured here: /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.53 . Memory (MB): peak = 9674.762 ; gain = 0.000 ; free physical = 1398 ; free virtual = 17583
+INFO: [Netlist 29-17] Analyzing 677 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 9924.402 ; gain = 66.195 ; free physical = 748 ; free virtual = 16946
+Restored from archive | CPU: 3.030000 secs | Memory: 26.121490 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 9924.402 ; gain = 66.195 ; free physical = 748 ; free virtual = 16946
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9924.402 ; gain = 0.000 ; free physical = 778 ; free virtual = 16976
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 75 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 52 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 19 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:39 . Memory (MB): peak = 10104.508 ; gain = 429.746 ; free physical = 613 ; free virtual = 16869
+open_report: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 10104.508 ; gain = 0.000 ; free physical = 543 ; free virtual = 16774
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+write_hw_platform -fixed -include_bit -force -file /home/penta/Documents/BikeRadar/Bajie7020/bajie7020_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: /home/penta/Documents/BikeRadar/Bajie7020/bajie7020_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/penta/Documents/BikeRadar/Bajie7020/bajie7020_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/opt/Xilinx/Vivado/2022.1/data/embeddedsw) loading 0 seconds
+write_hw_platform: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 10200.988 ; gain = 81.617 ; free physical = 422 ; free virtual = 16678
+file copy -force /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/bajie7020_wrapper.bit /home/penta/Documents/BikeRadar/Bajie7020/radarcon.bit
+close_design
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property AUTO_RQS 1 [get_runs impl_1]
+set_property AUTO_RQS.SUGGESTION_RUN impl_1 [get_runs synth_1]
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.58 . Memory (MB): peak = 10240.211 ; gain = 0.000 ; free physical = 126 ; free virtual = 15052
+INFO: [Netlist 29-17] Analyzing 677 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 10240.211 ; gain = 0.000 ; free physical = 123 ; free virtual = 14714
+Restored from archive | CPU: 2.540000 secs | Memory: 28.456779 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 10240.211 ; gain = 0.000 ; free physical = 123 ; free virtual = 14714
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 10240.211 ; gain = 0.000 ; free physical = 123 ; free virtual = 14720
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 75 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 52 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 19 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 10319.027 ; gain = 78.816 ; free physical = 118 ; free virtual = 14628
+open_report: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 10319.027 ; gain = 0.000 ; free physical = 178 ; free virtual = 14411
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+WARNING: [IP_Flow 19-4684] Expected long value for param s_axi_lite.FREQ_HZ but, float/scientific notation value 1.33333e+08 is provided. The value is converted to long type(133333000)
+WARNING: [IP_Flow 19-4684] Expected long value for param s_axi_aclk.FREQ_HZ but, float/scientific notation value 1.33333e+08 is provided. The value is converted to long type(133333000)
+WARNING: [IP_Flow 19-4684] Expected long value for param s_axi_lite.FREQ_HZ but, float/scientific notation value 1.33333e+08 is provided. The value is converted to long type(133333000)
+WARNING: [IP_Flow 19-4684] Expected long value for param s_axi_aclk.FREQ_HZ but, float/scientific notation value 1.33333e+08 is provided. The value is converted to long type(133333000)
+archive_project /home/penta/Documents/BikeRadar/Bajie7020.xpr.zip -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-3883196-Penta0308-15U560-U' for archiving project
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp'.
+WARNING: [Project 1-865] Could not find the file /home/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/penta/Documents/digilent-vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [IP_Flow 19-7005] Skipping external file /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/new/fir48Mt2M4.coe
+WARNING: [IP_Flow 19-4684] Expected long value for param aclk_intf.FREQ_HZ but, float/scientific notation value 2e+08 is provided. The value is converted to long type(200000000)
+WARNING: [IP_Flow 19-4684] Expected long value for param S_AXIS_DATA.FREQ_HZ but, float/scientific notation value 2e+08 is provided. The value is converted to long type(200000000)
+WARNING: [IP_Flow 19-4684] Expected long value for param M_AXIS_DATA.FREQ_HZ but, float/scientific notation value 2e+08 is provided. The value is converted to long type(200000000)
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/penta/Documents/digilent-vivado-library-master'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_DCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_FCLK' of definition 'xilinx.com:interface:diff_clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB_AXIS_CLK' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'idelay_refclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'des_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'io_reset' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+WARNING: [IP_Flow 19-5150] The Range '(SYS_W - 1):0' is present in all ports of the interface 'RFB'. It is assumed that this is meant to declare an array of interface. However, the IP Packager does not currently support Interface Arrays of variable length (based on a parameter). Please change the range to be a constant if you want IP Packager to infer this as an interface array.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_P on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5464] No port map found for required logical port CLK_N on bus interface abstraction tmds_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RFB' of definition 'digilentinc.com:interface:tmds:1.0' (from User Repositories).
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_DCLK': Added interface parameter 'FREQ_HZ' with value '144000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'CAN_DEBUG' with value 'false'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_FCLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'des_reset'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RFB_AXIS_CLK': Added interface parameter 'FREQ_HZ' with value '48000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'idelay_refclk': Added interface parameter 'FREQ_HZ' with value '200000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'des_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'io_reset': Added interface parameter 'POLARITY' with value 'ACTIVE_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_DCLK' has a fixed FREQ_HZ of '144000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_FCLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'RFB_AXIS_CLK' has a fixed FREQ_HZ of '48000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'idelay_refclk' has a fixed FREQ_HZ of '200000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'idelay_refclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_P" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'RFB': A port map to the required logical port "CLK_N" of the bus abstraction "digilentinc.com:interface:tmds_rtl:1.0" is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/penta/Documents/digilent-vivado-library-master'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_rfbdes_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_xadc_wiz_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_rfb_axi_dma_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_xfft_axi_dma_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_xbar_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_xbar_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_axis_subset_converter_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_rst_ps7_0_160M_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_processing_system7_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_proc_sys_reset_rfb_fclk_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_firoutmixer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_axis_subset_converter_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_axis_subset_converter_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_rst_ps7_0_200M_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_axis_data_fifo_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_axis_data_fifo_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_fir_compiler_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'bajie7020_xfft_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_rfbdes_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_xadc_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_rfb_axi_dma_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_xfft_axi_dma_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_xbar_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_axis_subset_converter_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_rst_ps7_0_160M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_proc_sys_reset_rfb_fclk_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_firoutmixer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_axis_subset_converter_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_axis_subset_converter_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_rst_ps7_0_200M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_axis_data_fifo_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_axis_data_fifo_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_fir_compiler_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bajie7020_xfft_0_0_impl_1'...
+WARNING: [Coretcl 2-52] File '/home/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp' does not exist
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_axis_data_fifo_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_axis_data_fifo_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_axis_data_fifo_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_axis_data_fifo_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_axis_subset_converter_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_axis_subset_converter_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_axis_subset_converter_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_axis_subset_converter_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_axis_subset_converter_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_axis_subset_converter_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_fir_compiler_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_fir_compiler_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_firoutmixer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_firoutmixer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_proc_sys_reset_rfb_fclk_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_proc_sys_reset_rfb_fclk_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_rfb_axi_dma_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_rfb_axi_dma_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_rfbdes_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_rfbdes_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_rst_ps7_0_160M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_rst_ps7_0_160M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_rst_ps7_0_200M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_rst_ps7_0_200M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_xadc_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_xadc_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_xbar_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_xbar_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_xfft_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_xfft_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bajie7020_xfft_axi_dma_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bajie7020_xfft_axi_dma_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: /home/Bajie7020.srcs/utils_1/imports/synth_1/bajie7020_wrapper.dcp
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (/home/penta/Documents/BikeRadar/Bajie7020.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:01:33 ; elapsed = 00:01:31 . Memory (MB): peak = 10418.090 ; gain = 99.062 ; free physical = 568 ; free virtual = 15233
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 16:48:13 2023...

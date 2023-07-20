@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Jun 24 22:03:47 2023
+# Process ID: 3883196
+# Current directory: /home/penta/Documents/BikeRadar/Bajie7020
+# Command line: vivado
+# Log file: /home/penta/Documents/BikeRadar/Bajie7020/vivado.log
+# Journal file: /home/penta/Documents/BikeRadar/Bajie7020/vivado.jou
+# Running On: Penta0308-15U560-U, OS: Linux, CPU Frequency: 2298.747 MHz, CPU Physical cores: 2, Host memory: 8179 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.srcs/sources_1/bd/bajie7020/bajie7020.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+delete_bd_objs [get_bd_intf_nets RFB_0_1] [get_bd_intf_ports RFB_DATA]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rfbdes_0/RFB]
+endgroup
+set_property name RFB_DATA [get_bd_intf_ports RFB_0]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file /home/penta/Documents/BikeRadar/Bajie7020/bajie7020_wrapper.xsa
+file copy -force /home/penta/Documents/BikeRadar/Bajie7020/Bajie7020.runs/impl_1/bajie7020_wrapper.bit /home/penta/Documents/BikeRadar/Bajie7020/radarcon.bit
+close_design
+set_property AUTO_RQS 1 [get_runs impl_1]
+set_property AUTO_RQS.SUGGESTION_RUN impl_1 [get_runs synth_1]
+open_run impl_1
+close_design
+archive_project /home/penta/Documents/BikeRadar/Bajie7020.xpr.zip -force -include_local_ip_cache -include_config_settings

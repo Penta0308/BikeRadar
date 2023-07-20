@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Warning on instance bajie7020_wrapper.bajie7020_i.processing_system7_0.inst.PS7_i : The Zynq-7000 All Programmable SoC does not have a simulation model. Behavioral simulation of Zynq-7000 (e.g. Zynq PS7 block) is not supported in any simulator. Please use the AXI BFM simulation model to verify the AXI transactions.
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance bajie7020_wrapper.bajie7020_i.xadc_wiz_0.inst.AXI_XADC_CORE_I.XADC_INST was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+

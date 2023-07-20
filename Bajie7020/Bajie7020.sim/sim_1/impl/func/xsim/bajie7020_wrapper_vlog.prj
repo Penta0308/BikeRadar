@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Bajie7020.gen/sources_1/bd/bajie7020/ipshared/ec67/hdl" --include "../../../../../Bajie7020.gen/sources_1/bd/bajie7020/ipshared/5765/hdl" --include "../../../../../Bajie7020.gen/sources_1/bd/bajie7020/ipshared/8713/hdl" --include "/opt/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"bajie7020_wrapper_func_impl.v" \
+
+# Do not sort compile order
+nosort
