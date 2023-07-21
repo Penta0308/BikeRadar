@@ -20,14 +20,14 @@
         "rfb_fir_out": {
           "axis_data_fifo_0": "",
           "axis_subset_converter_1": "",
-          "system_ila_1": "",
           "firoutmixer_0": ""
         },
         "rfb_fir_in": {
           "axis_data_fifo_1": "",
           "axis_subset_converter_0": ""
         },
-        "fir_compiler_0": ""
+        "fir_compiler_0": "",
+        "system_ila_1": ""
       },
       "xadc_wiz_0": "",
       "rfb_axi_dma": "",
@@ -2066,6 +2066,11 @@
                 "mode": "Master",
                 "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
                 "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "M_AXIS1": {
+                "mode": "Monitor",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
               }
             },
             "ports": {
@@ -2087,6 +2092,25 @@
               "s_axis_reset": {
                 "type": "rst",
                 "direction": "I"
+              },
+              "sample_last": {
+                "direction": "O"
+              },
+              "sample_active": {
+                "direction": "O"
+              },
+              "sample_begin": {
+                "direction": "O"
+              },
+              "sample_n": {
+                "direction": "O",
+                "left": "15",
+                "right": "0"
+              },
+              "sample_ln": {
+                "direction": "O",
+                "left": "3",
+                "right": "0"
               }
             },
             "components": {
@@ -2115,7 +2139,7 @@
                     "value": "8"
                   },
                   "TDEST_WIDTH": {
-                    "value": "2"
+                    "value": "0"
                   },
                   "TID_WIDTH": {
                     "value": "0"
@@ -2187,71 +2211,6 @@
                   }
                 }
               },
-              "system_ila_1": {
-                "vlnv": "xilinx.com:ip:system_ila:1.1",
-                "xci_name": "bajie7020_system_ila_1_0",
-                "xci_path": "ip/bajie7020_system_ila_1_0/bajie7020_system_ila_1_0.xci",
-                "inst_hier_path": "rfb_fir/rfb_fir_out/system_ila_1",
-                "parameters": {
-                  "ALL_PROBE_SAME_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_DATA_DEPTH": {
-                    "value": "8192"
-                  },
-                  "C_EN_STRG_QUAL": {
-                    "value": "1"
-                  },
-                  "C_MON_TYPE": {
-                    "value": "MIX"
-                  },
-                  "C_NUM_MONITOR_SLOTS": {
-                    "value": "2"
-                  },
-                  "C_NUM_OF_PROBES": {
-                    "value": "6"
-                  },
-                  "C_PROBE0_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_PROBE1_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_PROBE2_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_PROBE3_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_PROBE4_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_PROBE5_MU_CNT": {
-                    "value": "2"
-                  },
-                  "C_SLOT": {
-                    "value": "0"
-                  },
-                  "C_SLOT_0_INTF_TYPE": {
-                    "value": "xilinx.com:interface:axis_rtl:1.0"
-                  },
-                  "C_SLOT_1_INTF_TYPE": {
-                    "value": "xilinx.com:interface:axis_rtl:1.0"
-                  }
-                },
-                "interface_ports": {
-                  "SLOT_0_AXIS": {
-                    "mode": "Monitor",
-                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-                    "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-                  },
-                  "SLOT_1_AXIS": {
-                    "mode": "Monitor",
-                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-                    "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-                  }
-                }
-              },
               "firoutmixer_0": {
                 "vlnv": "xilinx.com:module_ref:firoutmixer:1.0",
                 "xci_name": "bajie7020_firoutmixer_0_0",
@@ -2281,7 +2240,7 @@
                         "value_src": "constant"
                       },
                       "TUSER_WIDTH": {
-                        "value": "1",
+                        "value": "2",
                         "value_src": "constant"
                       },
                       "HAS_TREADY": {
@@ -2323,7 +2282,7 @@
                       "TUSER": {
                         "physical_name": "s_axis_user",
                         "direction": "I",
-                        "left": "0",
+                        "left": "1",
                         "right": "0"
                       },
                       "TVALID": {
@@ -2350,7 +2309,7 @@
                         "value_src": "constant"
                       },
                       "TUSER_WIDTH": {
-                        "value": "1",
+                        "value": "0",
                         "value_src": "constant"
                       },
                       "HAS_TREADY": {
@@ -2366,7 +2325,7 @@
                         "value_src": "constant"
                       },
                       "HAS_TLAST": {
-                        "value": "0",
+                        "value": "1",
                         "value_src": "constant"
                       },
                       "FREQ_HZ": {
@@ -2385,7 +2344,7 @@
                         "left": "63",
                         "right": "0"
                       },
-                      "TUSER": {
+                      "TLAST": {
                         "physical_name": "m_axis_last",
                         "direction": "O"
                       },
@@ -2442,9 +2401,6 @@
                   "sample_active": {
                     "direction": "O"
                   },
-                  "sample_valid": {
-                    "direction": "O"
-                  },
                   "sample_begin": {
                     "direction": "O"
                   },
@@ -2470,15 +2426,14 @@
               "fir_compiler_0_M_AXIS_DATA": {
                 "interface_ports": [
                   "S_AXIS",
-                  "firoutmixer_0/S_AXIS",
-                  "system_ila_1/SLOT_1_AXIS"
+                  "firoutmixer_0/S_AXIS"
                 ]
               },
               "firoutmixer_0_M_AXIS": {
                 "interface_ports": [
                   "firoutmixer_0/M_AXIS",
                   "axis_subset_converter_1/S_AXIS",
-                  "system_ila_1/SLOT_0_AXIS"
+                  "M_AXIS1"
                 ]
               }
             },
@@ -2492,45 +2447,38 @@
               "firoutmixer_0_sample_active": {
                 "ports": [
                   "firoutmixer_0/sample_active",
-                  "system_ila_1/probe2"
+                  "sample_active"
                 ]
               },
               "firoutmixer_0_sample_begin": {
                 "ports": [
                   "firoutmixer_0/sample_begin",
-                  "system_ila_1/probe4"
+                  "sample_begin"
                 ]
               },
               "firoutmixer_0_sample_last": {
                 "ports": [
                   "firoutmixer_0/sample_last",
-                  "system_ila_1/probe5"
+                  "sample_last"
                 ]
               },
               "firoutmixer_0_sample_ln": {
                 "ports": [
                   "firoutmixer_0/sample_ln",
-                  "system_ila_1/probe1"
+                  "sample_ln"
                 ]
               },
               "firoutmixer_0_sample_n": {
                 "ports": [
                   "firoutmixer_0/sample_n",
-                  "system_ila_1/probe0"
-                ]
-              },
-              "firoutmixer_0_sample_valid": {
-                "ports": [
-                  "firoutmixer_0/sample_valid",
-                  "system_ila_1/probe3"
+                  "sample_n"
                 ]
               },
               "proc_sys_reset_rfb_288M_peripheral_aresetn": {
                 "ports": [
                   "s_axis_aresetn",
                   "axis_data_fifo_0/s_axis_aresetn",
-                  "axis_subset_converter_1/aresetn",
-                  "system_ila_1/resetn"
+                  "axis_subset_converter_1/aresetn"
                 ]
               },
               "processing_system7_0_FCLK_CLK0": {
@@ -2544,7 +2492,6 @@
                   "s_axis_aclk",
                   "axis_data_fifo_0/s_axis_aclk",
                   "axis_subset_converter_1/aclk",
-                  "system_ila_1/clk",
                   "firoutmixer_0/clk"
                 ]
               },
@@ -2798,9 +2745,88 @@
                 "value": "48"
               }
             }
+          },
+          "system_ila_1": {
+            "vlnv": "xilinx.com:ip:system_ila:1.1",
+            "xci_name": "bajie7020_system_ila_1_0",
+            "xci_path": "ip/bajie7020_system_ila_1_0/bajie7020_system_ila_1_0.xci",
+            "inst_hier_path": "rfb_fir/system_ila_1",
+            "parameters": {
+              "ALL_PROBE_SAME_MU_CNT": {
+                "value": "2"
+              },
+              "C_DATA_DEPTH": {
+                "value": "4096"
+              },
+              "C_EN_STRG_QUAL": {
+                "value": "1"
+              },
+              "C_MON_TYPE": {
+                "value": "MIX"
+              },
+              "C_NUM_MONITOR_SLOTS": {
+                "value": "3"
+              },
+              "C_NUM_OF_PROBES": {
+                "value": "5"
+              },
+              "C_PROBE0_MU_CNT": {
+                "value": "2"
+              },
+              "C_PROBE1_MU_CNT": {
+                "value": "2"
+              },
+              "C_PROBE2_MU_CNT": {
+                "value": "2"
+              },
+              "C_PROBE3_MU_CNT": {
+                "value": "2"
+              },
+              "C_PROBE4_MU_CNT": {
+                "value": "2"
+              },
+              "C_PROBE5_MU_CNT": {
+                "value": "2"
+              },
+              "C_SLOT": {
+                "value": "2"
+              },
+              "C_SLOT_0_INTF_TYPE": {
+                "value": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "C_SLOT_1_INTF_TYPE": {
+                "value": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "C_SLOT_2_INTF_TYPE": {
+                "value": "xilinx.com:interface:axis_rtl:1.0"
+              }
+            },
+            "interface_ports": {
+              "SLOT_0_AXIS": {
+                "mode": "Monitor",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "SLOT_1_AXIS": {
+                "mode": "Monitor",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "SLOT_2_AXIS": {
+                "mode": "Monitor",
+                "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              }
+            }
           }
         },
         "interface_nets": {
+          "Conn": {
+            "interface_ports": [
+              "system_ila_1/SLOT_1_AXIS",
+              "rfb_fir_out/M_AXIS1"
+            ]
+          },
           "Conn1": {
             "interface_ports": [
               "M_AXIS",
@@ -2810,13 +2836,15 @@
           "axis_data_fifo_1_M_AXIS": {
             "interface_ports": [
               "rfb_fir_in/M_AXIS",
-              "fir_compiler_0/S_AXIS_DATA"
+              "fir_compiler_0/S_AXIS_DATA",
+              "system_ila_1/SLOT_2_AXIS"
             ]
           },
           "fir_compiler_0_M_AXIS_DATA": {
             "interface_ports": [
               "fir_compiler_0/M_AXIS_DATA",
-              "rfb_fir_out/S_AXIS"
+              "rfb_fir_out/S_AXIS",
+              "system_ila_1/SLOT_0_AXIS"
             ]
           },
           "rfbdes_0_M_AXIS": {
@@ -2831,7 +2859,8 @@
             "ports": [
               "fir_aresetn",
               "rfb_fir_out/s_axis_aresetn",
-              "fir_compiler_0/aresetn"
+              "fir_compiler_0/aresetn",
+              "system_ila_1/resetn"
             ]
           },
           "proc_sys_reset_rfb_fclk_peripheral_aresetn": {
@@ -2851,13 +2880,44 @@
               "fir_aclk",
               "rfb_fir_in/m_axis_aclk",
               "rfb_fir_out/s_axis_aclk",
-              "fir_compiler_0/aclk"
+              "fir_compiler_0/aclk",
+              "system_ila_1/clk"
             ]
           },
           "reset_1": {
             "ports": [
               "fir_reset",
               "rfb_fir_out/s_axis_reset"
+            ]
+          },
+          "rfb_fir_out_sample_active": {
+            "ports": [
+              "rfb_fir_out/sample_active",
+              "system_ila_1/probe2"
+            ]
+          },
+          "rfb_fir_out_sample_begin": {
+            "ports": [
+              "rfb_fir_out/sample_begin",
+              "system_ila_1/probe3"
+            ]
+          },
+          "rfb_fir_out_sample_last": {
+            "ports": [
+              "rfb_fir_out/sample_last",
+              "system_ila_1/probe4"
+            ]
+          },
+          "rfb_fir_out_sample_ln": {
+            "ports": [
+              "rfb_fir_out/sample_ln",
+              "system_ila_1/probe1"
+            ]
+          },
+          "rfb_fir_out_sample_n": {
+            "ports": [
+              "rfb_fir_out/sample_n",
+              "system_ila_1/probe0"
             ]
           },
           "rfb_fir_out_transfer_dropped_0": {
@@ -2996,6 +3056,9 @@
           },
           "c_s_axis_s2mm_tdata_width": {
             "value": "64"
+          },
+          "c_sg_length_width": {
+            "value": "20"
           }
         },
         "interface_ports": {

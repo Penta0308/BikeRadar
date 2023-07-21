@@ -173,10 +173,10 @@ void SPIInitTiPll(void) {
 	osDelay(1);
 	SPIWriteTiPll( 97, 0b0000010010001001); // RAMP0 RST Dis, TrigA:ClkR, TrigB:ClkF, Burst:TrigA
 	osDelay(1);
-	SPIWriteTiPll( 96, 0b1000000000000100); // Burst On, CNT:1
+	SPIWriteTiPll( 96, 0b1000000000001000); // Burst On, CNT:2
 	osDelay(1);
-	SPIWriteTiPll( 75, 0b0000101110000000); // CHDIV 14 (by 256)
-	osDelay(1);
+	//SPIWriteTiPll( 75, 0b0000101110000000); // CHDIV 14 (by 256)
+	//osDelay(1);
 	//SPIWriteTiPll( 46, 0b0000011111110000); // OutB:CHDIV
 	//osDelay(1);
 	//SPIWriteTiPll( 45, 0b1100011000001100); // OutA:CHDIV, OutBPWR: 12 (0b1100)
@@ -185,7 +185,7 @@ void SPIInitTiPll(void) {
 	osDelay(1);
 	SPIWriteTiPll( 46, 0b0000011111110001); // OutB:VCO
 	osDelay(1);
-	SPIWriteTiPll( 45, 0b1100111000001100); // OutA:VCO, OutBPWR: 12 (0b1100)
+	SPIWriteTiPll( 45, 0b1100111000111111); // OutA:VCO, OutBPWR: 3F
 	osDelay(1);
 	SPIWriteTiPll( 44, 0b0000000001100010); // OutAPWR: 0, OutAEn: Off, OutBEn: On
 	osDelay(1);
@@ -339,8 +339,8 @@ void SPIInitTiAdc() {
 
             //SPIInitTiAdcW_GenArray(0x006, 0x02), // Test Pattern En
             //SPIInitTiAdcW_GenArray(0x009, 0x02), // Test Pattern Sync
-            //SPIInitTiAdcW_GenArray(0x00A, 0x04), // ChA Test Pattern Inc
-            //SPIInitTiAdcW_GenArray(0x00B, 0x10), // ChB Test Pattern 000
+            //SPIInitTiAdcW_GenArray(0x00A, 0x01), // ChA Test Pattern 000000
+            //SPIInitTiAdcW_GenArray(0x00B, 0x40), // ChB Test Pattern Incr
     };
 
     for (uint8_t i = 0; i < COUNTOF(aTxBuffers); i++) {

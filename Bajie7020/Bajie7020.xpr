@@ -114,26 +114,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_rfbdes_0_0_1/bajie7020_rfbdes_0_0.xci">
-          <Proxy FileSetName="bajie7020_rfbdes_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_proc_sys_reset_rfb_fclk_0/bajie7020_proc_sys_reset_rfb_fclk_0.xci">
-          <Proxy FileSetName="bajie7020_proc_sys_reset_rfb_fclk_0"/>
+        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_processing_system7_0_0_1/bajie7020_processing_system7_0_0.xci">
+          <Proxy FileSetName="bajie7020_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_xadc_wiz_0_0_1/bajie7020_xadc_wiz_0_0.xci">
           <Proxy FileSetName="bajie7020_xadc_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_axis_subset_converter_0_0/bajie7020_axis_subset_converter_0_0.xci">
-          <Proxy FileSetName="bajie7020_axis_subset_converter_0_0"/>
+        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_xfft_axi_dma_0/bajie7020_xfft_axi_dma_0.xci">
+          <Proxy FileSetName="bajie7020_xfft_axi_dma_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_firoutmixer_0_0_1/bajie7020_firoutmixer_0_0.xci">
-          <Proxy FileSetName="bajie7020_firoutmixer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_system_ila_1_0/bajie7020_system_ila_1_0.xci">
-          <Proxy FileSetName="bajie7020_system_ila_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_processing_system7_0_0_1/bajie7020_processing_system7_0_0.xci">
-          <Proxy FileSetName="bajie7020_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="bajie7020.bd" FileRelPathName="ip/bajie7020_rfbdes_0_0_1/bajie7020_rfbdes_0_0.xci">
+          <Proxy FileSetName="bajie7020_rfbdes_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/bajie7020/hdl/bajie7020_wrapper.v">
@@ -363,16 +354,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="bajie7020_proc_sys_reset_rfb_fclk_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bajie7020_proc_sys_reset_rfb_fclk_0" RelGenDir="$PGENDIR/bajie7020_proc_sys_reset_rfb_fclk_0">
+    <FileSet Name="bajie7020_xfft_axi_dma_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bajie7020_xfft_axi_dma_0" RelGenDir="$PGENDIR/bajie7020_xfft_axi_dma_0">
       <Config>
-        <Option Name="TopModule" Val="bajie7020_proc_sys_reset_rfb_fclk_0"/>
-        <Option Name="ElabLinkDCPs" Val="0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="bajie7020_axis_subset_converter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bajie7020_axis_subset_converter_0_0" RelGenDir="$PGENDIR/bajie7020_axis_subset_converter_0_0">
-      <Config>
-        <Option Name="TopModule" Val="bajie7020_axis_subset_converter_0_0"/>
+        <Option Name="TopModule" Val="bajie7020_xfft_axi_dma_0"/>
         <Option Name="ElabLinkDCPs" Val="0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
@@ -380,20 +364,6 @@
     <FileSet Name="bajie7020_rfbdes_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bajie7020_rfbdes_0_0" RelGenDir="$PGENDIR/bajie7020_rfbdes_0_0">
       <Config>
         <Option Name="TopModule" Val="bajie7020_rfbdes_0_0"/>
-        <Option Name="ElabLinkDCPs" Val="0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="bajie7020_firoutmixer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bajie7020_firoutmixer_0_0" RelGenDir="$PGENDIR/bajie7020_firoutmixer_0_0">
-      <Config>
-        <Option Name="TopModule" Val="bajie7020_firoutmixer_0_0"/>
-        <Option Name="ElabLinkDCPs" Val="0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="bajie7020_system_ila_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bajie7020_system_ila_1_0" RelGenDir="$PGENDIR/bajie7020_system_ila_1_0">
-      <Config>
-        <Option Name="TopModule" Val="bajie7020_system_ila_1_0"/>
         <Option Name="ElabLinkDCPs" Val="0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
@@ -453,37 +423,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bajie7020_proc_sys_reset_rfb_fclk_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_proc_sys_reset_rfb_fclk_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_proc_sys_reset_rfb_fclk_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_proc_sys_reset_rfb_fclk_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_proc_sys_reset_rfb_fclk_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_proc_sys_reset_rfb_fclk_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="bajie7020_axis_subset_converter_0_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_axis_subset_converter_0_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_axis_subset_converter_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_axis_subset_converter_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_axis_subset_converter_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_axis_subset_converter_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="bajie7020_rfbdes_0_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_rfbdes_0_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_rfbdes_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_rfbdes_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="bajie7020_firoutmixer_0_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_firoutmixer_0_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_firoutmixer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_firoutmixer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_firoutmixer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_firoutmixer_0_0_synth_1">
+    <Run Id="bajie7020_xfft_axi_dma_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_xfft_axi_dma_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_xfft_axi_dma_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_xfft_axi_dma_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_xfft_axi_dma_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_xfft_axi_dma_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -495,7 +435,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bajie7020_system_ila_1_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_system_ila_1_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_system_ila_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_system_ila_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_system_ila_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_system_ila_1_0_synth_1">
+    <Run Id="bajie7020_rfbdes_0_0_synth_1" Type="Ft3:Synth" SrcSet="bajie7020_rfbdes_0_0" Part="xc7z020clg400-1" ConstrsSet="bajie7020_rfbdes_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bajie7020_rfbdes_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -584,28 +524,28 @@
         </ReportConfig>
         <ReportConfig DisplayName="DRC - Route Design" Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="bajie7020_wrapper_drc_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="bajie7020_wrapper_drc_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="bajie7020_wrapper_drc_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="Methodology - Route Design" Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="bajie7020_wrapper_methodology_drc_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="bajie7020_wrapper_methodology_drc_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="bajie7020_wrapper_methodology_drc_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="Power - Route Design" Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="bajie7020_wrapper_power_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="bajie7020_wrapper_power_summary_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="bajie7020_wrapper_power_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="Route Status - Route Design" Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="bajie7020_wrapper_route_status.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="bajie7020_wrapper_route_status.pb"/>
         </ReportConfig>
         <ReportConfig DisplayName="Timing Summary - Route Design" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="bajie7020_wrapper_timing_summary_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="max_paths" Type="" Value="10"/>
           <ReportConfigOption Name="report_unconstrained" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="bajie7020_wrapper_timing_summary_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="bajie7020_wrapper_timing_summary_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="Incremental Reuse - Route Design" Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="bajie7020_wrapper_incremental_reuse_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
@@ -615,8 +555,8 @@
         </ReportConfig>
         <ReportConfig DisplayName="Bus Skew - Route Design" Name="impl_1_route_report_bus_skew_0" Spec="report_bus_skew" RunStep="route_design" ReportFile="bajie7020_wrapper_bus_skew_routed.rpt" Version="1" Minor="1">
           <ReportConfigOption Name="warn_on_violation" Type="" Value="true"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="bajie7020_wrapper_bus_skew_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="bajie7020_wrapper_bus_skew_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="implementation_log" Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="bajie7020_wrapper.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
@@ -682,58 +622,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bajie7020_proc_sys_reset_rfb_fclk_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_proc_sys_reset_rfb_fclk_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_proc_sys_reset_rfb_fclk_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_proc_sys_reset_rfb_fclk_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_proc_sys_reset_rfb_fclk_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="bajie7020_axis_subset_converter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_axis_subset_converter_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_axis_subset_converter_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_axis_subset_converter_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_axis_subset_converter_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="bajie7020_rfbdes_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_rfbdes_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_rfbdes_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="bajie7020_firoutmixer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_firoutmixer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_firoutmixer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_firoutmixer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_firoutmixer_0_0_impl_1">
+    <Run Id="bajie7020_xfft_axi_dma_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_xfft_axi_dma_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_xfft_axi_dma_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_xfft_axi_dma_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_xfft_axi_dma_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
           <Desc>Default settings for Implementation.</Desc>
@@ -752,7 +641,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bajie7020_system_ila_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_system_ila_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_system_ila_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_system_ila_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_system_ila_1_0_impl_1">
+    <Run Id="bajie7020_rfbdes_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="bajie7020_rfbdes_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bajie7020_rfbdes_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bajie7020_rfbdes_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
           <Desc>Default settings for Implementation.</Desc>

@@ -42,7 +42,7 @@ din_idelay_tap = 22
   output       RFB_AXIS_CLK,
   
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *)
-  output reg [0:0] RFB_AXIS_USER,
+  output [0:0] RFB_AXIS_USER,
   
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 idelay_refclk CLK" *)
   (* X_INTERFACE_PARAMETER = "FREQ_HZ 200000000" *)
@@ -175,17 +175,15 @@ din_idelay_tap = 22
     
     reg dv_p;
     wire dv = isd_q[5][3];
+    assign RFB_AXIS_USER[0] = dv ^ dv_p;
     
     always @(posedge RFB_DCLK_div) begin
+        dv_p <= dv;
         if(reset || !idelayctrl_ready) begin
             RFB_AXIS_VALID <= 0;
             isd_bitslip <= 0;
             bitslipcount <= 0;
-            RFB_AXIS_USER[0] <= 0;
-            dv_p <= dv;
         end else begin
-            RFB_AXIS_USER[0] <= dv ^ dv_p;
-            dv_p <= dv;
             if(bitslipcount == 2'b00) begin
                 if(isd_q[4][5:0] == 6'b111000) begin
                     RFB_AXIS_VALID <= 1;
@@ -207,18 +205,18 @@ din_idelay_tap = 22
     end
 
       
-    assign RFB_AXIS_DATA[23] = isd_q[1][0];
-    assign RFB_AXIS_DATA[22] = ~isd_q[0][0];
-    assign RFB_AXIS_DATA[21] = isd_q[1][1];
-    assign RFB_AXIS_DATA[20] = ~isd_q[0][1];
-    assign RFB_AXIS_DATA[19] = isd_q[1][2];
-    assign RFB_AXIS_DATA[18] = ~isd_q[0][2];
-    assign RFB_AXIS_DATA[17] = isd_q[1][3];
-    assign RFB_AXIS_DATA[16] = ~isd_q[0][3];
-    assign RFB_AXIS_DATA[15] = isd_q[1][4];
-    assign RFB_AXIS_DATA[14] = ~isd_q[0][4];
-    assign RFB_AXIS_DATA[13] = isd_q[1][5];
-    assign RFB_AXIS_DATA[12] = ~isd_q[0][5];
+    assign RFB_AXIS_DATA[22] = isd_q[1][0];
+    assign RFB_AXIS_DATA[23] = ~isd_q[0][0];
+    assign RFB_AXIS_DATA[20] = isd_q[1][1];
+    assign RFB_AXIS_DATA[21] = ~isd_q[0][1];
+    assign RFB_AXIS_DATA[18] = isd_q[1][2];
+    assign RFB_AXIS_DATA[19] = ~isd_q[0][2];
+    assign RFB_AXIS_DATA[16] = isd_q[1][3];
+    assign RFB_AXIS_DATA[17] = ~isd_q[0][3];
+    assign RFB_AXIS_DATA[14] = isd_q[1][4];
+    assign RFB_AXIS_DATA[15] = ~isd_q[0][4];
+    assign RFB_AXIS_DATA[12] = isd_q[1][5];
+    assign RFB_AXIS_DATA[13] = ~isd_q[0][5];
     
     assign RFB_AXIS_DATA[10] = isd_q[2][0];
     assign RFB_AXIS_DATA[11] = isd_q[3][0];
