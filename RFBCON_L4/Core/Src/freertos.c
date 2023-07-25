@@ -290,10 +290,15 @@ void StartTxMgr(void *argument)
     	xTaskNotifyWait(0, 1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP, &ulNotifiedValue, portMAX_DELAY);
     	if(ulNotifiedValue & (1u << TXMGR_NOTIFICATION_BIT_STARTSWEEP)) {
     		taskENTER_CRITICAL();
-    		SPIWriteTiPll(  0, 0b1010000010011000);
+    		SPIWriteTiPll(  0, 0b0010000010011000);
+    		//SPIWriteTiPll( 96, 0b1000000010000000); // Burst On, CNT:32
     		LL_GPIO_TogglePin(FGPB13_GPIO_Port, FGPB13_Pin);
+    		SPIWriteTiPll(  0, 0b1010000010011000);
+    		//LL_GPIO_SetOutputPin(PLL_RAMPCLK_GPIO_Port, PLL_RAMPCLK_Pin);
     		//LL_GPIO_TogglePin(PLL_RAMPCLK_GPIO_Port, PLL_RAMPCLK_Pin);
     		taskEXIT_CRITICAL();
+    		osDelay(1);
+    		//LL_GPIO_ResetOutputPin(PLL_RAMPCLK_GPIO_Port, PLL_RAMPCLK_Pin);
     		//HAL_TIM_Base_Start(&htim15);
     		/*LL_TIM_SetAutoReload(TIM15, RFBPllData[RFBPllData_SweepN].u4);
     		LL_TIM_EnableCounter(TIM15);

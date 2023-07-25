@@ -22,12 +22,12 @@
 
 /* USER CODE BEGIN 0 */
 
-const uint8_t TIPLL_OSC2X = 1;
+const uint8_t TIPLL_OSC2X = 2;
 const uint8_t TIPLL_MULT = 1;
 const uint8_t TIPLL_PRER = 1;
 const uint8_t TIPLL_POSTR = 1;
 const float TIPLL_FPD = TIPLL_FOSCIN * TIPLL_OSC2X * TIPLL_MULT / TIPLL_PRER / TIPLL_POSTR;
-uint8_t TIPLL_DENQ = 24;
+//uint8_t TIPLL_DENQ = 24;
 //uint32_t TIPLL_DEN = 0xFFFFFFFF;
 
 /* USER CODE END 0 */
@@ -161,27 +161,21 @@ uint16_t SPIReadTiPll(uint8_t addr) {
 void SPIInitTiPll(void) {
 	SPIWriteTiPll(  0, 0b0010001000011010); // Reset
 	osDelay(4);
-	SPIWriteTiPll(  5, 0b0010100011001000); // OSCin diff, internal term
-	osDelay(1);
-	SPIWriteTiPll(  6, 0b0001000000000010); // LDO_DLY = 2
-	osDelay(1);
-	SPIWriteTiPll(  0, 0b0010000010011000); // RAMP Disable, Fpd Range set, MUXOUT to Readback, OUT_MUTE Disable
-	osDelay(1);
-	SPIWriteTiPll(106, 0b0000000000010011); // RAMP_TRIG_CAL On, RAMP_SCALE_COUNT 3
+	SPIWriteTiPll(106, 0b0000000000000011); // RAMP_TRIG_CAL Off, RAMP_SCALE_COUNT 3
 	osDelay(1);
 	SPIWriteTiPll(105, 0b0111111111000000); // Automatic Ramping, RAMP1 End -> RAMP0, RAMP_DLY_CNT 1023
 	osDelay(1);
-	SPIWriteTiPll(101, 0b0000000000110000); // RAMP1 RST En, RAMP0 End -> RAMP1
+	SPIWriteTiPll(101, 0b0000000000010000); // RAMP1 RST Off, RAMP0 End -> RAMP1
+	//SPIWriteTiPll(101, 0b0000000000100000); // RAMP1 RST En, RAMP0 End -> RAMP0
 	osDelay(1);
-	SPIWriteTiPll( 97, 0b1000010010001000); // RAMP0 RST En, TrigA:ClkR, TrigB:ClkF, Burst:RampTrans
+	SPIWriteTiPll( 97, 0b0000010010001000); // RAMP0 RST Off, TrigA:ClkR, TrigB:ClkF, Burst:RT
 	osDelay(1);
-	SPIWriteTiPll( 96, 0b0000000000001000); // Burst Off, CNT:2
-	osDelay(1);
-	SPIWriteTiPll( 17, 0b0000000011111100); // VCO_DACISET_STRT
-	osDelay(1);
-	SPIWriteTiPll( 20, 0b0111010001001000); // VCO_SEL 6, VCO_SEL_FORCE 1
+	//SPIWriteTiPll( 96, 0b0000000000001000); // Burst Off, CNT:2
+	SPIWriteTiPll( 96, 0b1000000000001000); // Burst On, CNT:2
 	osDelay(1);
 	SPIWriteTiPll( 78, 0b0000000100011011); // QUICK_RECAL_EN 0, VCO_CAPCTRL_STRT 141
+	osDelay(1);
+	SPIWriteTiPll( 71, 0b0000000010000001); // ?
 	osDelay(1);
 	//SPIWriteTiPll( 75, 0b0000101110000000); // CHDIV 14 (by 256)
 	//osDelay(1);
@@ -191,20 +185,56 @@ void SPIInitTiPll(void) {
 	//osDelay(1);
 	SPIWriteTiPll( 60, 0b0000000000000000); // LD_DLY = 0
 	osDelay(1);
+	SPIWriteTiPll( 57, 0b0000000000010100); // ?
+	osDelay(1);
+	SPIWriteTiPll( 52, 0b0000010000100001); // ?
+	osDelay(1);
 	SPIWriteTiPll( 46, 0b0000011111110001); // OutB:VCO
 	osDelay(1);
-	SPIWriteTiPll( 45, 0b1100111000111111); // OutA:VCO, OutBPWR: 3F
-	osDelay(1);
-	SPIWriteTiPll( 36, (uint16_t)(121u));   // Init 5808MHz
-	osDelay(1);
-	SPIWriteTiPll( 34, (uint16_t)(((121u >> 16) & 0b111) | 0b0000000000010000));
+	SPIWriteTiPll( 45, 0b1100111000011000); // OutA:VCO, OutBPWR: 18h
 	osDelay(1);
 	SPIWriteTiPll( 44, 0b0000000001100010); // OutAPWR: 0, OutAEn: Off, OutBEn: On
 	osDelay(1);
+	SPIWriteTiPll( 37, 0b1000001000000101); // MASH_SEED_EN Off, PFD_DLY_SEL 2
+
+	uint32_t den = 1u << 24;
+	uint64_t ns = llroundf(5820000000.0f * den / TIPLL_FPD);
+	uint32_t sq = ns % den;
+	uint32_t sp = (ns - sq) / den;
+	osDelay(1);
+	SPIWriteTiPll( 43, (uint16_t)(sq));
+	osDelay(1);
+	SPIWriteTiPll( 42, (uint16_t)(sq >> 16));
+	osDelay(1);
+	SPIWriteTiPll( 39, (uint16_t)(den));
+	osDelay(1);
+	SPIWriteTiPll( 38, (uint16_t)(den >> 16));
+	osDelay(1);
+	SPIWriteTiPll( 36, (uint16_t)(sp));
+	osDelay(1);
+	SPIWriteTiPll( 34, (uint16_t)(((sp >> 16) & 0b111) | 0b0000000000010000));
+
+	osDelay(1);
+	SPIWriteTiPll( 30, 0b0001100010100110); // ?
+	osDelay(1);
+	SPIWriteTiPll( 29, 0b0000000000000000); // ?
+	osDelay(1);
+	SPIWriteTiPll( 20, 0b0111010001001000); // VCO_SEL 6, VCO_SEL_FORCE 1
+	osDelay(1);
+	SPIWriteTiPll( 17, 0b0000000011111100); // VCO_DACISET_STRT
+	osDelay(1);
 	SPIWriteTiPll( 14, 0b0001100001000000); // CPG 8 (2500 uA)
+	osDelay(1);
+	SPIWriteTiPll(  9, 0b0001000000000100); // OSC_2X On
+	osDelay(1);
+	SPIWriteTiPll(  8, 0b0010000000000000); // VCO_DACISET_FORCE Off, VCO_CAPCTRL_FORCE Off
 	osDelay(1);
 	SPIWriteTiPll(  7, 0b0100000010110010); // OUT_FORCE to ramp
 	osDelay(3);
+	SPIWriteTiPll(  6, 0b0001000000000010); // LDO_DLY = 2
+	osDelay(1);
+	SPIWriteTiPll(  5, 0b0010100011001000); // OSCin diff, internal term
+	osDelay(1);
 	SPIWriteTiPll(  0, 0b0010000010011000); // RAMP Disable, Fpd Range set, MUXOUT to Readback, OUT_MUTE Disable, FCAL_EN
 	osDelay(1);
 }
@@ -223,8 +253,7 @@ uint8_t SPISetTiPllOutAPwr(uint8_t power, uint8_t powerdown) {
 }
 
 float SPISetTiPllFreq(float f) {
-	uint8_t denq = TIPLL_DENQ;
-	uint32_t den = (1u << denq) - 1;
+	uint32_t den = 1u << 24;
 	uint64_t ns = llroundf(f * den / TIPLL_FPD);
 
 	uint32_t sq = ns % den;
@@ -269,7 +298,7 @@ void SPISetTiPllRampFreqFromBuf() {
 	float p = RFBPllData[RFBPllData_SweepLow].f;
 	float q = RFBPllData[RFBPllData_SweepHigh].f;
 
-	SPISetTiPllRampFreq(p, q, RFBPllData[RFBPllData_SweepN].h[1], fabs(q - p) + 80000000.0f, q + 20000000.0f, p - 20000000.0f);
+	SPISetTiPllRampFreq(p, q, RFBPllData[RFBPllData_SweepN].h[1], fabs(q - p) + 400000000.0f, q + 200000000.0f, p - 200000000.0f);
 }
 
 uint8_t SPIGetTiPllLocked() {
@@ -288,14 +317,17 @@ void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, f
 	uint64_t ne = llroundf(end   * sden / TIPLL_FPD);
 	int64_t so = (int64_t)ne - (int64_t)ns;
 	int32_t ss = so / len * 4;
-	uint32_t sq = ns % den;
-	uint32_t sp = (ns - sq) / den;
+	uint64_t sns = llroundf(start * den / TIPLL_FPD);
+	uint32_t sq = sns % den;
+	uint32_t sp = (sns - sq) / den;
 	if(sp & 0xFFFF0000) return; // OVF.
 
 	uint64_t rthresh = llroundf(threshbw * 16777216.0f / TIPLL_FPD); // 32bit
 	uint64_t rlhramp = llroundf(16777216.0f * (limithigh - start) / TIPLL_FPD); // 33bit
 	uint64_t rllramp = 8589934592ull - llroundf(16777216.0f * (start - limitlow) / TIPLL_FPD); // 33bit
 
+	osDelay(1);
+	SPIWriteTiPll(  0, 0b0010000010011000);
 	osDelay(1);
 	SPIWriteTiPll(104, len); // RAMP1
 	osDelay(1);
@@ -343,6 +375,9 @@ void SPISetTiPllRampFreq(float start, float end, uint16_t len, float threshbw, f
 	SPIWriteTiPll( 36, (uint16_t)(sp));
 	osDelay(1);
 	SPIWriteTiPll( 34, (uint16_t)(((sp >> 16) & 0b111) | 0b0000000000010000));
+
+	//osDelay(1);
+	//SPIWriteTiPll(  0, 0b1010000010011000);
 }
 
 void SPIInitTiAdc() {
